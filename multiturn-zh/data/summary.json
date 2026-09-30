@@ -1,0 +1,52 @@
+{
+  "seed": 20260930,
+  "tune": {
+    "dialogues": 30,
+    "turns": 210,
+    "reply_turns": 125,
+    "no_reply_turns": 85,
+    "by_category": {
+      "question": 74,
+      "request": 51,
+      "backchannel": 51,
+      "side_talk": 19,
+      "filler": 15
+    },
+    "by_bucket_no_reply_share": {
+      "low": 0.22,
+      "mid": 0.38,
+      "high": 0.63
+    },
+    "voices": [
+      "Eddy",
+      "Flo",
+      "Reed",
+      "Sandy",
+      "Shelley",
+      "Tingting"
+    ]
+  },
+  "heldout": {
+    "dialogues": 15,
+    "turns": 103,
+    "reply_turns": 63,
+    "no_reply_turns": 40,
+    "by_category": {
+      "question": 44,
+      "request": 19,
+      "backchannel": 28,
+      "side_talk": 9,
+      "filler": 3
+    },
+    "by_bucket_no_reply_share": {
+      "low": 0.17,
+      "mid": 0.38,
+      "high": 0.62
+    },
+    "voices": [
+      "Grandma",
+      "Grandpa",
+      "Rocko"
+    ]
+  }
+}

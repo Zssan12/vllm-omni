@@ -1,0 +1,100 @@
+{
+ "zh-choice-plain": {
+  "type": "choice",
+  "ins": "语音助手接下来应该怎么做？",
+  "crit": {
+   "yes": "开口回答用户：用户提了问题、提出请求或指令，或者在回答助手刚才的问题",
+   "no": "不出声，继续听：用户只是附和（嗯、好的、哦）、在笑、在咳嗽，或者在和别人说话"
+  },
+  "reply": "yes",
+  "state": "{t}"
+ },
+ "zh-choice-framed": {
+  "type": "choice",
+  "ins": "语音助手接下来应该怎么做？",
+  "crit": {
+   "yes": "开口回答用户：用户提了问题、提出请求或指令，或者在回答助手刚才的问题",
+   "no": "不出声，继续听：用户只是附和（嗯、好的、哦）、在笑、在咳嗽，或者在和别人说话"
+  },
+  "reply": "yes",
+  "state": "用户刚刚说：「{t}」"
+ },
+ "en-choice-plain": {
+  "type": "choice",
+  "ins": "What should the voice assistant do next?",
+  "crit": {
+   "respond": "Speak and answer: the user asked a question, made a request or gave an instruction, or answered the assistant",
+   "stay_silent": "Keep listening without speaking: the user only gave a backchannel (uh-huh, okay, oh), laughed, coughed, the text is noise, or the user is talking to someone else"
+  },
+  "reply": "respond",
+  "state": "{t}"
+ },
+ "en-choice-framed": {
+  "type": "choice",
+  "ins": "What should the voice assistant do next?",
+  "crit": {
+   "respond": "Speak and answer: the user asked a question, made a request or gave an instruction, or answered the assistant",
+   "stay_silent": "Keep listening without speaking: the user only gave a backchannel (uh-huh, okay, oh), laughed, coughed, the text is noise, or the user is talking to someone else"
+  },
+  "reply": "respond",
+  "state": "The user just said to the voice assistant: \"{t}\""
+ },
+ "en-noul-framed": {
+  "type": "noul",
+  "ins": "The voice assistant should reply to what the user just said.",
+  "crit": {
+   "true": "a reply is needed: a question, request, instruction, or an answer to the assistant",
+   "false": "no reply: a backchannel, laughter, a cough, noise, or speech addressed to someone else"
+  },
+  "state": "The user just said to the voice assistant: \"{t}\""
+ },
+ "en-noul-plain": {
+  "type": "noul",
+  "ins": "This utterance is addressed to the voice assistant and needs a spoken reply.",
+  "crit": {
+   "true": "needs a reply",
+   "false": "backchannel, filler, noise or side talk; no reply"
+  },
+  "state": "{t}"
+ },
+ "zh-noul-framed": {
+  "type": "noul",
+  "ins": "语音助手需要回应用户刚说的这句话。",
+  "crit": {
+   "true": "需要回应：提问、请求、指令，或者在回答助手",
+   "false": "不需要回应：附和、笑、咳嗽、噪声，或在和别人说话"
+  },
+  "state": "用户刚刚说：「{t}」"
+ },
+ "en-choice-3way": {
+  "type": "choice",
+  "ins": "What kind of input is this for a voice assistant?",
+  "crit": {
+   "request": "a question, request, instruction, or an answer to the assistant",
+   "backchannel": "a backchannel or filler such as uh-huh, okay, oh, or laughter",
+   "not_for_assistant": "noise, a cough, or speech addressed to someone else"
+  },
+  "reply": "request",
+  "state": "The user just said to the voice assistant: \"{t}\""
+ },
+ "en-choice-short": {
+  "type": "choice",
+  "ins": "Does the assistant need to answer?",
+  "crit": {
+   "yes": "yes, answer the user",
+   "no": "no, just keep listening"
+  },
+  "reply": "yes",
+  "state": "The user just said to the voice assistant: \"{t}\""
+ },
+ "zh-choice-short": {
+  "type": "choice",
+  "ins": "助手需要回答吗？",
+  "crit": {
+   "yes": "需要回答用户",
+   "no": "不需要，继续听"
+  },
+  "reply": "yes",
+  "state": "用户刚刚说：「{t}」"
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "en-multi5-conv (PR default)": {
+  "threshold_from_tune": 0.436529,
+  "tune@threshold": {
+   "balanced_accuracy": 0.9348,
+   "blocked_requests": "6/125",
+   "filtered_non_requests": "78/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.8774,
+   "blocked_requests": "6/63",
+   "filtered_non_requests": "34/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.8139,
+   "blocked_requests": "14/63",
+   "filtered_non_requests": "34/40"
+  },
+  "demo_clips_correct": true,
+  "demo_p": {}
+ }
+}

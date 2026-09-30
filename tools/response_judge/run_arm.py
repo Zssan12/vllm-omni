@@ -44,7 +44,8 @@ def main() -> None:
     p.add_argument("--config", type=Path, required=True)
     p.add_argument("--name", required=True)
     p.add_argument("--mode", choices=("on", "off"), required=True)
-    p.add_argument("--client", choices=("onoff", "conc"), required=True)
+    p.add_argument("--client", choices=("onoff", "conc", "dialogue"), required=True)
+    p.add_argument("--dialogue-args", default="", help="dialogue arms: extra dialogue_client.py arguments, one string")
     p.add_argument("--models", type=Path, required=True)
     p.add_argument("--audio-dir", type=Path, required=True)
     p.add_argument("--out", type=Path, required=True)
@@ -109,6 +110,9 @@ def main() -> None:
         if a.client == "onoff":
             script = HERE.parent / "rfc_bench" / "aura_judge_onoff.py"
             extra = ["--mode", a.mode, "--clips", *[f"{a.audio_dir / (c + '.wav')}={n}" for c, n in CLIPS_ONOFF]]
+        elif a.client == "dialogue":
+            script = HERE.parent / "multiturn" / "dialogue_client.py"
+            extra = ["--mode", a.mode, "--audio-dir", str(a.audio_dir), *a.dialogue_args.split()]
         else:
             script = HERE.parent / "rfc_bench" / "aura_concurrency_real.py"
             extra = ["--mode", a.mode, "--users", "4", "8", "--rounds", "3",

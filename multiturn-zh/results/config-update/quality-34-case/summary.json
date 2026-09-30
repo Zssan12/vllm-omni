@@ -1,0 +1,38 @@
+{
+ "en-choice-short (PR default)": {
+  "threshold_from_tune": 0.6393,
+  "tune@threshold": {
+   "balanced_accuracy": 0.6176,
+   "blocked_requests": "12/17",
+   "filtered_non_requests": "16/17"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.5588,
+   "blocked_requests": "13/17",
+   "filtered_non_requests": "15/17"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.5,
+   "blocked_requests": "12/17",
+   "filtered_non_requests": "12/17"
+  }
+ },
+ "en-choice-4way-heard": {
+  "threshold_from_tune": 0.0187,
+  "tune@threshold": {
+   "balanced_accuracy": 0.7353,
+   "blocked_requests": "7/17",
+   "filtered_non_requests": "15/17"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.7059,
+   "blocked_requests": "7/17",
+   "filtered_non_requests": "14/17"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.6176,
+   "blocked_requests": "13/17",
+   "filtered_non_requests": "17/17"
+  }
+ }
+}

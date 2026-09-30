@@ -1,0 +1,182 @@
+{
+ "zh-choice-plain": {
+  "threshold_from_tune": 0.39,
+  "tune@threshold": {
+   "balanced_accuracy": 0.6311,
+   "blocked_requests": "29/125",
+   "filtered_non_requests": "42/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.571,
+   "blocked_requests": "32/63",
+   "filtered_non_requests": "26/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.6597,
+   "blocked_requests": "35/63",
+   "filtered_non_requests": "35/40"
+  }
+ },
+ "zh-choice-framed": {
+  "threshold_from_tune": 0.4319,
+  "tune@threshold": {
+   "balanced_accuracy": 0.6285,
+   "blocked_requests": "37/125",
+   "filtered_non_requests": "47/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.5802,
+   "blocked_requests": "34/63",
+   "filtered_non_requests": "28/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.5246,
+   "blocked_requests": "41/63",
+   "filtered_non_requests": "28/40"
+  }
+ },
+ "en-choice-plain": {
+  "threshold_from_tune": 0.3132,
+  "tune@threshold": {
+   "balanced_accuracy": 0.684,
+   "blocked_requests": "54/125",
+   "filtered_non_requests": "68/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.6494,
+   "blocked_requests": "30/63",
+   "filtered_non_requests": "31/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.6609,
+   "blocked_requests": "38/63",
+   "filtered_non_requests": "37/40"
+  }
+ },
+ "en-choice-framed": {
+  "threshold_from_tune": 0.5,
+  "tune@threshold": {
+   "balanced_accuracy": 0.8282,
+   "blocked_requests": "40/125",
+   "filtered_non_requests": "83/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.7562,
+   "blocked_requests": "26/63",
+   "filtered_non_requests": "37/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.7562,
+   "blocked_requests": "26/63",
+   "filtered_non_requests": "37/40"
+  }
+ },
+ "en-noul-framed": {
+  "threshold_from_tune": 0.7596,
+  "tune@threshold": {
+   "balanced_accuracy": 0.5664,
+   "blocked_requests": "104/125",
+   "filtered_non_requests": "82/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.4669,
+   "blocked_requests": "53/63",
+   "filtered_non_requests": "31/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.2895,
+   "blocked_requests": "47/63",
+   "filtered_non_requests": "13/40"
+  }
+ },
+ "en-noul-plain": {
+  "threshold_from_tune": 0.5283,
+  "tune@threshold": {
+   "balanced_accuracy": 0.5485,
+   "blocked_requests": "82/125",
+   "filtered_non_requests": "64/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.4974,
+   "blocked_requests": "46/63",
+   "filtered_non_requests": "29/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.4974,
+   "blocked_requests": "46/63",
+   "filtered_non_requests": "29/40"
+  }
+ },
+ "zh-noul-framed": {
+  "threshold_from_tune": 0.5993,
+  "tune@threshold": {
+   "balanced_accuracy": 0.588,
+   "blocked_requests": "103/125",
+   "filtered_non_requests": "85/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.6133,
+   "blocked_requests": "44/63",
+   "filtered_non_requests": "37/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.5508,
+   "blocked_requests": "44/63",
+   "filtered_non_requests": "32/40"
+  }
+ },
+ "en-choice-3way": {
+  "threshold_from_tune": 0.0597,
+  "tune@threshold": {
+   "balanced_accuracy": 0.8908,
+   "blocked_requests": "17/125",
+   "filtered_non_requests": "78/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.8637,
+   "blocked_requests": "3/63",
+   "filtered_non_requests": "31/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.8117,
+   "blocked_requests": "19/63",
+   "filtered_non_requests": "37/40"
+  }
+ },
+ "en-choice-short": {
+  "threshold_from_tune": 0.6872,
+  "tune@threshold": {
+   "balanced_accuracy": 0.784,
+   "blocked_requests": "54/125",
+   "filtered_non_requests": "85/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.6472,
+   "blocked_requests": "35/63",
+   "filtered_non_requests": "34/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.6869,
+   "blocked_requests": "30/63",
+   "filtered_non_requests": "34/40"
+  }
+ },
+ "zh-choice-short": {
+  "threshold_from_tune": 0.3957,
+  "tune@threshold": {
+   "balanced_accuracy": 0.6972,
+   "blocked_requests": "36/125",
+   "filtered_non_requests": "58/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.4006,
+   "blocked_requests": "33/63",
+   "filtered_non_requests": "13/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.4597,
+   "blocked_requests": "35/63",
+   "filtered_non_requests": "19/40"
+  }
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "en-choice-short (PR default)": {
+  "threshold_from_tune": 0.6872,
+  "tune@threshold": {
+   "balanced_accuracy": 0.784,
+   "blocked_requests": "54/125",
+   "filtered_non_requests": "85/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.6472,
+   "blocked_requests": "35/63",
+   "filtered_non_requests": "34/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.6869,
+   "blocked_requests": "30/63",
+   "filtered_non_requests": "34/40"
+  }
+ },
+ "en-choice-3way": {
+  "threshold_from_tune": 0.0597,
+  "tune@threshold": {
+   "balanced_accuracy": 0.8908,
+   "blocked_requests": "17/125",
+   "filtered_non_requests": "78/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.8637,
+   "blocked_requests": "3/63",
+   "filtered_non_requests": "31/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.8117,
+   "blocked_requests": "19/63",
+   "filtered_non_requests": "37/40"
+  }
+ },
+ "en-choice-4way-heard": {
+  "threshold_from_tune": 0.0173,
+  "tune@threshold": {
+   "balanced_accuracy": 0.9605,
+   "blocked_requests": "4/125",
+   "filtered_non_requests": "81/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.9625,
+   "blocked_requests": "0/63",
+   "filtered_non_requests": "37/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.6905,
+   "blocked_requests": "39/63",
+   "filtered_non_requests": "40/40"
+  }
+ },
+ "zh-choice-4way": {
+  "threshold_from_tune": 0.0359,
+  "tune@threshold": {
+   "balanced_accuracy": 0.6687,
+   "blocked_requests": "74/125",
+   "filtered_non_requests": "79/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.5905,
+   "blocked_requests": "39/63",
+   "filtered_non_requests": "32/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.5,
+   "blocked_requests": "63/63",
+   "filtered_non_requests": "40/40"
+  }
+ }
+}

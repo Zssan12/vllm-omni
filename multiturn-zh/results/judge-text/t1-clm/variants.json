@@ -1,0 +1,65 @@
+{
+ "en-multi5-conv": {
+  "instructions": "What should the voice assistant do next?",
+  "options": {
+   "answer": "Answer the question the user asked",
+   "act": "Carry out the action the user requested",
+   "ack": "Stay silent: the user is only acknowledging, like \"uh-huh\", \"okay\", \"oh\"",
+   "other": "Stay silent: the user is talking to someone else nearby, not to the assistant",
+   "noise": "Stay silent: this is only a cough, laughter, throat clearing, noise or meaningless caption text"
+  },
+  "reply": [
+   "answer",
+   "act"
+  ],
+  "state": "Conversation so far:\n(no conversation yet)\nThe assistant is not speaking right now.\nThe user just said: \"{transcript}\""
+ },
+ "en-multi5-said": {
+  "instructions": "What should the voice assistant do next?",
+  "options": {
+   "answer": "Answer the question the user asked",
+   "act": "Carry out the action the user requested",
+   "ack": "Stay silent: the user is only acknowledging, like \"uh-huh\", \"okay\", \"oh\"",
+   "other": "Stay silent: the user is talking to someone else nearby, not to the assistant",
+   "noise": "Stay silent: this is only a cough, laughter, throat clearing, noise or meaningless caption text"
+  },
+  "reply": [
+   "answer",
+   "act"
+  ],
+  "state": "The user just said to the voice assistant: \"{transcript}\""
+ },
+ "en-action-said": {
+  "instructions": "What should the voice assistant do next?",
+  "options": {
+   "respond": "Speak and answer: the user asked a question, made a request or gave an instruction, or answered the assistant",
+   "stay_silent": "Keep listening without speaking: the user only gave a backchannel (uh-huh, okay, oh), laughed, coughed, the text is noise, or the user is talking to someone else"
+  },
+  "reply": [
+   "respond"
+  ],
+  "state": "The user just said to the voice assistant: \"{transcript}\""
+ },
+ "en-short-said": {
+  "instructions": "Does the assistant need to answer?",
+  "options": {
+   "yes": "yes, answer the user",
+   "no": "no, just keep listening"
+  },
+  "reply": [
+   "yes"
+  ],
+  "state": "The user just said to the voice assistant: \"{transcript}\""
+ },
+ "zh-action-said": {
+  "instructions": "语音助手接下来应该怎么做？",
+  "options": {
+   "yes": "开口回答用户：用户提了问题、提出请求或指令，或者在回答助手刚才的问题",
+   "no": "不出声，继续听：用户只是附和（嗯、好的、哦）、在笑、在咳嗽，或者在和别人说话"
+  },
+  "reply": [
+   "yes"
+  ],
+  "state": "用户刚刚说：「{transcript}」"
+ }
+}

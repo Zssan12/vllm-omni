@@ -6,6 +6,14 @@ and discussed in [#8211](https://github.com/vllm-project/vllm-omni/issues/8211).
 None of this is part of the PR. The measurement hooks patch a *copy* of the
 source tree and are never meant to be merged.
 
+## Multi-turn check
+
+[`multiturn-zh/`](multiturn-zh/README.md) holds a later check on Chinese
+multi-turn dialogues: the data and audio, judge-only results for Qwen3, LAYA
+and CLM, an end-to-end judge off/on run with AURA, and stability runs of the
+LAYA judge. Its scripts are in `tools/multiturn/`; `run_arm.py --client
+dialogue` runs its client.
+
 ## Source under test
 
 | Numbers | vllm-omni source |

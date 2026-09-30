@@ -1,0 +1,47 @@
+{
+ "en-multi5-conv (PR default)": {
+  "instructions": "What should the voice assistant do next?",
+  "options": {
+   "answer": "Answer the question the user asked",
+   "act": "Carry out the action the user requested",
+   "ack": "Stay silent: the user is only acknowledging, like \"uh-huh\", \"okay\", \"oh\"",
+   "other": "Stay silent: the user is talking to someone else nearby, not to the assistant",
+   "noise": "Stay silent: this is only a cough, laughter, throat clearing, noise or meaningless caption text"
+  },
+  "reply": [
+   "answer",
+   "act"
+  ],
+  "state": "Conversation so far:\n(no conversation yet)\nThe assistant is not speaking right now.\nThe user just said: \"{transcript}\""
+ },
+ "en-multi5-conv-cues": {
+  "instructions": "What should the voice assistant do next?",
+  "options": {
+   "answer": "Answer the question the user asked",
+   "act": "Carry out the action the user requested",
+   "ack": "Stay silent: the user is only acknowledging what they heard, like \"uh-huh\", \"okay\", \"I see\", \"got it\", \"oh really\", \"right right\"",
+   "other": "Stay silent: the user is talking to a family member or someone nearby, not to the assistant: calling them (mom, dear, honey, a name), asking them to do something, telling them what the user is about to do, or talking on the phone",
+   "noise": "Stay silent: this is only a cough, laughter, throat clearing, noise or meaningless caption text"
+  },
+  "reply": [
+   "answer",
+   "act"
+  ],
+  "state": "Conversation so far:\n(no conversation yet)\nThe assistant is not speaking right now.\nThe user just said: \"{transcript}\""
+ },
+ "en-multi5-home-cues": {
+  "instructions": "What should the voice assistant do next?",
+  "options": {
+   "answer": "Answer the question the user asked",
+   "act": "Carry out the action the user requested",
+   "ack": "Stay silent: the user is only acknowledging what they heard, like \"uh-huh\", \"okay\", \"I see\", \"got it\", \"oh really\", \"right right\"",
+   "other": "Stay silent: the user is talking to a family member or someone nearby, not to the assistant: calling them (mom, dear, honey, a name), asking them to do something, telling them what the user is about to do, or talking on the phone",
+   "noise": "Stay silent: this is only a cough, laughter, throat clearing, noise or meaningless caption text"
+  },
+  "reply": [
+   "answer",
+   "act"
+  ],
+  "state": "A home voice assistant is listening. People may be talking to each other nearby.\nThe assistant is not speaking right now.\nThe microphone just picked up: \"{transcript}\""
+ }
+}

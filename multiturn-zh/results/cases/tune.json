@@ -1,0 +1,3152 @@
+[
+ {
+  "id": "tune-S1-low-00-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "西红柿是水果还是蔬菜？",
+   "assistant_speaking": false
+  },
+  "reference_text": "西红柿是水果还是蔬菜？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-00-t01",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "给我讲个笑话吧。",
+   "assistant_speaking": false
+  },
+  "reference_text": "给我讲个笑话吧。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-00-t02",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "熊猫主要吃什么？",
+   "assistant_speaking": false
+  },
+  "reference_text": "熊猫主要吃什么？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-00-t03",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我定一个明天早上七点的闹钟。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我定一个明天早上七点的闹钟。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-00-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "哦，这样啊。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哦，这样啊。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-00-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你能讲讲唐朝的历史吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你能讲讲唐朝的历史吗？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-00-t06",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "把音乐声音调小一点。",
+   "assistant_speaking": false
+  },
+  "reference_text": "把音乐声音调小一点。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-01-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "学英语有什么好方法？",
+   "assistant_speaking": false
+  },
+  "reference_text": "学英语有什么好方法？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-01-t01",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "西红柿是水果还是蔬菜？",
+   "assistant_speaking": false
+  },
+  "reference_text": "西红柿是水果还是蔬菜？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-01-t02",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "放一首轻松一点的歌。",
+   "assistant_speaking": false
+  },
+  "reference_text": "放一首轻松一点的歌。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-01-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你能讲讲唐朝的历史吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你能讲讲唐朝的历史吗？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-01-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "给我推荐一本好看的小说。",
+   "assistant_speaking": false
+  },
+  "reference_text": "给我推荐一本好看的小说。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-01-t05",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "老婆，帮我拿一下遥控器。",
+   "assistant_speaking": false
+  },
+  "reference_text": "老婆，帮我拿一下遥控器。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-02-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "世界上最高的山是哪座？",
+   "assistant_speaking": false
+  },
+  "reference_text": "世界上最高的山是哪座？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-02-t01",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "推荐几个适合周末去的地方。",
+   "assistant_speaking": false
+  },
+  "reference_text": "推荐几个适合周末去的地方。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-02-t02",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯嗯。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-02-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "一年有多少天？",
+   "assistant_speaking": false
+  },
+  "reference_text": "一年有多少天？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-02-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "放一首轻松一点的歌。",
+   "assistant_speaking": false
+  },
+  "reference_text": "放一首轻松一点的歌。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-02-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "北京到上海坐高铁要多久？",
+   "assistant_speaking": false
+  },
+  "reference_text": "北京到上海坐高铁要多久？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-02-t06",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "地球离太阳有多远？",
+   "assistant_speaking": false
+  },
+  "reference_text": "地球离太阳有多远？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-03-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "长城一共有多长？",
+   "assistant_speaking": false
+  },
+  "reference_text": "长城一共有多长？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-03-t01",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "给我讲个笑话吧。",
+   "assistant_speaking": false
+  },
+  "reference_text": "给我讲个笑话吧。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-03-t02",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "好的。",
+   "assistant_speaking": false
+  },
+  "reference_text": "好的。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-03-t03",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "推荐几个适合周末去的地方。",
+   "assistant_speaking": false
+  },
+  "reference_text": "推荐几个适合周末去的地方。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-03-t04",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "中国有多少个省份？",
+   "assistant_speaking": false
+  },
+  "reference_text": "中国有多少个省份？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-03-t05",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "哈哈。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哈哈。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-03-t06",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我把这句话翻译成英文。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我把这句话翻译成英文。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-03-t07",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "放一首轻松一点的歌。",
+   "assistant_speaking": false
+  },
+  "reference_text": "放一首轻松一点的歌。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-04-t00",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我算一下十五乘以二十四。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我算一下十五乘以二十四。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-04-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "行。",
+   "assistant_speaking": false
+  },
+  "reference_text": "行。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-04-t02",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "月亮为什么会有圆缺？",
+   "assistant_speaking": false
+  },
+  "reference_text": "月亮为什么会有圆缺？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-04-t03",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我定一个明天早上七点的闹钟。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我定一个明天早上七点的闹钟。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-04-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "放一首轻松一点的歌。",
+   "assistant_speaking": false
+  },
+  "reference_text": "放一首轻松一点的歌。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-04-t05",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "哈哈。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哈哈。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-04-t06",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "感冒了应该多喝水吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "感冒了应该多喝水吗？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-04-t07",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "一年有多少天？",
+   "assistant_speaking": false
+  },
+  "reference_text": "一年有多少天？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-05-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "月亮为什么会有圆缺？",
+   "assistant_speaking": false
+  },
+  "reference_text": "月亮为什么会有圆缺？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-05-t01",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "跑步前需要热身吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "跑步前需要热身吗？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-05-t02",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "给我推荐一本好看的小说。",
+   "assistant_speaking": false
+  },
+  "reference_text": "给我推荐一本好看的小说。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-05-t03",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "等我一下，我换个衣服。",
+   "assistant_speaking": false
+  },
+  "reference_text": "等我一下，我换个衣服。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-05-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我记一下，周五要交报告。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我记一下，周五要交报告。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-05-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "北京到上海坐高铁要多久？",
+   "assistant_speaking": false
+  },
+  "reference_text": "北京到上海坐高铁要多久？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-05-t06",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我定一个明天早上七点的闹钟。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我定一个明天早上七点的闹钟。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-05-t07",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "哦，这样啊。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哦，这样啊。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-06-t00",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我算一下十五乘以二十四。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我算一下十五乘以二十四。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-06-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯，对。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯，对。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-06-t02",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "跑步前需要热身吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "跑步前需要热身吗？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-06-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你能讲讲唐朝的历史吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你能讲讲唐朝的历史吗？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-06-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "放一首轻松一点的歌。",
+   "assistant_speaking": false
+  },
+  "reference_text": "放一首轻松一点的歌。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-06-t05",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "哦哦。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哦哦。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-06-t06",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我记一下，周五要交报告。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我记一下，周五要交报告。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-06-t07",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "一公里大概要走多久？",
+   "assistant_speaking": false
+  },
+  "reference_text": "一公里大概要走多久？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-07-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "学英语有什么好方法？",
+   "assistant_speaking": false
+  },
+  "reference_text": "学英语有什么好方法？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-07-t01",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "世界上最高的山是哪座？",
+   "assistant_speaking": false
+  },
+  "reference_text": "世界上最高的山是哪座？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-07-t02",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "咖啡喝多了会失眠吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "咖啡喝多了会失眠吗？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-07-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "为什么天空是蓝色的？",
+   "assistant_speaking": false
+  },
+  "reference_text": "为什么天空是蓝色的？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-07-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我定一个明天早上七点的闹钟。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我定一个明天早上七点的闹钟。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-07-t05",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "宝贝把鞋穿上，我们要出门了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "宝贝把鞋穿上，我们要出门了。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-07-t06",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "老婆，帮我拿一下遥控器。",
+   "assistant_speaking": false
+  },
+  "reference_text": "老婆，帮我拿一下遥控器。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-07-t07",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "提醒我下午三点开会。",
+   "assistant_speaking": false
+  },
+  "reference_text": "提醒我下午三点开会。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-08-t00",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "把音乐声音调小一点。",
+   "assistant_speaking": false
+  },
+  "reference_text": "把音乐声音调小一点。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-08-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "好的。",
+   "assistant_speaking": false
+  },
+  "reference_text": "好的。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-08-t02",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "光速是多少？",
+   "assistant_speaking": false
+  },
+  "reference_text": "光速是多少？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-08-t03",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我定一个明天早上七点的闹钟。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我定一个明天早上七点的闹钟。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-08-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "行。",
+   "assistant_speaking": false
+  },
+  "reference_text": "行。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-08-t05",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "给我讲个笑话吧。",
+   "assistant_speaking": false
+  },
+  "reference_text": "给我讲个笑话吧。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-08-t06",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "放一首轻松一点的歌。",
+   "assistant_speaking": false
+  },
+  "reference_text": "放一首轻松一点的歌。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-low-08-t07",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你能讲讲唐朝的历史吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你能讲讲唐朝的历史吗？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-09-t00",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "给我推荐一本好看的小说。",
+   "assistant_speaking": false
+  },
+  "reference_text": "给我推荐一本好看的小说。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-09-t01",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "熊猫主要吃什么？",
+   "assistant_speaking": false
+  },
+  "reference_text": "熊猫主要吃什么？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-09-t02",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我把这句话翻译成英文。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我把这句话翻译成英文。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-09-t03",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "呃……",
+   "assistant_speaking": false
+  },
+  "reference_text": "呃……",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-09-t04",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "猫为什么喜欢晒太阳？",
+   "assistant_speaking": false
+  },
+  "reference_text": "猫为什么喜欢晒太阳？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-09-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "中国有多少个省份？",
+   "assistant_speaking": false
+  },
+  "reference_text": "中国有多少个省份？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-09-t06",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你们先吃吧，我一会儿就来。",
+   "assistant_speaking": false
+  },
+  "reference_text": "你们先吃吧，我一会儿就来。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S2-low-09-t07",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "咖啡喝多了会失眠吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "咖啡喝多了会失眠吗？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "tune-S1-mid-00-t00",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我查一下明天的天气。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我查一下明天的天气。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-00-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-00-t02",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "好的。",
+   "assistant_speaking": false
+  },
+  "reference_text": "好的。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-00-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "猫为什么喜欢晒太阳？",
+   "assistant_speaking": false
+  },
+  "reference_text": "猫为什么喜欢晒太阳？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-00-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我算一下十五乘以二十四。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我算一下十五乘以二十四。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-00-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "熊猫主要吃什么？",
+   "assistant_speaking": false
+  },
+  "reference_text": "熊猫主要吃什么？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-00-t06",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "对对对。",
+   "assistant_speaking": false
+  },
+  "reference_text": "对对对。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-01-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "感冒了应该多喝水吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "感冒了应该多喝水吗？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-01-t01",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯……",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯……",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-01-t02",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "猫为什么喜欢晒太阳？",
+   "assistant_speaking": false
+  },
+  "reference_text": "猫为什么喜欢晒太阳？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-01-t03",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "推荐几个适合周末去的地方。",
+   "assistant_speaking": false
+  },
+  "reference_text": "推荐几个适合周末去的地方。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-01-t04",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "啊……",
+   "assistant_speaking": false
+  },
+  "reference_text": "啊……",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-01-t05",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "把音乐声音调小一点。",
+   "assistant_speaking": false
+  },
+  "reference_text": "把音乐声音调小一点。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-01-t06",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "呃……",
+   "assistant_speaking": false
+  },
+  "reference_text": "呃……",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-02-t00",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我定一个明天早上七点的闹钟。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我定一个明天早上七点的闹钟。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-02-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "哦哦。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哦哦。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-02-t02",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "中国有多少个省份？",
+   "assistant_speaking": false
+  },
+  "reference_text": "中国有多少个省份？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-02-t03",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-02-t04",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "光速是多少？",
+   "assistant_speaking": false
+  },
+  "reference_text": "光速是多少？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-02-t05",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我查一下明天的天气。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我查一下明天的天气。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-03-t00",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我定一个明天早上七点的闹钟。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我定一个明天早上七点的闹钟。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-03-t01",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "长城一共有多长？",
+   "assistant_speaking": false
+  },
+  "reference_text": "长城一共有多长？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-03-t02",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "呃，嗯……",
+   "assistant_speaking": false
+  },
+  "reference_text": "呃，嗯……",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-03-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "学英语有什么好方法？",
+   "assistant_speaking": false
+  },
+  "reference_text": "学英语有什么好方法？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-03-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "放一首轻松一点的歌。",
+   "assistant_speaking": false
+  },
+  "reference_text": "放一首轻松一点的歌。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-03-t05",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "爸，你手机响了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "爸，你手机响了。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-04-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "今天北京天气怎么样？",
+   "assistant_speaking": false
+  },
+  "reference_text": "今天北京天气怎么样？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-04-t01",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我定一个明天早上七点的闹钟。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我定一个明天早上七点的闹钟。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-04-t02",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-04-t03",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "给我推荐一本好看的小说。",
+   "assistant_speaking": false
+  },
+  "reference_text": "给我推荐一本好看的小说。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-04-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "哦，这样啊。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哦，这样啊。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-04-t05",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我查一下明天的天气。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我查一下明天的天气。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-05-t00",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我算一下十五乘以二十四。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我算一下十五乘以二十四。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-05-t01",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "北京到上海坐高铁要多久？",
+   "assistant_speaking": false
+  },
+  "reference_text": "北京到上海坐高铁要多久？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-05-t02",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯……",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯……",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-05-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "世界上最高的山是哪座？",
+   "assistant_speaking": false
+  },
+  "reference_text": "世界上最高的山是哪座？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-05-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "明白了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "明白了。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-05-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你能讲讲唐朝的历史吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你能讲讲唐朝的历史吗？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-06-t00",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我算一下十五乘以二十四。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我算一下十五乘以二十四。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-06-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-06-t02",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "明天是星期几？",
+   "assistant_speaking": false
+  },
+  "reference_text": "明天是星期几？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-06-t03",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯，对。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯，对。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-06-t04",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "熊猫主要吃什么？",
+   "assistant_speaking": false
+  },
+  "reference_text": "熊猫主要吃什么？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-06-t05",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "放一首轻松一点的歌。",
+   "assistant_speaking": false
+  },
+  "reference_text": "放一首轻松一点的歌。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-06-t06",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯嗯。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-07-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "跑步前需要热身吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "跑步前需要热身吗？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-07-t01",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "一年有多少天？",
+   "assistant_speaking": false
+  },
+  "reference_text": "一年有多少天？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-07-t02",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你们先吃吧，我一会儿就来。",
+   "assistant_speaking": false
+  },
+  "reference_text": "你们先吃吧，我一会儿就来。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-07-t03",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "爸，你手机响了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "爸，你手机响了。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-07-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "提醒我下午三点开会。",
+   "assistant_speaking": false
+  },
+  "reference_text": "提醒我下午三点开会。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-07-t05",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "推荐几个适合周末去的地方。",
+   "assistant_speaking": false
+  },
+  "reference_text": "推荐几个适合周末去的地方。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-07-t06",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯……",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯……",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-07-t07",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "为什么天空是蓝色的？",
+   "assistant_speaking": false
+  },
+  "reference_text": "为什么天空是蓝色的？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-08-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "西红柿是水果还是蔬菜？",
+   "assistant_speaking": false
+  },
+  "reference_text": "西红柿是水果还是蔬菜？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-08-t01",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "中国有多少个省份？",
+   "assistant_speaking": false
+  },
+  "reference_text": "中国有多少个省份？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-08-t02",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "对对对。",
+   "assistant_speaking": false
+  },
+  "reference_text": "对对对。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-08-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "熊猫主要吃什么？",
+   "assistant_speaking": false
+  },
+  "reference_text": "熊猫主要吃什么？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-08-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-mid-08-t05",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我算一下十五乘以二十四。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我算一下十五乘以二十四。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-09-t00",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我查一下明天的天气。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我查一下明天的天气。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-09-t01",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "等我一下，我换个衣服。",
+   "assistant_speaking": false
+  },
+  "reference_text": "等我一下，我换个衣服。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-09-t02",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "一公里大概要走多久？",
+   "assistant_speaking": false
+  },
+  "reference_text": "一公里大概要走多久？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-09-t03",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "呃……",
+   "assistant_speaking": false
+  },
+  "reference_text": "呃……",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-09-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "推荐几个适合周末去的地方。",
+   "assistant_speaking": false
+  },
+  "reference_text": "推荐几个适合周末去的地方。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-09-t05",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我算一下十五乘以二十四。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我算一下十五乘以二十四。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S2-mid-09-t06",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯……",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯……",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "tune-S1-high-00-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "长城一共有多长？",
+   "assistant_speaking": false
+  },
+  "reference_text": "长城一共有多长？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-00-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "行。",
+   "assistant_speaking": false
+  },
+  "reference_text": "行。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-00-t02",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "一年有多少天？",
+   "assistant_speaking": false
+  },
+  "reference_text": "一年有多少天？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-00-t03",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "明白了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "明白了。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-00-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯，对。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯，对。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-00-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "地球离太阳有多远？",
+   "assistant_speaking": false
+  },
+  "reference_text": "地球离太阳有多远？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-00-t06",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "哦，这样啊。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哦，这样啊。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-01-t00",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我把这句话翻译成英文。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我把这句话翻译成英文。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-01-t01",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "呃，嗯……",
+   "assistant_speaking": false
+  },
+  "reference_text": "呃，嗯……",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-01-t02",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "妈，我等会儿下楼吃饭。",
+   "assistant_speaking": false
+  },
+  "reference_text": "妈，我等会儿下楼吃饭。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-01-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你能讲讲唐朝的历史吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你能讲讲唐朝的历史吗？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-01-t04",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "宝贝把鞋穿上，我们要出门了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "宝贝把鞋穿上，我们要出门了。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-01-t05",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你们先吃吧，我一会儿就来。",
+   "assistant_speaking": false
+  },
+  "reference_text": "你们先吃吧，我一会儿就来。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-02-t00",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "提醒我下午三点开会。",
+   "assistant_speaking": false
+  },
+  "reference_text": "提醒我下午三点开会。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-02-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "好。",
+   "assistant_speaking": false
+  },
+  "reference_text": "好。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-02-t02",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "明白了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "明白了。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-02-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "地球离太阳有多远？",
+   "assistant_speaking": false
+  },
+  "reference_text": "地球离太阳有多远？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-02-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "行。",
+   "assistant_speaking": false
+  },
+  "reference_text": "行。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-02-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "世界上最高的山是哪座？",
+   "assistant_speaking": false
+  },
+  "reference_text": "世界上最高的山是哪座？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-02-t06",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯，对。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯，对。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-02-t07",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-03-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "为什么天空是蓝色的？",
+   "assistant_speaking": false
+  },
+  "reference_text": "为什么天空是蓝色的？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-03-t01",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "小心点，别把水打翻了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "小心点，别把水打翻了。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-03-t02",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "啊……",
+   "assistant_speaking": false
+  },
+  "reference_text": "啊……",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-03-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "跑步前需要热身吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "跑步前需要热身吗？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-03-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "哈哈。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哈哈。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-03-t05",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "呃……",
+   "assistant_speaking": false
+  },
+  "reference_text": "呃……",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-04-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "今天北京天气怎么样？",
+   "assistant_speaking": false
+  },
+  "reference_text": "今天北京天气怎么样？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-04-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "哦哦。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哦哦。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-04-t02",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "行。",
+   "assistant_speaking": false
+  },
+  "reference_text": "行。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-04-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "长城一共有多长？",
+   "assistant_speaking": false
+  },
+  "reference_text": "长城一共有多长？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-04-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-04-t05",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "好。",
+   "assistant_speaking": false
+  },
+  "reference_text": "好。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-05-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "世界上最高的山是哪座？",
+   "assistant_speaking": false
+  },
+  "reference_text": "世界上最高的山是哪座？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-05-t01",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "呃，嗯……",
+   "assistant_speaking": false
+  },
+  "reference_text": "呃，嗯……",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-05-t02",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "宝贝把鞋穿上，我们要出门了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "宝贝把鞋穿上，我们要出门了。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-05-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "熊猫主要吃什么？",
+   "assistant_speaking": false
+  },
+  "reference_text": "熊猫主要吃什么？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-05-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "好。",
+   "assistant_speaking": false
+  },
+  "reference_text": "好。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-05-t05",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "老婆，帮我拿一下遥控器。",
+   "assistant_speaking": false
+  },
+  "reference_text": "老婆，帮我拿一下遥控器。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-05-t06",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "跑步前需要热身吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "跑步前需要热身吗？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-05-t07",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "啊……",
+   "assistant_speaking": false
+  },
+  "reference_text": "啊……",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-06-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "一公里大概要走多久？",
+   "assistant_speaking": false
+  },
+  "reference_text": "一公里大概要走多久？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-06-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "好。",
+   "assistant_speaking": false
+  },
+  "reference_text": "好。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-06-t02",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-06-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "月亮为什么会有圆缺？",
+   "assistant_speaking": false
+  },
+  "reference_text": "月亮为什么会有圆缺？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-06-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "好的。",
+   "assistant_speaking": false
+  },
+  "reference_text": "好的。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-06-t05",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "提醒我下午三点开会。",
+   "assistant_speaking": false
+  },
+  "reference_text": "提醒我下午三点开会。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-06-t06",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "哦哦。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哦哦。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-06-t07",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯，对。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯，对。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-07-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "一年有多少天？",
+   "assistant_speaking": false
+  },
+  "reference_text": "一年有多少天？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-07-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "行。",
+   "assistant_speaking": false
+  },
+  "reference_text": "行。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-07-t02",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "喂，你到哪了？我马上出门。",
+   "assistant_speaking": false
+  },
+  "reference_text": "喂，你到哪了？我马上出门。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-07-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "长城一共有多长？",
+   "assistant_speaking": false
+  },
+  "reference_text": "长城一共有多长？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-07-t04",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "中国有多少个省份？",
+   "assistant_speaking": false
+  },
+  "reference_text": "中国有多少个省份？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-07-t05",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯嗯。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-07-t06",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-08-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "世界上最高的山是哪座？",
+   "assistant_speaking": false
+  },
+  "reference_text": "世界上最高的山是哪座？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-08-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "明白了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "明白了。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-08-t02",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "行。",
+   "assistant_speaking": false
+  },
+  "reference_text": "行。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-08-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "熊猫主要吃什么？",
+   "assistant_speaking": false
+  },
+  "reference_text": "熊猫主要吃什么？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-08-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "哦，这样啊。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哦，这样啊。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S1-high-08-t05",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯，对。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯，对。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-09-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "世界上最高的山是哪座？",
+   "assistant_speaking": false
+  },
+  "reference_text": "世界上最高的山是哪座？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-09-t01",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "啊……",
+   "assistant_speaking": false
+  },
+  "reference_text": "啊……",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-09-t02",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "喂，你到哪了？我马上出门。",
+   "assistant_speaking": false
+  },
+  "reference_text": "喂，你到哪了？我马上出门。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-09-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "光速是多少？",
+   "assistant_speaking": false
+  },
+  "reference_text": "光速是多少？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-09-t04",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "老婆，帮我拿一下遥控器。",
+   "assistant_speaking": false
+  },
+  "reference_text": "老婆，帮我拿一下遥控器。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "tune-S2-high-09-t05",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "妈，我等会儿下楼吃饭。",
+   "assistant_speaking": false
+  },
+  "reference_text": "妈，我等会儿下楼吃饭。",
+  "scene": "S2",
+  "bucket": "high"
+ }
+]

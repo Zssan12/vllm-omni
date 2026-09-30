@@ -1,0 +1,50 @@
+{
+ "rules (stage default)": {
+  "tune": {
+   "balanced_accuracy": 0.8412,
+   "blocked_requests": "0/125",
+   "filtered_non_requests": "58/85"
+  },
+  "heldout": {
+   "balanced_accuracy": 0.85,
+   "blocked_requests": "0/63",
+   "filtered_non_requests": "28/40"
+  },
+  "demo_clips_correct": true,
+  "inproc_latency_ms_p50": 15.06,
+  "inproc_latency_ms_p95": 23.56,
+  "system_prompt": "你是语音助手前面的门控判断器，只判断语音助手要不要回应用户刚说的话。只输出 YES 或 NO，不要输出其他内容。\nYES：用户在提问、提出请求或指令，或者在回答助手刚才的问题。\nNO：用户只是在附和（嗯、好的、哦、对对对）、在笑、在咳嗽，这段文字是噪声或无意义的字幕，或者用户在和身边的其他人说话。"
+ },
+ "fewshot": {
+  "tune": {
+   "balanced_accuracy": 0.8471,
+   "blocked_requests": "0/125",
+   "filtered_non_requests": "59/85"
+  },
+  "heldout": {
+   "balanced_accuracy": 0.875,
+   "blocked_requests": "0/63",
+   "filtered_non_requests": "30/40"
+  },
+  "demo_clips_correct": true,
+  "inproc_latency_ms_p50": 14.6,
+  "inproc_latency_ms_p95": 19.85,
+  "system_prompt": "你是语音助手前面的门控判断器，只判断语音助手要不要回应用户刚说的话。只输出 YES 或 NO，不要输出其他内容。\nYES：用户在提问、提出请求或指令，或者在回答助手刚才的问题。\nNO：用户只是在附和（嗯、好的、哦、对对对）、在笑、在咳嗽，这段文字是噪声或无意义的字幕，或者用户在和身边的其他人说话。\n\n示例（与评测题不同）：\n用户刚刚说：「嗯。」 → NO\n用户刚刚说：「明天是星期几？」 → YES\n用户刚刚说：「音乐吧」 → YES\n用户刚刚说：「爸，你手机响了。」 → NO\n用户刚刚说：「(咳嗽)」 → NO\n用户刚刚说：「好嘞」 → NO\n用户刚刚说：「帮我查一下快递到哪了」 → YES"
+ },
+ "minimal": {
+  "tune": {
+   "balanced_accuracy": 0.5118,
+   "blocked_requests": "0/125",
+   "filtered_non_requests": "2/85"
+  },
+  "heldout": {
+   "balanced_accuracy": 0.5625,
+   "blocked_requests": "0/63",
+   "filtered_non_requests": "5/40"
+  },
+  "demo_clips_correct": true,
+  "inproc_latency_ms_p50": 12.33,
+  "inproc_latency_ms_p95": 16.58,
+  "system_prompt": "判断语音助手是否需要回应用户刚说的话。附和、笑、咳嗽、噪声、对别人说的话输出 NO；提问、请求、回答助手的问题输出 YES。只输出 YES 或 NO。"
+ }
+}

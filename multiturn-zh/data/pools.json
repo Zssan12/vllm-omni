@@ -1,0 +1,121 @@
+{
+  "_about": "Sentence pools for the multi-turn test dialogues (v1). Author-written Chinese. tune and heldout pools share no sentence, except that very short backchannel/filler words are listed separately per split and may coincide in spirit. reply=true means the assistant should answer.",
+  "categories": {
+    "question": {"reply": true, "note": "a real question to the assistant"},
+    "request": {"reply": true, "note": "an instruction or request to the assistant"},
+    "backchannel": {"reply": false, "note": "acknowledgement while listening"},
+    "side_talk": {"reply": false, "note": "the user talks to someone else nearby"},
+    "filler": {"reply": false, "note": "hesitation or non-lexical sound, no content"}
+  },
+  "tune": {
+    "question": [
+      "今天北京天气怎么样？",
+      "一公里大概要走多久？",
+      "长城一共有多长？",
+      "为什么天空是蓝色的？",
+      "世界上最高的山是哪座？",
+      "感冒了应该多喝水吗？",
+      "明天是星期几？",
+      "咖啡喝多了会失眠吗？",
+      "地球离太阳有多远？",
+      "熊猫主要吃什么？",
+      "光速是多少？",
+      "一年有多少天？",
+      "中国有多少个省份？",
+      "跑步前需要热身吗？",
+      "西红柿是水果还是蔬菜？",
+      "月亮为什么会有圆缺？",
+      "你能讲讲唐朝的历史吗？",
+      "学英语有什么好方法？",
+      "猫为什么喜欢晒太阳？",
+      "北京到上海坐高铁要多久？"
+    ],
+    "request": [
+      "帮我定一个明天早上七点的闹钟。",
+      "给我讲个笑话吧。",
+      "把音乐声音调小一点。",
+      "帮我查一下明天的天气。",
+      "提醒我下午三点开会。",
+      "给我推荐一本好看的小说。",
+      "帮我算一下十五乘以二十四。",
+      "放一首轻松一点的歌。",
+      "帮我把这句话翻译成英文。",
+      "给我讲个睡前故事。",
+      "帮我记一下，周五要交报告。",
+      "推荐几个适合周末去的地方。"
+    ],
+    "backchannel": [
+      "嗯嗯。",
+      "好的。",
+      "对对对。",
+      "哦，这样啊。",
+      "嗯。",
+      "好。",
+      "行。",
+      "明白了。",
+      "原来如此。",
+      "哈哈。",
+      "嗯，对。",
+      "哦哦。"
+    ],
+    "side_talk": [
+      "妈，我等会儿下楼吃饭。",
+      "宝贝把鞋穿上，我们要出门了。",
+      "喂，你到哪了？我马上出门。",
+      "你们先吃吧，我一会儿就来。",
+      "老婆，帮我拿一下遥控器。",
+      "小心点，别把水打翻了。",
+      "爸，你手机响了。",
+      "等我一下，我换个衣服。"
+    ],
+    "filler": [
+      "呃……",
+      "嗯……",
+      "啊……",
+      "呃，嗯……"
+    ]
+  },
+  "heldout": {
+    "question": [
+      "上海明天会下雨吗？",
+      "刚才那首歌叫什么名字？",
+      "三乘以七等于多少？",
+      "你能讲讲长城是怎么修的吗？",
+      "大象能活多少年？",
+      "喝牛奶对睡眠有帮助吗？",
+      "太阳系有几颗行星？",
+      "为什么海水是咸的？",
+      "杭州有什么好玩的地方？",
+      "企鹅生活在哪里？"
+    ],
+    "request": [
+      "帮我把客厅的灯关掉。",
+      "提醒我晚上八点吃药。",
+      "给我推荐一部好看的电影。",
+      "把闹钟改到八点半。",
+      "帮我查一下最近的加油站。",
+      "念一首唐诗给我听。"
+    ],
+    "backchannel": [
+      "嗯嗯嗯。",
+      "好嘞。",
+      "对。",
+      "哦。",
+      "懂了。",
+      "可以。",
+      "嗯哼。",
+      "有道理。"
+    ],
+    "side_talk": [
+      "老公你把垃圾带下去。",
+      "你作业写完了没有？",
+      "喂你好，快递放门口就行。",
+      "小明快过来吃饭了。",
+      "奶奶，药我放桌上了。"
+    ],
+    "filler": [
+      "呃……",
+      "啊，嗯……"
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "A-request-0", "group": "A-request", "transcript": "今天北京天气怎么样？", "reply": true, "p_reply": 0.8677}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "A-request-1", "group": "A-request", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "p_reply": 0.8287}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "A-request-2", "group": "A-request", "transcript": "你刚才说的第二点我没听懂，再讲一遍。", "reply": true, "p_reply": 0.2401}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "A-request-3", "group": "A-request", "transcript": "一加一等于几？", "reply": true, "p_reply": 0.7322}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "A-request-4", "group": "A-request", "transcript": "给我讲个笑话吧。", "reply": true, "p_reply": 0.4343}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "A-request-5", "group": "A-request", "transcript": "把音乐声音调小一点。", "reply": true, "p_reply": 0.8213}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "A-request-6", "group": "A-request", "transcript": "我想订两个人今晚的位子。", "reply": true, "p_reply": 0.5171}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "A-request-7", "group": "A-request", "transcript": "你叫什么名字？", "reply": true, "p_reply": 0.6393}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "B-backchannel-0", "group": "B-backchannel", "transcript": "嗯嗯", "reply": false, "p_reply": 0.3134}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "B-backchannel-1", "group": "B-backchannel", "transcript": "好的", "reply": false, "p_reply": 0.1781}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "B-backchannel-2", "group": "B-backchannel", "transcript": "哦", "reply": false, "p_reply": 0.5161}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "B-backchannel-3", "group": "B-backchannel", "transcript": "嗯", "reply": false, "p_reply": 0.3218}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "B-backchannel-4", "group": "B-backchannel", "transcript": "行", "reply": false, "p_reply": 0.0866}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "C-short-answer-0", "group": "C-short-answer", "transcript": "嗯", "reply": true, "p_reply": 0.3218}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "C-short-answer-1", "group": "C-short-answer", "transcript": "古典", "reply": true, "p_reply": 0.3607}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "C-short-answer-2", "group": "C-short-answer", "transcript": "七点", "reply": true, "p_reply": 0.3478}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "C-short-answer-3", "group": "C-short-answer", "transcript": "对", "reply": true, "p_reply": 0.3294}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "C-short-answer-4", "group": "C-short-answer", "transcript": "不是", "reply": true, "p_reply": 0.0097}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "E-side-talk-0", "group": "E-side-talk", "transcript": "妈，我等会儿下楼吃饭。", "reply": false, "p_reply": 0.1009}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "E-side-talk-1", "group": "E-side-talk", "transcript": "宝贝把鞋穿上，我们要出门了。", "reply": false, "p_reply": 0.6248}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "E-side-talk-2", "group": "E-side-talk", "transcript": "喂，你到哪了？我马上出门。", "reply": false, "p_reply": 0.3942}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "E-side-talk-3", "group": "E-side-talk", "transcript": "你们先吃吧，我一会儿就来。", "reply": false, "p_reply": 0.1242}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "F-noise-0", "group": "F-noise", "transcript": "(咳嗽)", "reply": false, "p_reply": 0.5249}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "F-noise-1", "group": "F-noise", "transcript": "字幕由Amara.org社区提供", "reply": false, "p_reply": 0.3438}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "F-noise-2", "group": "F-noise", "transcript": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目", "reply": false, "p_reply": 0.603}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "F-noise-3", "group": "F-noise", "transcript": "嗯……", "reply": false, "p_reply": 0.3442}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "G-backchannel-while-speaking-0", "group": "G-backchannel-while-speaking", "transcript": "嗯嗯", "reply": false, "p_reply": 0.3134}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "G-backchannel-while-speaking-1", "group": "G-backchannel-while-speaking", "transcript": "对对对", "reply": false, "p_reply": 0.6792}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "G-backchannel-while-speaking-2", "group": "G-backchannel-while-speaking", "transcript": "哈哈", "reply": false, "p_reply": 0.0827}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "G-backchannel-while-speaking-3", "group": "G-backchannel-while-speaking", "transcript": "(咳嗽)", "reply": false, "p_reply": 0.5249}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "G-interrupt-0", "group": "G-interrupt", "transcript": "停一下", "reply": true, "p_reply": 0.0759}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "G-interrupt-1", "group": "G-interrupt", "transcript": "等等，我刚才说错了，我想问的是四大名著", "reply": true, "p_reply": 0.0447}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "G-interrupt-2", "group": "G-interrupt", "transcript": "不对不对，我问的是明天的天气", "reply": true, "p_reply": 0.0995}
+{"variant": "en-choice-short (PR default)", "split": "tune", "id": "G-interrupt-3", "group": "G-interrupt", "transcript": "别说了，换个话题", "reply": true, "p_reply": 0.0745}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "A-request-0", "group": "A-request", "transcript": "上海明天会下雨吗？", "reply": true, "p_reply": 0.2979}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "A-request-1", "group": "A-request", "transcript": "帮我把客厅的灯关掉。", "reply": true, "p_reply": 0.7556}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "A-request-2", "group": "A-request", "transcript": "刚才那首歌叫什么名字？", "reply": true, "p_reply": 0.596}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "A-request-3", "group": "A-request", "transcript": "三乘以七等于多少？", "reply": true, "p_reply": 0.4868}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "A-request-4", "group": "A-request", "transcript": "给我推荐一部好看的电影。", "reply": true, "p_reply": 0.8814}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "A-request-5", "group": "A-request", "transcript": "提醒我下午三点开会。", "reply": true, "p_reply": 0.7542}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "A-request-6", "group": "A-request", "transcript": "你能讲讲长城是怎么修的吗？", "reply": true, "p_reply": 0.2647}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "A-request-7", "group": "A-request", "transcript": "把闹钟改到八点半。", "reply": true, "p_reply": 0.2433}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "B-backchannel-0", "group": "B-backchannel", "transcript": "嗯", "reply": false, "p_reply": 0.3218}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "B-backchannel-1", "group": "B-backchannel", "transcript": "好", "reply": false, "p_reply": 0.1727}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "B-backchannel-2", "group": "B-backchannel", "transcript": "哦哦", "reply": false, "p_reply": 0.6505}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "B-backchannel-3", "group": "B-backchannel", "transcript": "嗯嗯嗯", "reply": false, "p_reply": 0.3162}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "B-backchannel-4", "group": "B-backchannel", "transcript": "是吗", "reply": false, "p_reply": 0.3534}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "C-short-answer-0", "group": "C-short-answer", "transcript": "中文的", "reply": true, "p_reply": 0.7274}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "C-short-answer-1", "group": "C-short-answer", "transcript": "每天", "reply": true, "p_reply": 0.1727}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "C-short-answer-2", "group": "C-short-answer", "transcript": "要", "reply": true, "p_reply": 0.0704}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "C-short-answer-3", "group": "C-short-answer", "transcript": "明天", "reply": true, "p_reply": 0.0281}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "C-short-answer-4", "group": "C-short-answer", "transcript": "不用", "reply": true, "p_reply": 0.0342}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "E-side-talk-0", "group": "E-side-talk", "transcript": "老公你把垃圾带下去。", "reply": false, "p_reply": 0.1219}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "E-side-talk-1", "group": "E-side-talk", "transcript": "你作业写完了没有？", "reply": false, "p_reply": 0.2088}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "E-side-talk-2", "group": "E-side-talk", "transcript": "喂你好，我是快递，放门口可以吗？", "reply": false, "p_reply": 0.5684}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "E-side-talk-3", "group": "E-side-talk", "transcript": "小明快过来吃饭了。", "reply": false, "p_reply": 0.1097}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "F-noise-0", "group": "F-noise", "transcript": "(清嗓子)", "reply": false, "p_reply": 0.8953}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "F-noise-1", "group": "F-noise", "transcript": "谢谢观看", "reply": false, "p_reply": 0.2798}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "F-noise-2", "group": "F-noise", "transcript": "嗯……啊……", "reply": false, "p_reply": 0.4547}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "F-noise-3", "group": "F-noise", "transcript": "（笑声）", "reply": false, "p_reply": 0.0734}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "G-backchannel-while-speaking-0", "group": "G-backchannel-while-speaking", "transcript": "嗯嗯嗯", "reply": false, "p_reply": 0.3162}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "G-backchannel-while-speaking-1", "group": "G-backchannel-while-speaking", "transcript": "哦", "reply": false, "p_reply": 0.5161}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "G-backchannel-while-speaking-2", "group": "G-backchannel-while-speaking", "transcript": "哈哈哈", "reply": false, "p_reply": 0.1661}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "G-backchannel-while-speaking-3", "group": "G-backchannel-while-speaking", "transcript": "(咳嗽)", "reply": false, "p_reply": 0.5249}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "G-interrupt-0", "group": "G-interrupt", "transcript": "等一下", "reply": true, "p_reply": 0.1152}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "G-interrupt-1", "group": "G-interrupt", "transcript": "不对，我想问的是银河系", "reply": true, "p_reply": 0.1919}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "G-interrupt-2", "group": "G-interrupt", "transcript": "行了行了，换个话题吧", "reply": true, "p_reply": 0.1523}
+{"variant": "en-choice-short (PR default)", "split": "heldout", "id": "G-interrupt-3", "group": "G-interrupt", "transcript": "停，先帮我查一下天气", "reply": true, "p_reply": 0.4571}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "A-request-0", "group": "A-request", "transcript": "今天北京天气怎么样？", "reply": true, "p_reply": 0.0187}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "A-request-1", "group": "A-request", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "p_reply": 0.0548}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "A-request-2", "group": "A-request", "transcript": "你刚才说的第二点我没听懂，再讲一遍。", "reply": true, "p_reply": 0.0234}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "A-request-3", "group": "A-request", "transcript": "一加一等于几？", "reply": true, "p_reply": 0.8835}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "A-request-4", "group": "A-request", "transcript": "给我讲个笑话吧。", "reply": true, "p_reply": 0.0189}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "A-request-5", "group": "A-request", "transcript": "把音乐声音调小一点。", "reply": true, "p_reply": 0.0641}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "A-request-6", "group": "A-request", "transcript": "我想订两个人今晚的位子。", "reply": true, "p_reply": 0.023}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "A-request-7", "group": "A-request", "transcript": "你叫什么名字？", "reply": true, "p_reply": 0.5863}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "B-backchannel-0", "group": "B-backchannel", "transcript": "嗯嗯", "reply": false, "p_reply": 0.0007}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "B-backchannel-1", "group": "B-backchannel", "transcript": "好的", "reply": false, "p_reply": 0.0006}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "B-backchannel-2", "group": "B-backchannel", "transcript": "哦", "reply": false, "p_reply": 0.002}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "B-backchannel-3", "group": "B-backchannel", "transcript": "嗯", "reply": false, "p_reply": 0.0013}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "B-backchannel-4", "group": "B-backchannel", "transcript": "行", "reply": false, "p_reply": 0.0122}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "C-short-answer-0", "group": "C-short-answer", "transcript": "嗯", "reply": true, "p_reply": 0.0013}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "C-short-answer-1", "group": "C-short-answer", "transcript": "古典", "reply": true, "p_reply": 0.0042}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "C-short-answer-2", "group": "C-short-answer", "transcript": "七点", "reply": true, "p_reply": 0.0069}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "C-short-answer-3", "group": "C-short-answer", "transcript": "对", "reply": true, "p_reply": 0.004}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "C-short-answer-4", "group": "C-short-answer", "transcript": "不是", "reply": true, "p_reply": 0.0005}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "E-side-talk-0", "group": "E-side-talk", "transcript": "妈，我等会儿下楼吃饭。", "reply": false, "p_reply": 0.0064}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "E-side-talk-1", "group": "E-side-talk", "transcript": "宝贝把鞋穿上，我们要出门了。", "reply": false, "p_reply": 0.011}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "E-side-talk-2", "group": "E-side-talk", "transcript": "喂，你到哪了？我马上出门。", "reply": false, "p_reply": 0.015}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "E-side-talk-3", "group": "E-side-talk", "transcript": "你们先吃吧，我一会儿就来。", "reply": false, "p_reply": 0.0053}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "F-noise-0", "group": "F-noise", "transcript": "(咳嗽)", "reply": false, "p_reply": 0.0026}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "F-noise-1", "group": "F-noise", "transcript": "字幕由Amara.org社区提供", "reply": false, "p_reply": 0.0284}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "F-noise-2", "group": "F-noise", "transcript": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目", "reply": false, "p_reply": 0.0217}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "F-noise-3", "group": "F-noise", "transcript": "嗯……", "reply": false, "p_reply": 0.0013}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "G-backchannel-while-speaking-0", "group": "G-backchannel-while-speaking", "transcript": "嗯嗯", "reply": false, "p_reply": 0.0007}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "G-backchannel-while-speaking-1", "group": "G-backchannel-while-speaking", "transcript": "对对对", "reply": false, "p_reply": 0.0068}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "G-backchannel-while-speaking-2", "group": "G-backchannel-while-speaking", "transcript": "哈哈", "reply": false, "p_reply": 0.01}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "G-backchannel-while-speaking-3", "group": "G-backchannel-while-speaking", "transcript": "(咳嗽)", "reply": false, "p_reply": 0.0026}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "G-interrupt-0", "group": "G-interrupt", "transcript": "停一下", "reply": true, "p_reply": 0.0059}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "G-interrupt-1", "group": "G-interrupt", "transcript": "等等，我刚才说错了，我想问的是四大名著", "reply": true, "p_reply": 0.5074}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "G-interrupt-2", "group": "G-interrupt", "transcript": "不对不对，我问的是明天的天气", "reply": true, "p_reply": 0.6203}
+{"variant": "en-choice-4way-heard", "split": "tune", "id": "G-interrupt-3", "group": "G-interrupt", "transcript": "别说了，换个话题", "reply": true, "p_reply": 0.0093}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "A-request-0", "group": "A-request", "transcript": "上海明天会下雨吗？", "reply": true, "p_reply": 0.0319}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "A-request-1", "group": "A-request", "transcript": "帮我把客厅的灯关掉。", "reply": true, "p_reply": 0.0848}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "A-request-2", "group": "A-request", "transcript": "刚才那首歌叫什么名字？", "reply": true, "p_reply": 0.8217}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "A-request-3", "group": "A-request", "transcript": "三乘以七等于多少？", "reply": true, "p_reply": 0.9174}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "A-request-4", "group": "A-request", "transcript": "给我推荐一部好看的电影。", "reply": true, "p_reply": 0.3031}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "A-request-5", "group": "A-request", "transcript": "提醒我下午三点开会。", "reply": true, "p_reply": 0.0085}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "A-request-6", "group": "A-request", "transcript": "你能讲讲长城是怎么修的吗？", "reply": true, "p_reply": 0.8688}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "A-request-7", "group": "A-request", "transcript": "把闹钟改到八点半。", "reply": true, "p_reply": 0.0513}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "B-backchannel-0", "group": "B-backchannel", "transcript": "嗯", "reply": false, "p_reply": 0.0013}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "B-backchannel-1", "group": "B-backchannel", "transcript": "好", "reply": false, "p_reply": 0.0003}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "B-backchannel-2", "group": "B-backchannel", "transcript": "哦哦", "reply": false, "p_reply": 0.002}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "B-backchannel-3", "group": "B-backchannel", "transcript": "嗯嗯嗯", "reply": false, "p_reply": 0.0012}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "B-backchannel-4", "group": "B-backchannel", "transcript": "是吗", "reply": false, "p_reply": 0.0031}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "C-short-answer-0", "group": "C-short-answer", "transcript": "中文的", "reply": true, "p_reply": 0.018}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "C-short-answer-1", "group": "C-short-answer", "transcript": "每天", "reply": true, "p_reply": 0.0055}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "C-short-answer-2", "group": "C-short-answer", "transcript": "要", "reply": true, "p_reply": 0.0376}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "C-short-answer-3", "group": "C-short-answer", "transcript": "明天", "reply": true, "p_reply": 0.0092}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "C-short-answer-4", "group": "C-short-answer", "transcript": "不用", "reply": true, "p_reply": 0.0057}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "E-side-talk-0", "group": "E-side-talk", "transcript": "老公你把垃圾带下去。", "reply": false, "p_reply": 0.012}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "E-side-talk-1", "group": "E-side-talk", "transcript": "你作业写完了没有？", "reply": false, "p_reply": 0.0235}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "E-side-talk-2", "group": "E-side-talk", "transcript": "喂你好，我是快递，放门口可以吗？", "reply": false, "p_reply": 0.0271}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "E-side-talk-3", "group": "E-side-talk", "transcript": "小明快过来吃饭了。", "reply": false, "p_reply": 0.0061}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "F-noise-0", "group": "F-noise", "transcript": "(清嗓子)", "reply": false, "p_reply": 0.0078}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "F-noise-1", "group": "F-noise", "transcript": "谢谢观看", "reply": false, "p_reply": 0.0018}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "F-noise-2", "group": "F-noise", "transcript": "嗯……啊……", "reply": false, "p_reply": 0.0017}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "F-noise-3", "group": "F-noise", "transcript": "（笑声）", "reply": false, "p_reply": 0.0211}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "G-backchannel-while-speaking-0", "group": "G-backchannel-while-speaking", "transcript": "嗯嗯嗯", "reply": false, "p_reply": 0.0012}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "G-backchannel-while-speaking-1", "group": "G-backchannel-while-speaking", "transcript": "哦", "reply": false, "p_reply": 0.002}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "G-backchannel-while-speaking-2", "group": "G-backchannel-while-speaking", "transcript": "哈哈哈", "reply": false, "p_reply": 0.0067}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "G-backchannel-while-speaking-3", "group": "G-backchannel-while-speaking", "transcript": "(咳嗽)", "reply": false, "p_reply": 0.0026}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "G-interrupt-0", "group": "G-interrupt", "transcript": "等一下", "reply": true, "p_reply": 0.003}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "G-interrupt-1", "group": "G-interrupt", "transcript": "不对，我想问的是银河系", "reply": true, "p_reply": 0.9752}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "G-interrupt-2", "group": "G-interrupt", "transcript": "行了行了，换个话题吧", "reply": true, "p_reply": 0.0085}
+{"variant": "en-choice-4way-heard", "split": "heldout", "id": "G-interrupt-3", "group": "G-interrupt", "transcript": "停，先帮我查一下天气", "reply": true, "p_reply": 0.0297}

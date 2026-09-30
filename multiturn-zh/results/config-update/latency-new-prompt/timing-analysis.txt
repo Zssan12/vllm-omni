@@ -1,0 +1,12 @@
+Audit: valid
+off: matched=30/30, warmups=8, measured=22, rejected=0, unassigned_server_requests=[]
+on: matched=30/30, warmups=8, measured=22, rejected=6, unassigned_server_requests=[]
+
+All values in ms. p50=median; p95=nearest rank. Delta=group quantile difference.
+| Group | off gate n; p50 / p95 | on gate n; p50 / p95 | on judge n; p50 / p95 | delta p50 / p95 |
+|---|---:|---:|---:|---:|
+| a3.wav | 8; 6.500 / 7.655 | 8; 33.783 / 37.395 | 8; 24.084 / 25.917 | 27.283 / 29.740 |
+| a4.wav | 8; 6.288 / 6.859 | 8; 34.065 / 34.580 | 8; 24.218 / 24.833 | 27.778 / 27.721 |
+| a0.wav | 3; 6.699 / 6.868 | 0; NA | 0; NA | NA |
+| a1.wav | 3; 6.523 / 6.961 | 0; NA | 0; NA | NA |
+| questions_a3_a4 | 16; 6.391 / 7.655 | 16; 34.065 / 37.395 | 16; 24.112 / 25.917 | 27.675 / 29.740 |

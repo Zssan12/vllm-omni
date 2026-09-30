@@ -1,0 +1,47 @@
+{
+ "en-choice-short (PR default)": {
+  "type": "choice",
+  "ins": "Does the assistant need to answer?",
+  "crit": {
+   "yes": "yes, answer the user",
+   "no": "no, just keep listening"
+  },
+  "reply": "yes",
+  "state": "The user just said to the voice assistant: \"{t}\""
+ },
+ "en-choice-3way": {
+  "type": "choice",
+  "ins": "What kind of input is this for a voice assistant?",
+  "crit": {
+   "request": "a question, request, instruction, or an answer to the assistant",
+   "backchannel": "a backchannel or filler such as uh-huh, okay, oh, or laughter",
+   "not_for_assistant": "noise, a cough, or speech addressed to someone else"
+  },
+  "reply": "request",
+  "state": "The user just said to the voice assistant: \"{t}\""
+ },
+ "en-choice-4way-heard": {
+  "type": "choice",
+  "ins": "Who is this utterance for, and does the voice assistant need to reply?",
+  "crit": {
+   "assistant_request": "a question or request for the voice assistant (information, explanation, alarm, reminder, music, volume, translation, a story or joke)",
+   "backchannel": "an acknowledgement or filler: uh-huh, okay, I see, got it, oh really, hmm, laughter",
+   "someone_else": "talking to a family member or someone nearby: calling them by name or title (mom, dear, honey), asking them to do something, telling them what the speaker is about to do, or on a phone call",
+   "noise": "a cough, throat clearing, or meaningless noise"
+  },
+  "reply": "assistant_request",
+  "state": "The microphone of a home voice assistant picked up the user saying: \"{t}\""
+ },
+ "zh-choice-4way": {
+  "type": "choice",
+  "ins": "这句话是说给谁的？语音助手需要回应吗？",
+  "crit": {
+   "assistant_request": "对语音助手提问或提要求：查询、讲解、定闹钟、提醒、放音乐、调音量、翻译、讲故事或笑话",
+   "backchannel": "附和或表示听到了：嗯、好的、对对对、哦这样啊、明白了、原来如此、笑声",
+   "someone_else": "对身边的家人或别人说话：叫人（妈、老婆、宝贝、名字），让别人做事，交代自己要去做什么，或者在打电话",
+   "noise": "咳嗽、清嗓子、噪声或没有意义的声音"
+  },
+  "reply": "assistant_request",
+  "state": "用户刚刚说：「{t}」"
+ }
+}

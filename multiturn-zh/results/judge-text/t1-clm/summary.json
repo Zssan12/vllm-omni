@@ -1,0 +1,102 @@
+{
+ "en-multi5-conv": {
+  "threshold_from_tune": 0.427086,
+  "tune@threshold": {
+   "balanced_accuracy": 0.9172,
+   "blocked_requests": "6/125",
+   "filtered_non_requests": "75/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.9375,
+   "blocked_requests": "0/63",
+   "filtered_non_requests": "35/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.874,
+   "blocked_requests": "8/63",
+   "filtered_non_requests": "35/40"
+  },
+  "demo_clips_correct": true,
+  "demo_p": {}
+ },
+ "en-multi5-said": {
+  "threshold_from_tune": 0.531096,
+  "tune@threshold": {
+   "balanced_accuracy": 0.9449,
+   "blocked_requests": "2/125",
+   "filtered_non_requests": "77/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.7456,
+   "blocked_requests": "10/63",
+   "filtered_non_requests": "26/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.7478,
+   "blocked_requests": "5/63",
+   "filtered_non_requests": "23/40"
+  },
+  "demo_clips_correct": true,
+  "demo_p": {}
+ },
+ "en-action-said": {
+  "threshold_from_tune": 0.973758,
+  "tune@threshold": {
+   "balanced_accuracy": 0.6153,
+   "blocked_requests": "80/125",
+   "filtered_non_requests": "74/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.5258,
+   "blocked_requests": "44/63",
+   "filtered_non_requests": "30/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.5,
+   "blocked_requests": "0/63",
+   "filtered_non_requests": "0/40"
+  },
+  "demo_clips_correct": true,
+  "demo_p": {}
+ },
+ "en-short-said": {
+  "threshold_from_tune": 0.816594,
+  "tune@threshold": {
+   "balanced_accuracy": 0.832,
+   "blocked_requests": "42/125",
+   "filtered_non_requests": "85/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.6641,
+   "blocked_requests": "25/63",
+   "filtered_non_requests": "29/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.525,
+   "blocked_requests": "0/63",
+   "filtered_non_requests": "2/40"
+  },
+  "demo_clips_correct": true,
+  "demo_p": {}
+ },
+ "zh-action-said": {
+  "threshold_from_tune": 0.999996,
+  "tune@threshold": {
+   "balanced_accuracy": 0.5927,
+   "blocked_requests": "18/125",
+   "filtered_non_requests": "28/85"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.4288,
+   "blocked_requests": "20/63",
+   "filtered_non_requests": "7/40"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.5,
+   "blocked_requests": "0/63",
+   "filtered_non_requests": "0/40"
+  },
+  "demo_clips_correct": true,
+  "demo_p": {}
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "en-choice-short (PR default)": {
+  "type": "choice",
+  "ins": "Does the assistant need to answer?",
+  "crit": {
+   "yes": "yes, answer the user",
+   "no": "no, just keep listening"
+  },
+  "reply": "yes",
+  "state": "The user just said to the voice assistant: \"{t}\""
+ },
+ "en-choice-4way-heard": {
+  "type": "choice",
+  "ins": "Who is this utterance for, and does the voice assistant need to reply?",
+  "crit": {
+   "assistant_request": "a question or request for the voice assistant (information, explanation, alarm, reminder, music, volume, translation, a story or joke)",
+   "backchannel": "an acknowledgement or filler: uh-huh, okay, I see, got it, oh really, hmm, laughter",
+   "someone_else": "talking to a family member or someone nearby: calling them by name or title (mom, dear, honey), asking them to do something, telling them what the speaker is about to do, or on a phone call",
+   "noise": "a cough, throat clearing, or meaningless noise"
+  },
+  "reply": "assistant_request",
+  "state": "The microphone of a home voice assistant picked up the user saying: \"{t}\""
+ }
+}

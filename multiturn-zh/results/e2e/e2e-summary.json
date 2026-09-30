@@ -1,0 +1,90 @@
+{
+ "off": {
+  "turns": 103,
+  "failed": 0,
+  "should_reply_answered": "63/63",
+  "should_reply_blocked": "0/63",
+  "no_reply_spoke": "40/40",
+  "no_reply_spoken_seconds": 109.3,
+  "first_text_ms_p50": 640.3,
+  "first_audio_ms_p50": 2708.6,
+  "listen_sources": {},
+  "by_category": {
+   "question": {
+    "n": 44,
+    "answered": 44,
+    "blocked": 0,
+    "failed": 0
+   },
+   "backchannel": {
+    "n": 28,
+    "answered": 28,
+    "blocked": 0,
+    "failed": 0
+   },
+   "request": {
+    "n": 19,
+    "answered": 19,
+    "blocked": 0,
+    "failed": 0
+   },
+   "side_talk": {
+    "n": 9,
+    "answered": 9,
+    "blocked": 0,
+    "failed": 0
+   },
+   "filler": {
+    "n": 3,
+    "answered": 3,
+    "blocked": 0,
+    "failed": 0
+   }
+  }
+ },
+ "on": {
+  "turns": 103,
+  "failed": 0,
+  "should_reply_answered": "63/63",
+  "should_reply_blocked": "0/63",
+  "no_reply_spoke": "3/40",
+  "no_reply_spoken_seconds": 9.0,
+  "first_text_ms_p50": 616.0,
+  "first_audio_ms_p50": 2292.8,
+  "listen_sources": {
+   "response_judge": 37
+  },
+  "by_category": {
+   "question": {
+    "n": 44,
+    "answered": 44,
+    "blocked": 0,
+    "failed": 0
+   },
+   "backchannel": {
+    "n": 28,
+    "answered": 0,
+    "blocked": 28,
+    "failed": 0
+   },
+   "request": {
+    "n": 19,
+    "answered": 19,
+    "blocked": 0,
+    "failed": 0
+   },
+   "side_talk": {
+    "n": 9,
+    "answered": 3,
+    "blocked": 6,
+    "failed": 0
+   },
+   "filler": {
+    "n": 3,
+    "answered": 0,
+    "blocked": 3,
+    "failed": 0
+   }
+  }
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "en-choice-4way-heard": {
+  "threshold_from_tune": 0.0173,
+  "tune@threshold": {
+   "balanced_accuracy": 0.927,
+   "blocked_requests": "11/142",
+   "filtered_non_requests": "95/102"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.7353,
+   "blocked_requests": "6/17",
+   "filtered_non_requests": "14/17"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.6176,
+   "blocked_requests": "13/17",
+   "filtered_non_requests": "17/17"
+  }
+ },
+ "4way-answers": {
+  "threshold_from_tune": 0.0152,
+  "tune@threshold": {
+   "balanced_accuracy": 0.9178,
+   "blocked_requests": "15/142",
+   "filtered_non_requests": "96/102"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.7353,
+   "blocked_requests": "8/17",
+   "filtered_non_requests": "16/17"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.6176,
+   "blocked_requests": "13/17",
+   "filtered_non_requests": "17/17"
+  }
+ },
+ "4way-answers-ack": {
+  "threshold_from_tune": 0.0166,
+  "tune@threshold": {
+   "balanced_accuracy": 0.9129,
+   "blocked_requests": "15/142",
+   "filtered_non_requests": "95/102"
+  },
+  "heldout@threshold": {
+   "balanced_accuracy": 0.6471,
+   "blocked_requests": "9/17",
+   "filtered_non_requests": "14/17"
+  },
+  "heldout@0.5": {
+   "balanced_accuracy": 0.5588,
+   "blocked_requests": "15/17",
+   "filtered_non_requests": "17/17"
+  }
+ }
+}

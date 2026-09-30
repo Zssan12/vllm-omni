@@ -1,0 +1,1547 @@
+[
+ {
+  "id": "heldout-S1-low-00-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "为什么海水是咸的？",
+   "assistant_speaking": false
+  },
+  "reference_text": "为什么海水是咸的？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-00-t01",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我把串新的灯关掉。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我把客厅的灯关掉。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-00-t02",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "企业生活在哪里？",
+   "assistant_speaking": false
+  },
+  "reference_text": "企鹅生活在哪里？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-00-t03",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "把闹钟改到八点半。",
+   "assistant_speaking": false
+  },
+  "reference_text": "把闹钟改到八点半。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-00-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "对。",
+   "assistant_speaking": false
+  },
+  "reference_text": "对。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-00-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "大象能活多少年？",
+   "assistant_speaking": false
+  },
+  "reference_text": "大象能活多少年？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-01-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你能讲讲长城是怎么修的吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你能讲讲长城是怎么修的吗？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-01-t01",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "刚才那首歌叫什么名字？",
+   "assistant_speaking": false
+  },
+  "reference_text": "刚才那首歌叫什么名字？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-01-t02",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你作业写完了没有？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你作业写完了没有？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-01-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "上海明天会下雨吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "上海明天会下雨吗？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-01-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "念一首唐诗给我听。",
+   "assistant_speaking": false
+  },
+  "reference_text": "念一首唐诗给我听。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-01-t05",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我把客厅的灯关掉。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我把客厅的灯关掉。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-01-t06",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "企业生活在哪里？",
+   "assistant_speaking": false
+  },
+  "reference_text": "企鹅生活在哪里？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-02-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "企鹅生活在哪里？",
+   "assistant_speaking": false
+  },
+  "reference_text": "企鹅生活在哪里？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-02-t01",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你们家家长城是怎么修的吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你能讲讲长城是怎么修的吗？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-02-t02",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "给我推荐一部好看的电影。",
+   "assistant_speaking": false
+  },
+  "reference_text": "给我推荐一部好看的电影。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-02-t03",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "老木了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "懂了。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-02-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "把闹钟改到八点半。",
+   "assistant_speaking": false
+  },
+  "reference_text": "把闹钟改到八点半。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-02-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "刚才那首歌叫什么名字？",
+   "assistant_speaking": false
+  },
+  "reference_text": "刚才那首歌叫什么名字？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-02-t06",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我把客厅的灯关掉。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我把客厅的灯关掉。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-03-t00",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我把串新的灯关掉。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我把客厅的灯关掉。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-03-t01",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你作业写完了没有？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你作业写完了没有？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-03-t02",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "念一首唐诗给我听。",
+   "assistant_speaking": false
+  },
+  "reference_text": "念一首唐诗给我听。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-03-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你们家家传承是怎么学的吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你能讲讲长城是怎么修的吗？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-03-t04",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "老中年把垃圾带下去。",
+   "assistant_speaking": false
+  },
+  "reference_text": "老公你把垃圾带下去。",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-03-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "刚才那首歌叫什么名字？",
+   "assistant_speaking": false
+  },
+  "reference_text": "刚才那首歌叫什么名字？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-03-t06",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "喝牛奶对睡眠有帮助吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "喝牛奶对睡眠有帮助吗？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S2-low-03-t07",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "大象能活多少年？",
+   "assistant_speaking": false
+  },
+  "reference_text": "大象能活多少年？",
+  "scene": "S2",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-04-t00",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "念一首唐诗给我听。",
+   "assistant_speaking": false
+  },
+  "reference_text": "念一首唐诗给我听。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-04-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "月。",
+   "assistant_speaking": false
+  },
+  "reference_text": "对。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-04-t02",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "把闹钟改到八点半。",
+   "assistant_speaking": false
+  },
+  "reference_text": "把闹钟改到八点半。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-04-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "为什么海水是咸的？",
+   "assistant_speaking": false
+  },
+  "reference_text": "为什么海水是咸的？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-04-t04",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "太阳系有几颗行星？",
+   "assistant_speaking": false
+  },
+  "reference_text": "太阳系有几颗行星？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-04-t05",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我查一下最近的加油站。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我查一下最近的加油站。",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-low-04-t06",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "三乘以七等于多少？",
+   "assistant_speaking": false
+  },
+  "reference_text": "三乘以七等于多少？",
+  "scene": "S1",
+  "bucket": "low"
+ },
+ {
+  "id": "heldout-S1-mid-00-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你们家家长城是怎么修的吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你能讲讲长城是怎么修的吗？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-00-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "然后。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯哼。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-00-t02",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "为什么海水是咸的？",
+   "assistant_speaking": false
+  },
+  "reference_text": "为什么海水是咸的？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-00-t03",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "给我推荐一部好看的电影。",
+   "assistant_speaking": false
+  },
+  "reference_text": "给我推荐一部好看的电影。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-00-t04",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "三乘以七等于多少？",
+   "assistant_speaking": false
+  },
+  "reference_text": "三乘以七等于多少？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-00-t05",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "对。",
+   "assistant_speaking": false
+  },
+  "reference_text": "对。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S2-mid-01-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "喝牛奶对睡眠有帮助吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "喝牛奶对睡眠有帮助吗？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S2-mid-01-t01",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你作业写完了没有？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你作业写完了没有？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S2-mid-01-t02",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "牛在哪里？",
+   "assistant_speaking": false
+  },
+  "reference_text": "有道理。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S2-mid-01-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "杭州有什么好玩的地方？",
+   "assistant_speaking": false
+  },
+  "reference_text": "杭州有什么好玩的地方？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S2-mid-01-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我查一下最近的加油站。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我查一下最近的加油站。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S2-mid-01-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "上海明天会下雨吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "上海明天会下雨吗？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-02-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "企业生活在哪里？",
+   "assistant_speaking": false
+  },
+  "reference_text": "企鹅生活在哪里？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-02-t01",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你能讲讲长城是怎么修的吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你能讲讲长城是怎么修的吗？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-02-t02",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "奥拉维。",
+   "assistant_speaking": false
+  },
+  "reference_text": "有道理。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-02-t03",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "人亨。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯哼。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-02-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我查一下最近的加油站。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我查一下最近的加油站。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-02-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "杭州有什么好玩的地方？",
+   "assistant_speaking": false
+  },
+  "reference_text": "杭州有什么好玩的地方？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-02-t06",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "月。",
+   "assistant_speaking": false
+  },
+  "reference_text": "对。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S2-mid-03-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "太阳系有几颗行星？",
+   "assistant_speaking": false
+  },
+  "reference_text": "太阳系有几颗行星？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S2-mid-03-t01",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "喝牛奶对睡眠有帮助吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "喝牛奶对睡眠有帮助吗？",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S2-mid-03-t02",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我把客厅的灯关掉。",
+   "assistant_speaking": false
+  },
+  "reference_text": "帮我把客厅的灯关掉。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S2-mid-03-t03",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "小明，快过来吃饭了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "小明快过来吃饭了。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S2-mid-03-t04",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "啊，嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "啊，嗯……",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S2-mid-03-t05",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "给我推荐一部好看的电影。",
+   "assistant_speaking": false
+  },
+  "reference_text": "给我推荐一部好看的电影。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S2-mid-03-t06",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "老木了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "懂了。",
+  "scene": "S2",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-04-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "太阳系有几颗行星？",
+   "assistant_speaking": false
+  },
+  "reference_text": "太阳系有几颗行星？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-04-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "小木嘞。",
+   "assistant_speaking": false
+  },
+  "reference_text": "懂了。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-04-t02",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "给我推荐一部好看的电影。",
+   "assistant_speaking": false
+  },
+  "reference_text": "给我推荐一部好看的电影。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-04-t03",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "可以。",
+   "assistant_speaking": false
+  },
+  "reference_text": "可以。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-04-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "牛在哪里？",
+   "assistant_speaking": false
+  },
+  "reference_text": "有道理。",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-04-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "大象能活多少年？",
+   "assistant_speaking": false
+  },
+  "reference_text": "大象能活多少年？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-04-t06",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "上海明天会下雨吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "上海明天会下雨吗？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-mid-04-t07",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "为什么海水是咸的？",
+   "assistant_speaking": false
+  },
+  "reference_text": "为什么海水是咸的？",
+  "scene": "S1",
+  "bucket": "mid"
+ },
+ {
+  "id": "heldout-S1-high-00-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "企业生活在哪里？",
+   "assistant_speaking": false
+  },
+  "reference_text": "企鹅生活在哪里？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-00-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "人亨。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯哼。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-00-t02",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "好嘞。",
+   "assistant_speaking": false
+  },
+  "reference_text": "好嘞。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-00-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "上海明天会下雨吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "上海明天会下雨吗？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-00-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "我。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哦。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-00-t05",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "奥拉维。",
+   "assistant_speaking": false
+  },
+  "reference_text": "有道理。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S2-high-01-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "刚才那首歌叫什么名字？",
+   "assistant_speaking": false
+  },
+  "reference_text": "刚才那首歌叫什么名字？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S2-high-01-t01",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "小明，快过来吃饭了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "小明快过来吃饭了。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S2-high-01-t02",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "啊，嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "啊，嗯……",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S2-high-01-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你们家家长城是怎么修的吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "你能讲讲长城是怎么修的吗？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S2-high-01-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯嗯嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯嗯嗯。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S2-high-01-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "上海明天会下雨吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "上海明天会下雨吗？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S2-high-01-t06",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "喂，你好，快递放门口就行。",
+   "assistant_speaking": false
+  },
+  "reference_text": "喂你好，快递放门口就行。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-02-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "大象能活多少年？",
+   "assistant_speaking": false
+  },
+  "reference_text": "大象能活多少年？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-02-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯嗯嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯嗯嗯。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-02-t02",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "对。",
+   "assistant_speaking": false
+  },
+  "reference_text": "对。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-02-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "刚才那首歌叫什么名字？",
+   "assistant_speaking": false
+  },
+  "reference_text": "刚才那首歌叫什么名字？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-02-t04",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "好嘞。",
+   "assistant_speaking": false
+  },
+  "reference_text": "好嘞。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-02-t05",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "为什么海水是咸的？",
+   "assistant_speaking": false
+  },
+  "reference_text": "为什么海水是咸的？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-02-t06",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "我。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哦。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-02-t07",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "牛在哪里？",
+   "assistant_speaking": false
+  },
+  "reference_text": "有道理。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S2-high-03-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "企业生活在哪里？",
+   "assistant_speaking": false
+  },
+  "reference_text": "企鹅生活在哪里？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S2-high-03-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "我。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哦。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S2-high-03-t02",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "为你好，快递放门口就行。",
+   "assistant_speaking": false
+  },
+  "reference_text": "喂你好，快递放门口就行。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S2-high-03-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "上海明天会下雨吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "上海明天会下雨吗？",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S2-high-03-t04",
+  "group": "filler",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "呃。",
+   "assistant_speaking": false
+  },
+  "reference_text": "呃……",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S2-high-03-t05",
+  "group": "side_talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "奶奶要我放桌上了。",
+   "assistant_speaking": false
+  },
+  "reference_text": "奶奶，药我放桌上了。",
+  "scene": "S2",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-04-t00",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "为什么海水是咸的？",
+   "assistant_speaking": false
+  },
+  "reference_text": "为什么海水是咸的？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-04-t01",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "耳朵里。",
+   "assistant_speaking": false
+  },
+  "reference_text": "有道理。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-04-t02",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "然后。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯哼。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-04-t03",
+  "group": "question",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "喝牛奶对睡眠有帮助吗？",
+   "assistant_speaking": false
+  },
+  "reference_text": "喝牛奶对睡眠有帮助吗？",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-04-t04",
+  "group": "request",
+  "expected": {
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "念一首藏诗给我听。",
+   "assistant_speaking": false
+  },
+  "reference_text": "念一首唐诗给我听。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-04-t05",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "我。",
+   "assistant_speaking": false
+  },
+  "reference_text": "哦。",
+  "scene": "S1",
+  "bucket": "high"
+ },
+ {
+  "id": "heldout-S1-high-04-t06",
+  "group": "backchannel",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯嗯嗯。",
+   "assistant_speaking": false
+  },
+  "reference_text": "嗯嗯嗯。",
+  "scene": "S1",
+  "bucket": "high"
+ }
+]

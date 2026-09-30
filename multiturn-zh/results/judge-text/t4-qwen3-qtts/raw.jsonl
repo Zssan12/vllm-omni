@@ -1,0 +1,626 @@
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-00-t00", "transcript": "西红柿是水果还是蔬菜？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-00-t01", "transcript": "给我讲个笑话吧。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-00-t02", "transcript": "熊猫主要吃什么？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-00-t03", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-00-t04", "transcript": "哦，这样吗？", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-00-t05", "transcript": "你能讲讲唐朝的历史吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-00-t06", "transcript": "把音乐声音调小一点。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-01-t00", "transcript": "学英语有什么好方法？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-01-t01", "transcript": "西红柿是水果还是蔬菜？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-01-t02", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-01-t03", "transcript": "你能讲讲唐朝的历史吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-01-t04", "transcript": "给我推荐一本好看的小说。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-01-t05", "transcript": "老婆，帮我拿一下遥控器。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-02-t00", "transcript": "世界上最高的山是哪座？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-02-t01", "transcript": "推荐几个适合周末去的地方。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-02-t02", "transcript": "嗯嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-02-t03", "transcript": "一年有多少天？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-02-t04", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-02-t05", "transcript": "北京到上海坐高铁要多久？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-02-t06", "transcript": "地球离太阳有多远？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-03-t00", "transcript": "长城一共有多长？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-03-t01", "transcript": "给我讲个笑话吧。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-03-t02", "transcript": "好的。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-03-t03", "transcript": "推荐几个适合周末去的地方。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-03-t04", "transcript": "中国有多少个省份？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-03-t05", "transcript": "哈哈，呵呵。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-03-t06", "transcript": "帮我把这句话翻译成英文。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-03-t07", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-04-t00", "transcript": "帮我算一下十五乘以二十四。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-04-t01", "transcript": "行啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-04-t02", "transcript": "月亮为什么会有圆缺？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-04-t03", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-04-t04", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-04-t05", "transcript": "呵呵。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-04-t06", "transcript": "感冒了，应该多喝水吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-04-t07", "transcript": "一年有多少天？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-05-t00", "transcript": "月亮为什么会有圆缺？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-05-t01", "transcript": "跑步前需要热身吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-05-t02", "transcript": "给我推荐一本好看的小说。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-05-t03", "transcript": "等我一下，我换个衣服。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-05-t04", "transcript": "帮我记一下，中午要交报告。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-05-t05", "transcript": "北京到上海坐高铁要多久？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-05-t06", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-05-t07", "transcript": "哦，这样啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-06-t00", "transcript": "帮我算一下十五乘以二十四。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-06-t01", "transcript": "嗯，对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-06-t02", "transcript": "跑步前需要热身吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-06-t03", "transcript": "你能讲讲唐朝的历史吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-06-t04", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-06-t05", "transcript": "哦。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-06-t06", "transcript": "帮我记一下，周五要交报告。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-06-t07", "transcript": "一公里大概要走多久？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-07-t00", "transcript": "学英语有什么好方法？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-07-t01", "transcript": "世界上最高的山是哪座？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-07-t02", "transcript": "咖啡喝多了会失眠吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-07-t03", "transcript": "为什么天空是蓝色的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-07-t04", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-07-t05", "transcript": "宝贝，把鞋穿上，我们要出门了。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-07-t06", "transcript": "老婆，帮我拿一下遥控器。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-07-t07", "transcript": "提醒我下午三点开会。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-08-t00", "transcript": "把音乐声音调小一点。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-08-t01", "transcript": "好的，嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-08-t02", "transcript": "光速是多少？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-08-t03", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-08-t04", "transcript": "行。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-08-t05", "transcript": "给我讲个笑话吧。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-08-t06", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-low-08-t07", "transcript": "你能讲讲唐朝的历史吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-09-t00", "transcript": "给我推荐一本好看的小说。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-09-t01", "transcript": "熊猫主要吃什么？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-09-t02", "transcript": "帮我把这句话翻译成英文。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-09-t03", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-09-t04", "transcript": "猫为什么喜欢晒太阳？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-09-t05", "transcript": "中国有多少个省份？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-09-t06", "transcript": "你们先吃吧，我一会儿就来。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-low-09-t07", "transcript": "咖啡喝多了会失眠吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-00-t00", "transcript": "帮我查一下明天的天气。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-00-t01", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-00-t02", "transcript": "好的。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-00-t03", "transcript": "猫为什么喜欢晒太阳？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-00-t04", "transcript": "帮我算一下十五乘以二十四。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-00-t05", "transcript": "熊猫主要吃什么？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-00-t06", "transcript": "对对对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-01-t00", "transcript": "感冒了，应该多喝水吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-01-t01", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-01-t02", "transcript": "猫为什么喜欢晒太阳？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-01-t03", "transcript": "推荐几个适合周末去的地方。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-01-t04", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-01-t05", "transcript": "把音乐声音调小一点。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-01-t06", "transcript": "呃。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-02-t00", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-02-t01", "transcript": "哦哦。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-02-t02", "transcript": "中国有多少个省份？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-02-t03", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-02-t04", "transcript": "光速是多少？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-02-t05", "transcript": "帮我查一下明天的天气。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-03-t00", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-03-t01", "transcript": "长城一共有多长？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-03-t02", "transcript": "呃，嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-03-t03", "transcript": "学英语有什么好方法？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-03-t04", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-03-t05", "transcript": "爸，你手机响了。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-04-t00", "transcript": "今天北京天气怎么样？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-04-t01", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-04-t02", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-04-t03", "transcript": "给我推荐一本好看的小说。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-04-t04", "transcript": "哦，这样啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-04-t05", "transcript": "帮我查一下明天的天气。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-05-t00", "transcript": "帮我算一下，十五乘以二十四。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-05-t01", "transcript": "北京到上海坐高铁要多久？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-05-t02", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-05-t03", "transcript": "世界上最高的山是哪座？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-05-t04", "transcript": "明白了。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-05-t05", "transcript": "你能讲讲唐朝的历史吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-06-t00", "transcript": "帮我算一下，十五乘以二十四。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-06-t01", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-06-t02", "transcript": "明天是星期几？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-06-t03", "transcript": "嗯，对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-06-t04", "transcript": "熊猫主要吃什么？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-06-t05", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-06-t06", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-07-t00", "transcript": "跑步前需要热身吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-07-t01", "transcript": "一年有多少天？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-07-t02", "transcript": "你们先吃吧，我一会儿就来。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-07-t03", "transcript": "爸，你手机响了。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-07-t04", "transcript": "提醒我下午三点开会。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-07-t05", "transcript": "推荐几个适合周末去的地方。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-07-t06", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-07-t07", "transcript": "为什么天空是蓝色的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-08-t00", "transcript": "西红柿是水果还是蔬菜？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-08-t01", "transcript": "中国有多少个省份？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-08-t02", "transcript": "对对对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-08-t03", "transcript": "熊猫主要吃什么？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-08-t04", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-mid-08-t05", "transcript": "帮我算一下十五乘以二十四。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-09-t00", "transcript": "帮我查一下明天的天气。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-09-t01", "transcript": "等我一下，我换个衣服。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-09-t02", "transcript": "一公里大概要走多久？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-09-t03", "transcript": "呃。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-09-t04", "transcript": "推荐几个适合周末去的地方。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-09-t05", "transcript": "帮我算一下十五乘以二十四。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-mid-09-t06", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-00-t00", "transcript": "长城一共有多长啊？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-00-t01", "transcript": "行。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-00-t02", "transcript": "一年有多少天？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-00-t03", "transcript": "明白了。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-00-t04", "transcript": "嗯，对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-00-t05", "transcript": "地球离太阳有多远？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-00-t06", "transcript": "哦，这样啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-01-t00", "transcript": "帮我把这句话翻译成英文。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-01-t01", "transcript": "嗯，嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-01-t02", "transcript": "妈，我等会儿下楼吃饭。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-01-t03", "transcript": "你能讲讲唐朝的历史吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-01-t04", "transcript": "宝贝，把鞋穿上，我们要出门了。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-01-t05", "transcript": "你们先吃吧，我一会儿就来。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-02-t00", "transcript": "提醒我下午三点开会。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-02-t01", "transcript": "好。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-02-t02", "transcript": "明白了。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-02-t03", "transcript": "地球离太阳有多远？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-02-t04", "transcript": "行。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-02-t05", "transcript": "世界上最高的山是哪座？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-02-t06", "transcript": "嗯，对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-02-t07", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-03-t00", "transcript": "为什么天空是蓝色的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-03-t01", "transcript": "小心点儿，别把水打翻了。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-03-t02", "transcript": "啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-03-t03", "transcript": "跑步前需要热身吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-03-t04", "transcript": "哈哈哈哈哈！", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-03-t05", "transcript": "呃。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-04-t00", "transcript": "今天北京天气怎么样？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-04-t01", "transcript": "啊啊！", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-04-t02", "transcript": "行。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-04-t03", "transcript": "长城一共有多长？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-04-t04", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-04-t05", "transcript": "好。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-05-t00", "transcript": "世界上最高的山是哪座？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-05-t01", "transcript": "啊啊啊！", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-05-t02", "transcript": "宝贝，把鞋穿上，我们要出门了。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-05-t03", "transcript": "熊猫主要吃什么？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-05-t04", "transcript": "好。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-05-t05", "transcript": "老婆，帮我拿一下遥控器。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-05-t06", "transcript": "跑步前需要热身吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-05-t07", "transcript": "啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-06-t00", "transcript": "一公里大概要走多久？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-06-t01", "transcript": "好。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-06-t02", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-06-t03", "transcript": "月亮为什么会有圆缺？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-06-t04", "transcript": "好的。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-06-t05", "transcript": "提醒我下午三点开会。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-06-t06", "transcript": "哦哦。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-06-t07", "transcript": "嗯，对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-07-t00", "transcript": "一年有多少天？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-07-t01", "transcript": "行。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-07-t02", "transcript": "喂，你到哪了？我马上出门。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-07-t03", "transcript": "长城一共有多长？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-07-t04", "transcript": "中国有多少个省份？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-07-t05", "transcript": "嗯嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-07-t06", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-08-t00", "transcript": "世界上最高的山是哪座？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-08-t01", "transcript": "明白了。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-08-t02", "transcript": "行。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-08-t03", "transcript": "熊猫主要吃什么？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-08-t04", "transcript": "哦，这样啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S1-high-08-t05", "transcript": "嗯，对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-09-t00", "transcript": "世界上最高的山是哪座？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-09-t01", "transcript": "啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-09-t02", "transcript": "喂，你到哪儿了？我马上出门。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-09-t03", "transcript": "光速是多少？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-09-t04", "transcript": "老婆，帮我拿一下遥控器。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "tune", "id": "tune-S2-high-09-t05", "transcript": "妈，我等会儿下楼吃饭。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-00-t00", "transcript": "为什么海水是咸的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-00-t01", "transcript": "帮我把客厅的灯关掉。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-00-t02", "transcript": "企鹅生活在哪里？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-00-t03", "transcript": "把闹钟改到八点半。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-00-t04", "transcript": "对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-00-t05", "transcript": "大象能活多少年？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-01-t00", "transcript": "你能讲讲长城是怎么修的吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-01-t01", "transcript": "刚才那首歌叫什么名字？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-01-t02", "transcript": "你作业写完了没有？", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-01-t03", "transcript": "上海明天会下雨吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-01-t04", "transcript": "念一首唐诗给我听。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-01-t05", "transcript": "帮我把客厅的灯关掉。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-01-t06", "transcript": "企鹅生活在哪里？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-02-t00", "transcript": "企鹅生活在哪里？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-02-t01", "transcript": "你能讲讲长城是怎么修的吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-02-t02", "transcript": "给我推荐一部好看的电影。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-02-t03", "transcript": "懂了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-02-t04", "transcript": "把闹钟改到八点半。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-02-t05", "transcript": "刚才那首歌叫什么名字？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-02-t06", "transcript": "帮我把客厅的灯关掉。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-03-t00", "transcript": "帮我把客厅的灯关掉。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-03-t01", "transcript": "你作业写完了没有？", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-03-t02", "transcript": "念一首唐诗给我听。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-03-t03", "transcript": "你能讲讲长城是怎么修的吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-03-t04", "transcript": "老公，你把垃圾带下去。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-03-t05", "transcript": "刚才那首歌叫什么名字？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-03-t06", "transcript": "喝牛奶对睡眠有帮助吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-low-03-t07", "transcript": "大象能活多少年啊？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-04-t00", "transcript": "念一首唐诗给我听。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-04-t01", "transcript": "对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-04-t02", "transcript": "把闹钟改到八点半。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-04-t03", "transcript": "为什么海水是咸的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-04-t04", "transcript": "太阳系有几颗行星？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-04-t05", "transcript": "帮我查一下最近的加油站。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-low-04-t06", "transcript": "三乘以七等于多少？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-00-t00", "transcript": "你能讲讲长城是怎么修的吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-00-t01", "transcript": "嗯哼。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-00-t02", "transcript": "为什么海水是咸的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-00-t03", "transcript": "给我推荐一部好看的电影。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-00-t04", "transcript": "三乘以七等于多少？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-00-t05", "transcript": "对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-mid-01-t00", "transcript": "喝牛奶对睡眠有帮助吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-mid-01-t01", "transcript": "你作业写完了没有？", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-mid-01-t02", "transcript": "有道理。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-mid-01-t03", "transcript": "杭州有什么好玩的地方？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-mid-01-t04", "transcript": "帮我查一下最近的加油站。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-mid-01-t05", "transcript": "上海明天会下雨吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-02-t00", "transcript": "企鹅生活在哪里？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-02-t01", "transcript": "你能讲讲长城是怎么修的吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-02-t02", "transcript": "有道理。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-02-t03", "transcript": "嗯哼。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-02-t04", "transcript": "帮我查一下最近的加油站。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-02-t05", "transcript": "杭州有什么好玩的地方？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-02-t06", "transcript": "对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-mid-03-t00", "transcript": "太阳系有几颗行星？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-mid-03-t01", "transcript": "喝牛奶对睡眠有帮助吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-mid-03-t02", "transcript": "帮我把客厅的灯关掉。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-mid-03-t03", "transcript": "小明，快过来吃饭了。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-mid-03-t04", "transcript": "呃，嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-mid-03-t05", "transcript": "给我推荐一部好看的电影。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-mid-03-t06", "transcript": "懂了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-04-t00", "transcript": "太阳系有几颗行星？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-04-t01", "transcript": "懂了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-04-t02", "transcript": "给我推荐一部好看的电影。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-04-t03", "transcript": "可以。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-04-t04", "transcript": "有道理。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-04-t05", "transcript": "大象能活多少年？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-04-t06", "transcript": "上海明天会下雨吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-mid-04-t07", "transcript": "为什么海水是咸的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-00-t00", "transcript": "企鹅生活在哪里？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-00-t01", "transcript": "嗯哼。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-00-t02", "transcript": "好嘞。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-00-t03", "transcript": "上海明天会下雨吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-00-t04", "transcript": "哦。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-00-t05", "transcript": "有道理。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-high-01-t00", "transcript": "刚才那首歌叫什么名字啊？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-high-01-t01", "transcript": "小明，快过来吃饭了。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-high-01-t02", "transcript": "啊，嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-high-01-t03", "transcript": "你能讲讲长城是怎么修的吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-high-01-t04", "transcript": "嗯嗯嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-high-01-t05", "transcript": "上海明天会下雨吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-high-01-t06", "transcript": "喂，你好，快递放门口就行。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-02-t00", "transcript": "大象能活多少年？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-02-t01", "transcript": "嗯，嗯嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-02-t02", "transcript": "对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-02-t03", "transcript": "刚才那首歌叫什么名字？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-02-t04", "transcript": "好嘞。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-02-t05", "transcript": "为什么海水是咸的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-02-t06", "transcript": "哦。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-02-t07", "transcript": "有道理。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-high-03-t00", "transcript": "企鹅生活在哪里？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-high-03-t01", "transcript": "哦。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-high-03-t02", "transcript": "喂，你好，快递放门口就行。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-high-03-t03", "transcript": "上海明天会下雨吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-high-03-t04", "transcript": "呃。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S2-high-03-t05", "transcript": "奶奶要我放桌上了。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-04-t00", "transcript": "为什么海水是咸的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-04-t01", "transcript": "有道理。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-04-t02", "transcript": "嗯哼。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-04-t03", "transcript": "喝牛奶对睡眠有帮助吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-04-t04", "transcript": "念一首唐诗给我听。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-04-t05", "transcript": "哦。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "rules (stage default)", "split": "heldout", "id": "heldout-S1-high-04-t06", "transcript": "嗯嗯嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-00-t00", "transcript": "西红柿是水果还是蔬菜？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-00-t01", "transcript": "给我讲个笑话吧。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-00-t02", "transcript": "熊猫主要吃什么？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-00-t03", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-00-t04", "transcript": "哦，这样吗？", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-00-t05", "transcript": "你能讲讲唐朝的历史吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-00-t06", "transcript": "把音乐声音调小一点。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-01-t00", "transcript": "学英语有什么好方法？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-01-t01", "transcript": "西红柿是水果还是蔬菜？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-01-t02", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-01-t03", "transcript": "你能讲讲唐朝的历史吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-01-t04", "transcript": "给我推荐一本好看的小说。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-01-t05", "transcript": "老婆，帮我拿一下遥控器。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-02-t00", "transcript": "世界上最高的山是哪座？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-02-t01", "transcript": "推荐几个适合周末去的地方。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-02-t02", "transcript": "嗯嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-02-t03", "transcript": "一年有多少天？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-02-t04", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-02-t05", "transcript": "北京到上海坐高铁要多久？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-02-t06", "transcript": "地球离太阳有多远？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-03-t00", "transcript": "长城一共有多长？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-03-t01", "transcript": "给我讲个笑话吧。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-03-t02", "transcript": "好的。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-03-t03", "transcript": "推荐几个适合周末去的地方。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-03-t04", "transcript": "中国有多少个省份？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-03-t05", "transcript": "哈哈，呵呵。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-03-t06", "transcript": "帮我把这句话翻译成英文。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-03-t07", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-04-t00", "transcript": "帮我算一下十五乘以二十四。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-04-t01", "transcript": "行啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-04-t02", "transcript": "月亮为什么会有圆缺？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-04-t03", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-04-t04", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-04-t05", "transcript": "呵呵。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-04-t06", "transcript": "感冒了，应该多喝水吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-04-t07", "transcript": "一年有多少天？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-05-t00", "transcript": "月亮为什么会有圆缺？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-05-t01", "transcript": "跑步前需要热身吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-05-t02", "transcript": "给我推荐一本好看的小说。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-05-t03", "transcript": "等我一下，我换个衣服。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-05-t04", "transcript": "帮我记一下，中午要交报告。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-05-t05", "transcript": "北京到上海坐高铁要多久？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-05-t06", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-05-t07", "transcript": "哦，这样啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-06-t00", "transcript": "帮我算一下十五乘以二十四。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-06-t01", "transcript": "嗯，对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-06-t02", "transcript": "跑步前需要热身吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-06-t03", "transcript": "你能讲讲唐朝的历史吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-06-t04", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-06-t05", "transcript": "哦。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-06-t06", "transcript": "帮我记一下，周五要交报告。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-06-t07", "transcript": "一公里大概要走多久？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-07-t00", "transcript": "学英语有什么好方法？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-07-t01", "transcript": "世界上最高的山是哪座？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-07-t02", "transcript": "咖啡喝多了会失眠吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-07-t03", "transcript": "为什么天空是蓝色的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-07-t04", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-07-t05", "transcript": "宝贝，把鞋穿上，我们要出门了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-07-t06", "transcript": "老婆，帮我拿一下遥控器。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-07-t07", "transcript": "提醒我下午三点开会。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-08-t00", "transcript": "把音乐声音调小一点。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-08-t01", "transcript": "好的，嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-08-t02", "transcript": "光速是多少？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-08-t03", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-08-t04", "transcript": "行。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-08-t05", "transcript": "给我讲个笑话吧。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-08-t06", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-low-08-t07", "transcript": "你能讲讲唐朝的历史吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-09-t00", "transcript": "给我推荐一本好看的小说。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-09-t01", "transcript": "熊猫主要吃什么？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-09-t02", "transcript": "帮我把这句话翻译成英文。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-09-t03", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-09-t04", "transcript": "猫为什么喜欢晒太阳？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-09-t05", "transcript": "中国有多少个省份？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-09-t06", "transcript": "你们先吃吧，我一会儿就来。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-low-09-t07", "transcript": "咖啡喝多了会失眠吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-00-t00", "transcript": "帮我查一下明天的天气。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-00-t01", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-00-t02", "transcript": "好的。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-00-t03", "transcript": "猫为什么喜欢晒太阳？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-00-t04", "transcript": "帮我算一下十五乘以二十四。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-00-t05", "transcript": "熊猫主要吃什么？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-00-t06", "transcript": "对对对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-01-t00", "transcript": "感冒了，应该多喝水吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-01-t01", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-01-t02", "transcript": "猫为什么喜欢晒太阳？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-01-t03", "transcript": "推荐几个适合周末去的地方。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-01-t04", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-01-t05", "transcript": "把音乐声音调小一点。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-01-t06", "transcript": "呃。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-02-t00", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-02-t01", "transcript": "哦哦。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-02-t02", "transcript": "中国有多少个省份？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-02-t03", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-02-t04", "transcript": "光速是多少？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-02-t05", "transcript": "帮我查一下明天的天气。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-03-t00", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-03-t01", "transcript": "长城一共有多长？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-03-t02", "transcript": "呃，嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-03-t03", "transcript": "学英语有什么好方法？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-03-t04", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-03-t05", "transcript": "爸，你手机响了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-04-t00", "transcript": "今天北京天气怎么样？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-04-t01", "transcript": "帮我定一个明天早上七点的闹钟。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-04-t02", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-04-t03", "transcript": "给我推荐一本好看的小说。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-04-t04", "transcript": "哦，这样啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-04-t05", "transcript": "帮我查一下明天的天气。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-05-t00", "transcript": "帮我算一下，十五乘以二十四。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-05-t01", "transcript": "北京到上海坐高铁要多久？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-05-t02", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-05-t03", "transcript": "世界上最高的山是哪座？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-05-t04", "transcript": "明白了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-05-t05", "transcript": "你能讲讲唐朝的历史吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-06-t00", "transcript": "帮我算一下，十五乘以二十四。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-06-t01", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-06-t02", "transcript": "明天是星期几？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-06-t03", "transcript": "嗯，对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-06-t04", "transcript": "熊猫主要吃什么？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-06-t05", "transcript": "放一首轻松一点的歌。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-06-t06", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-07-t00", "transcript": "跑步前需要热身吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-07-t01", "transcript": "一年有多少天？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-07-t02", "transcript": "你们先吃吧，我一会儿就来。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-07-t03", "transcript": "爸，你手机响了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-07-t04", "transcript": "提醒我下午三点开会。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-07-t05", "transcript": "推荐几个适合周末去的地方。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-07-t06", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-07-t07", "transcript": "为什么天空是蓝色的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-08-t00", "transcript": "西红柿是水果还是蔬菜？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-08-t01", "transcript": "中国有多少个省份？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-08-t02", "transcript": "对对对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-08-t03", "transcript": "熊猫主要吃什么？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-08-t04", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-mid-08-t05", "transcript": "帮我算一下十五乘以二十四。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-09-t00", "transcript": "帮我查一下明天的天气。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-09-t01", "transcript": "等我一下，我换个衣服。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-09-t02", "transcript": "一公里大概要走多久？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-09-t03", "transcript": "呃。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-09-t04", "transcript": "推荐几个适合周末去的地方。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-09-t05", "transcript": "帮我算一下十五乘以二十四。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-mid-09-t06", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-00-t00", "transcript": "长城一共有多长啊？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-00-t01", "transcript": "行。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-00-t02", "transcript": "一年有多少天？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-00-t03", "transcript": "明白了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-00-t04", "transcript": "嗯，对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-00-t05", "transcript": "地球离太阳有多远？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-00-t06", "transcript": "哦，这样啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-01-t00", "transcript": "帮我把这句话翻译成英文。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-01-t01", "transcript": "嗯，嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-01-t02", "transcript": "妈，我等会儿下楼吃饭。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-01-t03", "transcript": "你能讲讲唐朝的历史吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-01-t04", "transcript": "宝贝，把鞋穿上，我们要出门了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-01-t05", "transcript": "你们先吃吧，我一会儿就来。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-02-t00", "transcript": "提醒我下午三点开会。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-02-t01", "transcript": "好。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-02-t02", "transcript": "明白了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-02-t03", "transcript": "地球离太阳有多远？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-02-t04", "transcript": "行。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-02-t05", "transcript": "世界上最高的山是哪座？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-02-t06", "transcript": "嗯，对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-02-t07", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-03-t00", "transcript": "为什么天空是蓝色的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-03-t01", "transcript": "小心点儿，别把水打翻了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-03-t02", "transcript": "啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-03-t03", "transcript": "跑步前需要热身吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-03-t04", "transcript": "哈哈哈哈哈！", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-03-t05", "transcript": "呃。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-04-t00", "transcript": "今天北京天气怎么样？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-04-t01", "transcript": "啊啊！", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-04-t02", "transcript": "行。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-04-t03", "transcript": "长城一共有多长？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-04-t04", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-04-t05", "transcript": "好。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-05-t00", "transcript": "世界上最高的山是哪座？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-05-t01", "transcript": "啊啊啊！", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-05-t02", "transcript": "宝贝，把鞋穿上，我们要出门了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-05-t03", "transcript": "熊猫主要吃什么？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-05-t04", "transcript": "好。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-05-t05", "transcript": "老婆，帮我拿一下遥控器。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-05-t06", "transcript": "跑步前需要热身吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-05-t07", "transcript": "啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-06-t00", "transcript": "一公里大概要走多久？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-06-t01", "transcript": "好。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-06-t02", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-06-t03", "transcript": "月亮为什么会有圆缺？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-06-t04", "transcript": "好的。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-06-t05", "transcript": "提醒我下午三点开会。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-06-t06", "transcript": "哦哦。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-06-t07", "transcript": "嗯，对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-07-t00", "transcript": "一年有多少天？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-07-t01", "transcript": "行。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-07-t02", "transcript": "喂，你到哪了？我马上出门。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-07-t03", "transcript": "长城一共有多长？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-07-t04", "transcript": "中国有多少个省份？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-07-t05", "transcript": "嗯嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-07-t06", "transcript": "嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-08-t00", "transcript": "世界上最高的山是哪座？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-08-t01", "transcript": "明白了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-08-t02", "transcript": "行。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-08-t03", "transcript": "熊猫主要吃什么？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-08-t04", "transcript": "哦，这样啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S1-high-08-t05", "transcript": "嗯，对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-09-t00", "transcript": "世界上最高的山是哪座？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-09-t01", "transcript": "啊。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-09-t02", "transcript": "喂，你到哪儿了？我马上出门。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-09-t03", "transcript": "光速是多少？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-09-t04", "transcript": "老婆，帮我拿一下遥控器。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "tune", "id": "tune-S2-high-09-t05", "transcript": "妈，我等会儿下楼吃饭。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-00-t00", "transcript": "为什么海水是咸的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-00-t01", "transcript": "帮我把客厅的灯关掉。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-00-t02", "transcript": "企鹅生活在哪里？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-00-t03", "transcript": "把闹钟改到八点半。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-00-t04", "transcript": "对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-00-t05", "transcript": "大象能活多少年？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-01-t00", "transcript": "你能讲讲长城是怎么修的吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-01-t01", "transcript": "刚才那首歌叫什么名字？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-01-t02", "transcript": "你作业写完了没有？", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-01-t03", "transcript": "上海明天会下雨吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-01-t04", "transcript": "念一首唐诗给我听。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-01-t05", "transcript": "帮我把客厅的灯关掉。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-01-t06", "transcript": "企鹅生活在哪里？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-02-t00", "transcript": "企鹅生活在哪里？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-02-t01", "transcript": "你能讲讲长城是怎么修的吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-02-t02", "transcript": "给我推荐一部好看的电影。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-02-t03", "transcript": "懂了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-02-t04", "transcript": "把闹钟改到八点半。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-02-t05", "transcript": "刚才那首歌叫什么名字？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-02-t06", "transcript": "帮我把客厅的灯关掉。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-03-t00", "transcript": "帮我把客厅的灯关掉。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-03-t01", "transcript": "你作业写完了没有？", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-03-t02", "transcript": "念一首唐诗给我听。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-03-t03", "transcript": "你能讲讲长城是怎么修的吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-03-t04", "transcript": "老公，你把垃圾带下去。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-03-t05", "transcript": "刚才那首歌叫什么名字？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-03-t06", "transcript": "喝牛奶对睡眠有帮助吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-low-03-t07", "transcript": "大象能活多少年啊？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-04-t00", "transcript": "念一首唐诗给我听。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-04-t01", "transcript": "对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-04-t02", "transcript": "把闹钟改到八点半。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-04-t03", "transcript": "为什么海水是咸的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-04-t04", "transcript": "太阳系有几颗行星？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-04-t05", "transcript": "帮我查一下最近的加油站。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-low-04-t06", "transcript": "三乘以七等于多少？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-00-t00", "transcript": "你能讲讲长城是怎么修的吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-00-t01", "transcript": "嗯哼。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-00-t02", "transcript": "为什么海水是咸的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-00-t03", "transcript": "给我推荐一部好看的电影。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-00-t04", "transcript": "三乘以七等于多少？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-00-t05", "transcript": "对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-mid-01-t00", "transcript": "喝牛奶对睡眠有帮助吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-mid-01-t01", "transcript": "你作业写完了没有？", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-mid-01-t02", "transcript": "有道理。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-mid-01-t03", "transcript": "杭州有什么好玩的地方？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-mid-01-t04", "transcript": "帮我查一下最近的加油站。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-mid-01-t05", "transcript": "上海明天会下雨吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-02-t00", "transcript": "企鹅生活在哪里？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-02-t01", "transcript": "你能讲讲长城是怎么修的吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-02-t02", "transcript": "有道理。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-02-t03", "transcript": "嗯哼。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-02-t04", "transcript": "帮我查一下最近的加油站。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-02-t05", "transcript": "杭州有什么好玩的地方？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-02-t06", "transcript": "对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-mid-03-t00", "transcript": "太阳系有几颗行星？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-mid-03-t01", "transcript": "喝牛奶对睡眠有帮助吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-mid-03-t02", "transcript": "帮我把客厅的灯关掉。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-mid-03-t03", "transcript": "小明，快过来吃饭了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-mid-03-t04", "transcript": "呃，嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-mid-03-t05", "transcript": "给我推荐一部好看的电影。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-mid-03-t06", "transcript": "懂了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-04-t00", "transcript": "太阳系有几颗行星？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-04-t01", "transcript": "懂了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-04-t02", "transcript": "给我推荐一部好看的电影。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-04-t03", "transcript": "可以。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-04-t04", "transcript": "有道理。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-04-t05", "transcript": "大象能活多少年？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-04-t06", "transcript": "上海明天会下雨吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-mid-04-t07", "transcript": "为什么海水是咸的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-00-t00", "transcript": "企鹅生活在哪里？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-00-t01", "transcript": "嗯哼。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-00-t02", "transcript": "好嘞。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-00-t03", "transcript": "上海明天会下雨吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-00-t04", "transcript": "哦。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-00-t05", "transcript": "有道理。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-high-01-t00", "transcript": "刚才那首歌叫什么名字啊？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-high-01-t01", "transcript": "小明，快过来吃饭了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-high-01-t02", "transcript": "啊，嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-high-01-t03", "transcript": "你能讲讲长城是怎么修的吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-high-01-t04", "transcript": "嗯嗯嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-high-01-t05", "transcript": "上海明天会下雨吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-high-01-t06", "transcript": "喂，你好，快递放门口就行。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-02-t00", "transcript": "大象能活多少年？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-02-t01", "transcript": "嗯，嗯嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-02-t02", "transcript": "对。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-02-t03", "transcript": "刚才那首歌叫什么名字？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-02-t04", "transcript": "好嘞。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-02-t05", "transcript": "为什么海水是咸的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-02-t06", "transcript": "哦。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-02-t07", "transcript": "有道理。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-high-03-t00", "transcript": "企鹅生活在哪里？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-high-03-t01", "transcript": "哦。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-high-03-t02", "transcript": "喂，你好，快递放门口就行。", "reply": false, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-high-03-t03", "transcript": "上海明天会下雨吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-high-03-t04", "transcript": "呃。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S2-high-03-t05", "transcript": "奶奶要我放桌上了。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-04-t00", "transcript": "为什么海水是咸的？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-04-t01", "transcript": "有道理。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-04-t02", "transcript": "嗯哼。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-04-t03", "transcript": "喝牛奶对睡眠有帮助吗？", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-04-t04", "transcript": "念一首唐诗给我听。", "reply": true, "answer": "YES", "token_ids": [14004]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-04-t05", "transcript": "哦。", "reply": false, "answer": "NO", "token_ids": [8996]}
+{"variant": "sidetalk-fewshot", "split": "heldout", "id": "heldout-S1-high-04-t06", "transcript": "嗯嗯嗯。", "reply": false, "answer": "NO", "token_ids": [8996]}
