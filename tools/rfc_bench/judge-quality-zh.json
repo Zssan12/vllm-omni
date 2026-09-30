@@ -1,0 +1,1470 @@
+[
+ {
+  "id": "A-request-0",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "今天北京天气怎么样？",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "A-request-1",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我定一个明天早上七点的闹钟。",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "A-request-2",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你刚才说的第二点我没听懂，再讲一遍。",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "A-request-3",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "一加一等于几？",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "A-request-4",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "给我讲个笑话吧。",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "A-request-5",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "把音乐声音调小一点。",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "A-request-6",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "我想订两个人今晚的位子。",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "A-request-7",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你叫什么名字？",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "B-backchannel-0",
+  "group": "B-backchannel",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "好的，已经帮你设置好了明早七点的闹钟。"
+    }
+   ],
+   "transcript": "嗯嗯",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "B-backchannel-1",
+  "group": "B-backchannel",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "消息已经发送了。"
+    }
+   ],
+   "transcript": "好的",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "B-backchannel-2",
+  "group": "B-backchannel",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "明天北京晴，最高二十五度。"
+    }
+   ],
+   "transcript": "哦",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "B-backchannel-3",
+  "group": "B-backchannel",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "已经帮你把音量调小了。"
+    }
+   ],
+   "transcript": "嗯",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "B-backchannel-4",
+  "group": "B-backchannel",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "这就是造纸术的由来。"
+    }
+   ],
+   "transcript": "行",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "C-short-answer-0",
+  "group": "C-short-answer",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "需要我继续讲吗？"
+    }
+   ],
+   "transcript": "嗯",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "C-short-answer-1",
+  "group": "C-short-answer",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "你想听流行还是古典？"
+    }
+   ],
+   "transcript": "古典",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "C-short-answer-2",
+  "group": "C-short-answer",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "要设置几点的闹钟？"
+    }
+   ],
+   "transcript": "七点",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "C-short-answer-3",
+  "group": "C-short-answer",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "确认下单吗？"
+    }
+   ],
+   "transcript": "对",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "C-short-answer-4",
+  "group": "C-short-answer",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "你是在北京吗？"
+    }
+   ],
+   "transcript": "不是",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "D-incomplete-0",
+  "group": "D-incomplete",
+  "expected": {
+   "turn_complete": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "我想问一下那个",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "D-incomplete-1",
+  "group": "D-incomplete",
+  "expected": {
+   "turn_complete": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我查一下明天",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "D-incomplete-2",
+  "group": "D-incomplete",
+  "expected": {
+   "turn_complete": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "就是说如果我",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "D-incomplete-3",
+  "group": "D-incomplete",
+  "expected": {
+   "turn_complete": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你能不能把那个",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "D-incomplete-4",
+  "group": "D-incomplete",
+  "expected": {
+   "turn_complete": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "我想订一张去上海的",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "E-side-talk-0",
+  "group": "E-side-talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "妈，我等会儿下楼吃饭。",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "E-side-talk-1",
+  "group": "E-side-talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "宝贝把鞋穿上，我们要出门了。",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "E-side-talk-2",
+  "group": "E-side-talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "喂，你到哪了？我马上出门。",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "E-side-talk-3",
+  "group": "E-side-talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你们先吃吧，我一会儿就来。",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "F-noise-0",
+  "group": "F-noise",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "(咳嗽)",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "F-noise-1",
+  "group": "F-noise",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "字幕由Amara.org社区提供",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "F-noise-2",
+  "group": "F-noise",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "F-noise-3",
+  "group": "F-noise",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯……",
+   "assistant_speaking": false
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "G-backchannel-while-speaking-0",
+  "group": "G-backchannel-while-speaking",
+  "expected": {
+   "response_needed": "no",
+   "interrupt_permitted": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "请你详细介绍一下中国的四大发明。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，首先介绍造纸术。东汉时期蔡伦改进了造纸技术……"
+    }
+   ],
+   "transcript": "嗯嗯",
+   "assistant_speaking": true
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   },
+   "interrupt_permitted": {
+    "type": "choice",
+    "instructions": "Should this user input interrupt the assistant currently speaking?",
+    "criteria": {
+     "yes": "Intentional interruption or urgent correction",
+     "no": "Backchannel that should not stop playback",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "G-backchannel-while-speaking-1",
+  "group": "G-backchannel-while-speaking",
+  "expected": {
+   "response_needed": "no",
+   "interrupt_permitted": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "请你详细介绍一下中国的四大发明。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，首先介绍造纸术。东汉时期蔡伦改进了造纸技术……"
+    }
+   ],
+   "transcript": "对对对",
+   "assistant_speaking": true
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   },
+   "interrupt_permitted": {
+    "type": "choice",
+    "instructions": "Should this user input interrupt the assistant currently speaking?",
+    "criteria": {
+     "yes": "Intentional interruption or urgent correction",
+     "no": "Backchannel that should not stop playback",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "G-backchannel-while-speaking-2",
+  "group": "G-backchannel-while-speaking",
+  "expected": {
+   "response_needed": "no",
+   "interrupt_permitted": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "请你详细介绍一下中国的四大发明。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，首先介绍造纸术。东汉时期蔡伦改进了造纸技术……"
+    }
+   ],
+   "transcript": "哈哈",
+   "assistant_speaking": true
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   },
+   "interrupt_permitted": {
+    "type": "choice",
+    "instructions": "Should this user input interrupt the assistant currently speaking?",
+    "criteria": {
+     "yes": "Intentional interruption or urgent correction",
+     "no": "Backchannel that should not stop playback",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "G-backchannel-while-speaking-3",
+  "group": "G-backchannel-while-speaking",
+  "expected": {
+   "response_needed": "no",
+   "interrupt_permitted": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "请你详细介绍一下中国的四大发明。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，首先介绍造纸术。东汉时期蔡伦改进了造纸技术……"
+    }
+   ],
+   "transcript": "(咳嗽)",
+   "assistant_speaking": true
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   },
+   "interrupt_permitted": {
+    "type": "choice",
+    "instructions": "Should this user input interrupt the assistant currently speaking?",
+    "criteria": {
+     "yes": "Intentional interruption or urgent correction",
+     "no": "Backchannel that should not stop playback",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "G-interrupt-0",
+  "group": "G-interrupt",
+  "expected": {
+   "response_needed": "yes",
+   "interrupt_permitted": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "请你详细介绍一下中国的四大发明。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，首先介绍造纸术。东汉时期蔡伦改进了造纸技术……"
+    }
+   ],
+   "transcript": "停一下",
+   "assistant_speaking": true
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   },
+   "interrupt_permitted": {
+    "type": "choice",
+    "instructions": "Should this user input interrupt the assistant currently speaking?",
+    "criteria": {
+     "yes": "Intentional interruption or urgent correction",
+     "no": "Backchannel that should not stop playback",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "G-interrupt-1",
+  "group": "G-interrupt",
+  "expected": {
+   "response_needed": "yes",
+   "interrupt_permitted": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "请你详细介绍一下中国的四大发明。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，首先介绍造纸术。东汉时期蔡伦改进了造纸技术……"
+    }
+   ],
+   "transcript": "等等，我刚才说错了，我想问的是四大名著",
+   "assistant_speaking": true
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   },
+   "interrupt_permitted": {
+    "type": "choice",
+    "instructions": "Should this user input interrupt the assistant currently speaking?",
+    "criteria": {
+     "yes": "Intentional interruption or urgent correction",
+     "no": "Backchannel that should not stop playback",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "G-interrupt-2",
+  "group": "G-interrupt",
+  "expected": {
+   "response_needed": "yes",
+   "interrupt_permitted": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "请你详细介绍一下中国的四大发明。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，首先介绍造纸术。东汉时期蔡伦改进了造纸技术……"
+    }
+   ],
+   "transcript": "不对不对，我问的是明天的天气",
+   "assistant_speaking": true
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   },
+   "interrupt_permitted": {
+    "type": "choice",
+    "instructions": "Should this user input interrupt the assistant currently speaking?",
+    "criteria": {
+     "yes": "Intentional interruption or urgent correction",
+     "no": "Backchannel that should not stop playback",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ },
+ {
+  "id": "G-interrupt-3",
+  "group": "G-interrupt",
+  "expected": {
+   "response_needed": "yes",
+   "interrupt_permitted": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "请你详细介绍一下中国的四大发明。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，首先介绍造纸术。东汉时期蔡伦改进了造纸技术……"
+    }
+   ],
+   "transcript": "别说了，换个话题",
+   "assistant_speaking": true
+  },
+  "questions": {
+   "turn_complete": {
+    "type": "choice",
+    "instructions": "Has the user finished this turn? Use conversation history; do not answer the user.",
+    "criteria": {
+     "yes": "Finished turn",
+     "no": "Incomplete utterance or continuation expected",
+     "unknown": "Insufficient information"
+    }
+   },
+   "response_needed": {
+    "type": "choice",
+    "instructions": "Does the assistant need to produce a response to this input in context? A short answer can be meaningful.",
+    "criteria": {
+     "yes": "A reply is needed",
+     "no": "Acknowledgment or other input that needs no reply",
+     "unknown": "Insufficient information"
+    }
+   },
+   "interrupt_permitted": {
+    "type": "choice",
+    "instructions": "Should this user input interrupt the assistant currently speaking?",
+    "criteria": {
+     "yes": "Intentional interruption or urgent correction",
+     "no": "Backchannel that should not stop playback",
+     "unknown": "Insufficient information"
+    }
+   }
+  }
+ }
+]

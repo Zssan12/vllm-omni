@@ -1,0 +1,782 @@
+[
+ {
+  "id": "A-request-0",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "上海明天会下雨吗？",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "A-request-1",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "帮我把客厅的灯关掉。",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "A-request-2",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "刚才那首歌叫什么名字？",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "A-request-3",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "三乘以七等于多少？",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "A-request-4",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "给我推荐一部好看的电影。",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "A-request-5",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "提醒我下午三点开会。",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "A-request-6",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你能讲讲长城是怎么修的吗？",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "A-request-7",
+  "group": "A-request",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [],
+   "transcript": "把闹钟改到八点半。",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "B-backchannel-0",
+  "group": "B-backchannel",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "好的，已经为你播放周杰伦的歌。"
+    }
+   ],
+   "transcript": "嗯",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "B-backchannel-1",
+  "group": "B-backchannel",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "客厅的灯已经关了。"
+    }
+   ],
+   "transcript": "好",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "B-backchannel-2",
+  "group": "B-backchannel",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "明天上海有小雨，记得带伞。"
+    }
+   ],
+   "transcript": "哦哦",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "B-backchannel-3",
+  "group": "B-backchannel",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "已经提醒你下午三点开会了。"
+    }
+   ],
+   "transcript": "嗯嗯嗯",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "B-backchannel-4",
+  "group": "B-backchannel",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "这部电影讲的是一个太空旅行的故事。"
+    }
+   ],
+   "transcript": "是吗",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "C-short-answer-0",
+  "group": "C-short-answer",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "你想听中文歌还是英文歌？"
+    }
+   ],
+   "transcript": "中文的",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "C-short-answer-1",
+  "group": "C-short-answer",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "闹钟要设在工作日还是每天？"
+    }
+   ],
+   "transcript": "每天",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "C-short-answer-2",
+  "group": "C-short-answer",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "要我继续讲下一个故事吗？"
+    }
+   ],
+   "transcript": "要",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "C-short-answer-3",
+  "group": "C-short-answer",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "你是想订今天的还是明天的？"
+    }
+   ],
+   "transcript": "明天",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "C-short-answer-4",
+  "group": "C-short-answer",
+  "expected": {
+   "turn_complete": "yes",
+   "response_needed": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "assistant",
+     "content": "需要我把音量调大吗？"
+    }
+   ],
+   "transcript": "不用",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "D-incomplete-0",
+  "group": "D-incomplete",
+  "expected": {
+   "turn_complete": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "那个我想",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "D-incomplete-1",
+  "group": "D-incomplete",
+  "expected": {
+   "turn_complete": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你帮我看一下那个",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "D-incomplete-2",
+  "group": "D-incomplete",
+  "expected": {
+   "turn_complete": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "我觉得吧如果",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "D-incomplete-3",
+  "group": "D-incomplete",
+  "expected": {
+   "turn_complete": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "能不能把明天的",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "D-incomplete-4",
+  "group": "D-incomplete",
+  "expected": {
+   "turn_complete": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "请问一下就是",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "E-side-talk-0",
+  "group": "E-side-talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "老公你把垃圾带下去。",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "E-side-talk-1",
+  "group": "E-side-talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "你作业写完了没有？",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "E-side-talk-2",
+  "group": "E-side-talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "喂你好，我是快递，放门口可以吗？",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "E-side-talk-3",
+  "group": "E-side-talk",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "小明快过来吃饭了。",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "F-noise-0",
+  "group": "F-noise",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "(清嗓子)",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "F-noise-1",
+  "group": "F-noise",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "谢谢观看",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "F-noise-2",
+  "group": "F-noise",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "嗯……啊……",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "F-noise-3",
+  "group": "F-noise",
+  "expected": {
+   "response_needed": "no"
+  },
+  "state": {
+   "history": [],
+   "transcript": "（笑声）",
+   "assistant_speaking": false
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed"
+  ]
+ },
+ {
+  "id": "G-backchannel-while-speaking-0",
+  "group": "G-backchannel-while-speaking",
+  "expected": {
+   "response_needed": "no",
+   "interrupt_permitted": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "给我讲讲太阳系有哪些行星。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，太阳系有八大行星，离太阳最近的是水星，然后是金星……"
+    }
+   ],
+   "transcript": "嗯嗯嗯",
+   "assistant_speaking": true
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed",
+   "interrupt_permitted"
+  ]
+ },
+ {
+  "id": "G-backchannel-while-speaking-1",
+  "group": "G-backchannel-while-speaking",
+  "expected": {
+   "response_needed": "no",
+   "interrupt_permitted": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "给我讲讲太阳系有哪些行星。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，太阳系有八大行星，离太阳最近的是水星，然后是金星……"
+    }
+   ],
+   "transcript": "哦",
+   "assistant_speaking": true
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed",
+   "interrupt_permitted"
+  ]
+ },
+ {
+  "id": "G-backchannel-while-speaking-2",
+  "group": "G-backchannel-while-speaking",
+  "expected": {
+   "response_needed": "no",
+   "interrupt_permitted": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "给我讲讲太阳系有哪些行星。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，太阳系有八大行星，离太阳最近的是水星，然后是金星……"
+    }
+   ],
+   "transcript": "哈哈哈",
+   "assistant_speaking": true
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed",
+   "interrupt_permitted"
+  ]
+ },
+ {
+  "id": "G-backchannel-while-speaking-3",
+  "group": "G-backchannel-while-speaking",
+  "expected": {
+   "response_needed": "no",
+   "interrupt_permitted": "no"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "给我讲讲太阳系有哪些行星。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，太阳系有八大行星，离太阳最近的是水星，然后是金星……"
+    }
+   ],
+   "transcript": "(咳嗽)",
+   "assistant_speaking": true
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed",
+   "interrupt_permitted"
+  ]
+ },
+ {
+  "id": "G-interrupt-0",
+  "group": "G-interrupt",
+  "expected": {
+   "response_needed": "yes",
+   "interrupt_permitted": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "给我讲讲太阳系有哪些行星。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，太阳系有八大行星，离太阳最近的是水星，然后是金星……"
+    }
+   ],
+   "transcript": "等一下",
+   "assistant_speaking": true
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed",
+   "interrupt_permitted"
+  ]
+ },
+ {
+  "id": "G-interrupt-1",
+  "group": "G-interrupt",
+  "expected": {
+   "response_needed": "yes",
+   "interrupt_permitted": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "给我讲讲太阳系有哪些行星。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，太阳系有八大行星，离太阳最近的是水星，然后是金星……"
+    }
+   ],
+   "transcript": "不对，我想问的是银河系",
+   "assistant_speaking": true
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed",
+   "interrupt_permitted"
+  ]
+ },
+ {
+  "id": "G-interrupt-2",
+  "group": "G-interrupt",
+  "expected": {
+   "response_needed": "yes",
+   "interrupt_permitted": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "给我讲讲太阳系有哪些行星。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，太阳系有八大行星，离太阳最近的是水星，然后是金星……"
+    }
+   ],
+   "transcript": "行了行了，换个话题吧",
+   "assistant_speaking": true
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed",
+   "interrupt_permitted"
+  ]
+ },
+ {
+  "id": "G-interrupt-3",
+  "group": "G-interrupt",
+  "expected": {
+   "response_needed": "yes",
+   "interrupt_permitted": "yes"
+  },
+  "state": {
+   "history": [
+    {
+     "role": "user",
+     "content": "给我讲讲太阳系有哪些行星。"
+    },
+    {
+     "role": "assistant",
+     "content": "好的，太阳系有八大行星，离太阳最近的是水星，然后是金星……"
+    }
+   ],
+   "transcript": "停，先帮我查一下天气",
+   "assistant_speaking": true
+  },
+  "question_ids": [
+   "turn_complete",
+   "response_needed",
+   "interrupt_permitted"
+  ]
+ }
+]
