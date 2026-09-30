@@ -1,9 +1,12 @@
 """Split each judge-stage request into hops from rj_prof / OMNI_HOP lines (never part of the PR).
 
-    python rj_prof_analysis.py <server.log> [--stage 1] [--skip 9] [--json out.json]
+    python rj_prof_analysis.py <server.log> --client-jsonl <client.jsonl> [--stage 1] [--json out.json]
 
-One row per request sent to --stage (client_send0), in order; --skip drops the
-first N (server warmup + client warmups). Hops, all in ms:
+One row per request sent to --stage (client_send0), in order. With
+--client-jsonl, only requests from sessions the client marked warmup=false are
+kept (the client warms up before *each* clip, so warmups are interleaved with
+measured turns). Without it, --skip drops the first N requests; that is only
+correct when all warmups come first. Hops, all in ms:
 
   send        client_send0 -> client_send1   orchestrator hands the request to ZMQ
   to_engine   client_send1 -> eng_recv       ZMQ + engine input thread decode
@@ -20,6 +23,7 @@ first N (server warmup + client warmups). Hops, all in ms:
 from __future__ import annotations
 
 import argparse
+import base64
 import json
 import re
 import statistics
@@ -123,15 +127,38 @@ def exec_breakdown(row: dict) -> dict[str, float]:
     return res
 
 
+def session_of(request_id: str) -> str | None:
+    """duplex-s.<urlsafe b64 session id>.e.<epoch>.r.<role> -> session id."""
+    parts = request_id.split(".")
+    if len(parts) < 2 or parts[0] != "duplex-s":
+        return None
+    token = parts[1]
+    try:
+        return base64.urlsafe_b64decode(token + "=" * (-len(token) % 4)).decode()
+    except Exception:
+        return None
+
+
+def measured_sessions(path: Path) -> set[str]:
+    rows = [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+    return {r["session_id"] for r in rows if r.get("warmup") is False and r.get("session_id")}
+
+
 def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("log", type=Path)
     p.add_argument("--stage", default="1")
     p.add_argument("--skip", type=int, default=9)
+    p.add_argument("--client-jsonl", type=Path, help="keep only requests from sessions with warmup=false")
     p.add_argument("--json", type=Path)
     a = p.parse_args()
     all_rows = rows(parse(a.log, a.stage))
-    kept = all_rows[a.skip :]
+    if a.client_jsonl:
+        measured = measured_sessions(a.client_jsonl)
+        kept = [r for r in all_rows if session_of(r["req"]) in measured]
+        a.skip = len(all_rows) - len(kept)
+    else:
+        kept = all_rows[a.skip :]
     table = [{**hop_ms(r), **exec_breakdown(r)} for r in kept]
     extra = sorted({k for t in table for k in t if k.startswith(("run:", "overlap:"))})
     summary = {}
@@ -145,7 +172,8 @@ def main() -> None:
                 "min": round(vals[0], 2),
                 "max": round(vals[-1], 2),
             }
-    print(f"requests: {len(all_rows)} total, {len(kept)} after skipping {a.skip}")
+    how = "matched to measured client sessions" if a.client_jsonl else f"after skipping the first {a.skip}"
+    print(f"requests: {len(all_rows)} total, {len(kept)} kept ({how})")
     print(f"{'hop':<34}{'n':>4}{'p50':>9}{'p95':>9}{'min':>9}{'max':>9}")
     for hop, s in summary.items():
         print(f"{hop:<34}{s['n']:>4}{s['p50']:>9}{s['p95']:>9}{s['min']:>9}{s['max']:>9}")

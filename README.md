@@ -30,13 +30,13 @@ in this order: `tools/response_judge/timing_patch.py`, then
 - Python packages used by the tools beyond vLLM/torch: `PyYAML`, `jinja2`
   (`qwen3_prompt_equality.py`), `nvidia-ml-py`/`pynvml` (the standalone
   timing scripts) and, for LAYA parity only, the `laya` package 0.3.20
-  (`--laya-pkg <dir>`). The runner and Realtime clients also need `psutil`
-  (`run_arm.py`), `Pillow` (image frames in the client) and `websockets`
-  (the duplex client); these are in vllm-omni's `dev` extras, not in the
-  base install.
+  (`--laya-pkg <dir>`). The runner and Realtime clients also need
+  `pip install psutil Pillow websockets` (`run_arm.py`, the client's image
+  frames, and the duplex client).
 - Offline model directories. Replace every `/path/to/models/...` in the YAML
-  files with your paths; `run_arm.py --models` only locates the host model and
-  the TTS tokenizer and does not rewrite the YAML. Use absolute paths for the
+  files with your paths; `run_arm.py --models` must contain `AURA-88ee5506/` and
+  `Qwen3-TTS-12Hz-1.7B-CustomVoice/` (it takes the host model and the TTS
+  tokenizer from there) and does not rewrite the YAML. Use absolute paths for the
   source tree, configs, audio and output directories, because the runner
   starts the server from the source tree.
 
@@ -140,7 +140,7 @@ RJ_PROF_STAGES=1 python $C/tools/response_judge/run_arm.py --code $W/code-prof \
     --config $C/configs/compact-32gb/judge-laya-graph-capture-sizes.yaml --name on-laya --mode on --out $W/on
 cp $W/off/onoff-off.jsonl $W/off/server-off.log $W/on/
 python $C/tools/rfc_bench/analyze_onoff.py --directory $W/on
-python $C/tools/response_judge/rj_prof_analysis.py $W/on/on-laya.server.log
+python $C/tools/response_judge/rj_prof_analysis.py $W/on/on-laya.server.log --client-jsonl $W/on/on-laya.jsonl
 ```
 
 For the eager baseline, set `ORCH=0` and use `judge-laya-eager.yaml`. Each
@@ -160,11 +160,19 @@ One RTX 4080 SUPER 32 GB, compact profile, LAYA judge, one session at a time.
 - **Judge stage** = submit → output back at the orchestrator, over all
   **22 measured judge requests**.
 
+> Correction: the first version of `rj_prof_analysis.py` skipped the first nine
+> requests, assuming all warmups come first. The client warms up before *each*
+> clip, so that subset held 6 warmups and missed 6 measured turns. The script
+> now keeps only requests from sessions the client marked `warmup=false`
+> (`--client-jsonl`). Judge-stage medians moved by less than 1 ms except the
+> CUDA-graph run with capture sizes up to 2 (37.5 → 39.7 ms). The added-latency
+> figures were never affected: `analyze_onoff.py` matches client rows directly.
+
 | Setting | Added latency p50 / p95 | Judge stage p50 |
 | --- | --- | --- |
-| LAYA eager, 1 ms orchestrator poll (two runs) | 43.0 / 45.9 ms; 44.5 / 60.3 ms | 41.2 ms; 40.6 ms |
-| LAYA capture sizes + `VLLM_OMNI_EVENT_DRIVEN_ORCH=1` in both arms (two runs) | 26.1 / 35.9 ms; 28.5 / 29.5 ms | 24.7 ms; 26.5 ms |
-| Reference: the PR update's LAYA overlay (`max_num_seqs: 8`), earlier revision of the update (P10/P11) | 27.2 / 30.8 ms | 20.9 ms |
+| LAYA eager, 1 ms orchestrator poll (two runs) | 43.0 / 45.9 ms; 44.5 / 60.3 ms | 40.6 ms; 40.5 ms |
+| LAYA capture sizes + `VLLM_OMNI_EVENT_DRIVEN_ORCH=1` in both arms (two runs) | 26.1 / 35.9 ms; 28.5 / 29.5 ms | 24.0 ms; 26.6 ms |
+| Reference: the PR update's LAYA overlay (`max_num_seqs: 8`), earlier revision of the update (P10/P11) | 27.2 / 30.8 ms | 21.7 ms |
 
 In P10 the client read `response.metadata.vllm_omni.listen_source ==
 "response_judge"` on all 6 rejected turns.
