@@ -1,4 +1,4 @@
-# Multi-turn judge check (Chinese)
+# Multi-turn check
 
 Data, scripts and raw results for the multi-turn check of the response judge stage
 ([vllm-project/vllm-omni#8316](https://github.com/vllm-project/vllm-omni/pull/8316)).
