@@ -1,0 +1,237 @@
+diff --git a/tests/engine/duplex/test_session_runner.py b/tests/engine/duplex/test_session_runner.py
+index c51fc24..4bdfa76 100644
+--- a/tests/engine/duplex/test_session_runner.py
++++ b/tests/engine/duplex/test_session_runner.py
+@@ -926,6 +926,139 @@ async def test_direct_response_listen_still_emits_response_done_after_continuati
+         await close_harness(h)
+ 
+ 
++async def _open_turn_commit_harness() -> Harness:
++    """A session whose model gets one stage request per turn (no resumable core request)."""
++    from dataclasses import replace
++
++    h = await open_harness()
++    h.session.capabilities = replace(h.session.capabilities, supports_core_resumable_request=False)
++    return h
++
++
++def _terminal_listen_result(request_id: str, turn_id: int | None) -> dict[str, object]:
++    """A terminal listen as a plugin's data plane projects a silent turn.
++
++    This is what ends a turn the model (or a response judge) chose not to
++    answer: listen, end of turn, abort the turn's request.
++    """
++    result: dict[str, object] = {
++        "is_listen": True,
++        "end_of_turn": True,
++        "model_listen": True,
++        "reason": "model_listen",
++        "data_plane_request_id": request_id,
++        "abort_data_plane_request": True,
++    }
++    if turn_id is not None:
++        result["model_turn_id"] = turn_id
++    return result
++
++
++async def _send_model_result(h: Harness, result: dict[str, object]) -> list[DuplexEvent]:
++    await h.runner.model._send_one_model_output_event(result, expected_epoch=h.session.epoch)
++    return await h.settle()
++
++
++@pytest.mark.asyncio
++@pytest.mark.parametrize("bound_turn", [False, True], ids=["unbound", "turn-still-bound"])
++@pytest.mark.parametrize("explicit_turn", [True, False], ids=["model-turn", "turn-from-request-id"])
++async def test_terminal_listen_without_response_lets_the_next_turn_through(
++    explicit_turn: bool, bound_turn: bool
++) -> None:
++    """A silent turn must end the turn even when no response was opened.
++
++    The terminal listen used to release the request without completing the
++    model turn, so the next append reused the old turn's request id and the
++    session kept answering with listen only. Without an explicit model turn,
++    the turn comes from the ephemeral request id. A response-turn binding left
++    on the finished turn must not pin the next append to it either.
++    """
++    h = await _open_turn_commit_harness()
++    try:
++        await h.run(append_audio())
++        first_id = h.port.submissions[-1].context.request_id
++        turn = h.session.turn_id
++        assert h.session.active_response_id is None
++        if bound_turn:
++            h.session.bind_response_turn(turn)
++
++        events = await _send_model_result(h, _terminal_listen_result(first_id, turn if explicit_turn else None))
++        assert types(events) == ["response.listen"]
++        assert h.session.turn_id == turn + 1
++        assert h.session.fence.turn_id == turn + 1
++
++        await h.run(append_audio())
++        second_id = h.port.submissions[-1].context.request_id
++        assert second_id != first_id
++        assert f"-turn{turn + 1}" in second_id
++        await h.deliver_and_settle(tts_output(second_id, samples=24000, text="ok", turn_id=turn + 1))
++        assert h.session.active_response_id is not None
++    finally:
++        await close_harness(h)
++
++
++@pytest.mark.asyncio
++async def test_terminal_listen_with_continuations_left_still_ends_the_turn() -> None:
++    """Same with an active response whose continuation budget is not spent."""
++    h = await _open_turn_commit_harness()
++    try:
++        await h.run(append_audio())
++        first_id = h.port.submissions[-1].context.request_id
++        turn = h.session.turn_id
++        await h.deliver_and_settle(tts_output(first_id, samples=24000, text="ok"))
++        response_id = h.session.active_response_id
++        assert response_id is not None
++        assert h.runner.model.response_continuations_remaining(response_id)
++
++        events = await _send_model_result(h, _terminal_listen_result(first_id, turn))
++        assert "response.listen" in types(events)
++        assert find(events, "response.done").response_id == response_id
++        assert h.session.active_response_id is None
++        assert h.session.turn_id == turn + 1
++
++        await h.run(append_audio())
++        second_id = h.port.submissions[-1].context.request_id
++        assert f"-turn{turn + 1}" in second_id
++    finally:
++        await close_harness(h)
++
++
++@pytest.mark.asyncio
++async def test_late_terminal_listen_of_a_completed_turn_is_ignored(monkeypatch: pytest.MonkeyPatch) -> None:
++    """A repeated or late listen for a finished turn must not touch the next one.
++
++    It arrives after the turn completed and before the next append, when the
++    request-id check still lets an auto-response output through: it must not
++    commit its context again, emit another listen or abort anything.
++    """
++    h = await _open_turn_commit_harness()
++    try:
++        committed: list[str] = []
++        plugin = h.runner.model._ctx.plugin
++        monkeypatch.setattr(
++            plugin, "commit_model_context", lambda *, session_id, assistant_text: committed.append(assistant_text)
++        )
++        await h.run(append_audio())
++        first_id = h.port.submissions[-1].context.request_id
++        turn = h.session.turn_id
++        listen = {**_terminal_listen_result(first_id, turn), "model_context_text": "<silent>"}
++        await _send_model_result(h, listen)
++        assert h.session.turn_id == turn + 1
++        assert committed == ["<silent>"]
++        aborts = len(h.port.aborts)
++
++        events = await _send_model_result(h, dict(listen))
++        assert events == []
++        assert committed == ["<silent>"]
++        assert h.session.turn_id == turn + 1
++        assert len(h.port.aborts) == aborts
++
++        await h.run(append_audio())
++        assert f"-turn{turn + 1}" in h.port.submissions[-1].context.request_id
++    finally:
++        await close_harness(h)
++
++
+ @pytest.mark.asyncio
+ async def test_listen_decision_on_a_resumable_request_keeps_the_turn_going() -> None:
+     """Same unfinished listen, budget left: it must schedule the next unit.
+diff --git a/vllm_omni/engine/duplex/session/model_channel.py b/vllm_omni/engine/duplex/session/model_channel.py
+index e2bccf9..8be06ad 100644
+--- a/vllm_omni/engine/duplex/session/model_channel.py
++++ b/vllm_omni/engine/duplex/session/model_channel.py
+@@ -41,6 +41,7 @@ from vllm_omni.engine.duplex.contracts import (
+     duplex_data_plane_request_info,
+     duplex_same_turn_request_ids,
+     duplex_session_id_from_request_id,
++    duplex_turn_id_from_request_id,
+ )
+ from vllm_omni.engine.duplex.plugin import (
+     DuplexRuntimeConfigError,
+@@ -713,6 +714,25 @@ class ModelChannel:
+         session.release_resources_for_request_ids(release_ids)
+         await self._ctx.stage_port.cleanup(release_ids)
+ 
++    def _terminal_listen_turn_id(
++        self,
++        model_result: dict[str, object],
++        *,
++        model_turn_id: int | None,
++        data_plane_request_id: object,
++    ) -> int | None:
++        """The model turn an auto-response terminal listen ends, or None if it is not one.
++
++        A terminal listen (``end_of_turn``) is how a silent turn ends: the model
++        or a response judge chose not to reply. Without an explicit model turn,
++        an ephemeral request names its turn in its id.
++        """
++        if not self._out.auto_responds() or model_result.get("end_of_turn") is not True:
++            return None
++        if model_turn_id is not None:
++            return model_turn_id
++        return duplex_turn_id_from_request_id(data_plane_request_id if isinstance(data_plane_request_id, str) else None)
++
+     async def _on_model_listen(
+         self,
+         model_result: dict[str, object],
+@@ -774,12 +794,29 @@ class ModelChannel:
+         }
+         if response_id is not None:
+             payload["response_id"] = response_id
++        ended_turn_id = self._terminal_listen_turn_id(
++            model_result, model_turn_id=model_turn_id, data_plane_request_id=data_plane_request_id
++        )
+         self._attach_runtime_metadata(payload, model_result)
+         self._out.emit(payload)
++        if ended_turn_id is not None:
++            # A silent turn is over whether or not a response was open or had
++            # continuations left. Complete it before awaiting anything, so the
++            # next append gets the next turn (and a new request id) instead of
++            # reusing this turn's finished request.
++            model_state.clear_continuation()
++            session.complete_model_turn(ended_turn_id)
++            bound_turn_id = session.active_response_turn_id
++            if response_id is None and bound_turn_id is not None and bound_turn_id <= ended_turn_id:
++                session.bind_response_turn(None)
+         if model_result.get("abort_data_plane_request") is True and isinstance(data_plane_request_id, str):
+             # stage_port.abort_requests expects a list of ids; a bare str is
+             # iterated as characters and never matches the prewarmed binding.
+             await self._abort_request([data_plane_request_id], notify=False)
++        if response_id is not None and session.active_response_id != response_id:
++            # The response ended elsewhere (barge-in, cancel) while the request
++            # was being aborted; it already has its terminal event.
++            response_id = None
+         if response_id is not None:
+             if not auto_response and self.response_continuations_remaining(response_id):
+                 self._ctx.services.spawn(
+@@ -792,7 +829,7 @@ class ModelChannel:
+                 return close_reason, emitted_response
+             if auto_response:
+                 model_state.clear_continuation()
+-                if not auto_continuations_remaining:
++                if ended_turn_id is None and not auto_continuations_remaining:
+                     completed_turn_id = model_turn_id
+                     if completed_turn_id is None:
+                         completed_turn_id = session.active_response_turn_id
+@@ -870,6 +907,15 @@ class ModelChannel:
+             self._attach_runtime_metadata(payload, model_result)
+             self._out.emit(payload)
+             return close_reason, emitted_response
++        if is_listen is True and not draining:
++            ended_turn_id = self._terminal_listen_turn_id(
++                model_result, model_turn_id=model_turn_id, data_plane_request_id=data_plane_request_id
++            )
++            if ended_turn_id is not None and ended_turn_id < session.turn_id:
++                # A late or repeated terminal listen of a turn that is already
++                # complete: the next turn owns the session, its context and its
++                # requests. Drop it before it commits model context.
++                return close_reason, emitted_response
+         context_text = model_result.get("model_context_text")
+         if isinstance(context_text, str) and isinstance(data_plane_request_id, str):
+             self._ctx.plugin.commit_model_context(

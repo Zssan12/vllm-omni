@@ -1,0 +1,88 @@
+cmd: python -m pytest -p no:cacheprovider -rA tests/engine/duplex/test_session_aura_silent_turn.py
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: <laptop-dir>
+configfile: pyproject.toml
+plugins: asyncio-1.4.0, anyio-4.15.1, platformdirs-4.12.0, xdist-3.8.0, mock-3.15.1
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 1 item
+
+tests/engine/duplex/test_session_aura_silent_turn.py F                   [100%]
+
+=================================== FAILURES ===================================
+__________ test_aura_silence_lets_the_next_turn_of_the_session_speak ___________
+
+    def test_aura_silence_lets_the_next_turn_of_the_session_speak() -> None:
+        plugin = AuraDuplexPlugin(_encode_audio)
+        session = DuplexEngineSession(
+            session_id="s-aura-silent",
+            config=DuplexSessionConfig(model="aura", modalities=["text", "audio"]),
+            capabilities=DuplexCapabilities(supports_core_resumable_request=False),
+        )
+        out = _Out()
+        channel = ModelChannel(
+            SimpleNamespace(
+                session=session,
+                plugin=plugin,
+                stage_port=_Port(),
+                model_state=SimpleNamespace(
+                    continuation_owner_id=None, continuation_units=0, clear_continuation=lambda: None
+                ),
+                services=SimpleNamespace(spawn=lambda coro, **_k: coro.close()),
+                run=SimpleNamespace(closing=False),
+            ),
+            out,
+            close_from_runtime=_noop,
+            schedule_silence_continuation=_noop,
+            abort_request=_noop,
+        )
+    
+        async def deliver(output: SimpleNamespace) -> None:
+            for event in plugin.data_plane.project({"data_plane_outputs": [output]}):
+                await channel._send_one_model_output_event(event)
+    
+        silent_id = _next_request_id(session)
+        plugin.data_plane.begin_request(silent_id)
+        session.bind_request(silent_id)
+        asyncio.run(deliver(_thinker_output(silent_id, SILENT_TEXT, finished=True)))
+        assert [event.get("type") for event in out.events] == ["response.listen"]
+    
+        next_id = _next_request_id(session)
+        plugin.data_plane.begin_request(next_id)
+        session.bind_request(next_id)
+        out.events.clear()
+        asyncio.run(deliver(_thinker_output(next_id, "上海明天多云。", finished=False)))
+        assert "response.listen" not in [event.get("type") for event in out.events]
+>       assert session.active_response_id is not None
+E       AssertionError: assert None is not None
+E        +  where None = DuplexEngineSession(session_id='s-aura-silent', config=DuplexSessionConfig(model='aura', modalities=['text', 'audio'],...d=0, config_generation=0, input_seq=0, input_turn_seq=0, created_monotonic=89.764138453, num_stages=1, log_stats=False).active_response_id
+
+tests/engine/duplex/test_session_aura_silent_turn.py:108: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+INFO 10-01 13:17:11 [scheduler.py:288] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 10-01 13:17:11 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+--- Running test: test_aura_silence_lets_the_next_turn_of_the_session_speak
+------------------------------ Captured log setup ------------------------------
+INFO     vllm.config.scheduler:scheduler.py:288 Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO     vllm.config.kernel:kernel.py:416 Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+=============================== warnings summary ===============================
+../../../venvs/omni/lib/python3.12/site-packages/torch/jit/_script.py:365: 14 warnings
+  <laptop-dir> DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+vllm_omni/version.py:55
+  <laptop-dir> RuntimeWarning: vLLM and vLLM-Omni appear to have mismatched major/minor versions:
+   --> vLLM-Omni version 0.25.0.dev0
+   --> vLLM version 0.30.0
+  This will likely cause compatibility issues.
+    warn_if_misaligned_vllm_version()
+
+vllm_omni/protocol/realtime/audio.py:17
+  <laptop-dir> DeprecationWarning: 'audioop' is deprecated and slated for removal in Python 3.13
+    from audioop import alaw2lin, lin2alaw, lin2ulaw, ulaw2lin
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+--- Running Summary
+=========================== short test summary info ============================
+FAILED tests/engine/duplex/test_session_aura_silent_turn.py::test_aura_silence_lets_the_next_turn_of_the_session_speak
+======================== 1 failed, 16 warnings in 0.20s ========================

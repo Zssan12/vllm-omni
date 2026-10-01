@@ -1,0 +1,4 @@
+code-judgefix: 932fd24 + judge-fix.patch
+code-full: 932fd24 + judge-fix.patch + silent-fix.patch
+79696717f3ca400ab039ec99ece7c2bd797010370787ca9f15f7a086f977970c  judge-fix.patch
+1d08a2efd5dbc192f7ebaef26cb600711a7e53559d546cda0df496f27662657b  silent-fix.patch

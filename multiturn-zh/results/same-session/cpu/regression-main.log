@@ -1,0 +1,471 @@
+cmd: python -m pytest -q -p no:cacheprovider -n 8 -rf tests/engine/duplex tests/engine/test_duplex_orchestrator.py tests/engine/test_orchestrator.py tests/model_executor/models/aura_omni tests/model_executor/models/minicpmo_4_5 tests/model_executor/models/nemotron_voicechat tests/model_executor/stage_input_processors -m 'not gpu'
+bringing up nodes...
+bringing up nodes...
+
+........................................................................ [  3%]
+........................................................................ [  7%]
+........................................................................ [ 10%]
+........................................................................ [ 14%]
+........................................................................ [ 18%]
+.........................................................F...F.FFF...... [ 21%]
+.............F.........................s................................ [ 25%]
+........................................................................ [ 29%]
+........................................................................ [ 32%]
+........................................................................ [ 36%]
+........................................................................ [ 40%]
+........................................................................ [ 43%]
+........................................................................ [ 47%]
+........................................................................ [ 51%]
+........................................................................ [ 54%]
+....................F.F......................................FFF.F...... [ 58%]
+............................s.ss..s......................s.............. [ 62%]
+........................................................................ [ 65%]
+........................................................................ [ 69%]
+........................................................................ [ 73%]
+........................................................................ [ 76%]
+........................................................................ [ 80%]
+........................................................................ [ 84%]
+........................................................................ [ 87%]
+........................................................................ [ 91%]
+........................................................................ [ 95%]
+........................................................................ [ 98%]
+.......................                                                  [100%]
+=================================== FAILURES ===================================
+_ test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-unbound] _
+[gw7] linux -- Python 3.12.14 <laptop-dir>
+
+explicit_turn = False, bound_turn = False
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize("bound_turn", [False, True], ids=["unbound", "turn-still-bound"])
+    @pytest.mark.parametrize("explicit_turn", [True, False], ids=["model-turn", "turn-from-request-id"])
+    async def test_terminal_listen_without_response_lets_the_next_turn_through(
+        explicit_turn: bool, bound_turn: bool
+    ) -> None:
+        """A silent turn ends even with no response open, so the next append gets a new turn."""
+        h = await _open_turn_commit_harness()
+        try:
+            await h.run(append_audio())
+            first_id = h.port.submissions[-1].context.request_id
+            turn = h.session.turn_id
+            assert h.session.active_response_id is None
+            if bound_turn:
+                h.session.bind_response_turn(turn)
+    
+            events = await _send_model_result_and_settle(h, _terminal_listen_result(first_id, turn if explicit_turn else None))
+            assert types(events) == ["response.listen"]
+>           assert h.session.turn_id == turn + 1
+E           AssertionError: assert 0 == (0 + 1)
+E            +  where 0 = DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=386.485086782, num_stages=2, log_stats=False).turn_id
+E            +    where DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=386.485086782, num_stages=2, log_stats=False) = Harness(manager=<vllm_omni.engine.duplex.session.manager.DuplexSessionManager object at 0x7f9b0d9a5a30>, port=<tests.e...{'type': 'response.listen', 'session_id': 'duplex-test', 'epoch': 0, 'reason': 'model_listen', 'model_listen': True})]).session
+
+tests/engine/duplex/test_session_runner.py:974: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-unbound]
+___________ test_late_terminal_listen_of_a_completed_turn_is_ignored ___________
+[gw2] linux -- Python 3.12.14 <laptop-dir>
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x712511d24da0>
+
+    @pytest.mark.asyncio
+    async def test_late_terminal_listen_of_a_completed_turn_is_ignored(monkeypatch: pytest.MonkeyPatch) -> None:
+        """A repeated or late listen for a finished turn must not touch the next one.
+    
+        It arrives after the turn completed and before the next append, when the
+        request-id check still lets an auto-response output through: it must not
+        commit its context again, emit another listen or abort anything.
+        """
+        h = await _open_turn_commit_harness()
+        try:
+            committed: list[str] = []
+            plugin = h.runner.model._ctx.plugin
+            monkeypatch.setattr(
+                plugin, "commit_model_context", lambda *, session_id, assistant_text: committed.append(assistant_text)
+            )
+            await h.run(append_audio())
+            first_id = h.port.submissions[-1].context.request_id
+            turn = h.session.turn_id
+            listen = {**_terminal_listen_result(first_id, turn), "model_context_text": "<silent>"}
+            await _send_model_result_and_settle(h, listen)
+>           assert h.session.turn_id == turn + 1
+E           AssertionError: assert 0 == (0 + 1)
+E            +  where 0 = DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=386.636974845, num_stages=2, log_stats=False).turn_id
+E            +    where DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=386.636974845, num_stages=2, log_stats=False) = Harness(manager=<vllm_omni.engine.duplex.session.manager.DuplexSessionManager object at 0x712511d26090>, port=<tests.e...n_id': 'duplex-test', 'epoch': 0, 'reason': 'model_listen', 'model_listen': True, 'vllm_omni': {'model_turn_id': 0}})]).session
+
+tests/engine/duplex/test_session_runner.py:1033: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_late_terminal_listen_of_a_completed_turn_is_ignored
+_______ test_terminal_listen_with_continuations_left_still_ends_the_turn _______
+[gw0] linux -- Python 3.12.14 <laptop-dir>
+
+    @pytest.mark.asyncio
+    async def test_terminal_listen_with_continuations_left_still_ends_the_turn() -> None:
+        """Same with an active response whose continuation budget is not spent."""
+        h = await _open_turn_commit_harness()
+        try:
+            await h.run(append_audio())
+            first_id = h.port.submissions[-1].context.request_id
+            turn = h.session.turn_id
+            await h.deliver_and_settle(tts_output(first_id, samples=24000, text="ok"))
+            response_id = h.session.active_response_id
+            assert response_id is not None
+            assert h.runner.model.response_continuations_remaining(response_id)
+    
+            events = await _send_model_result_and_settle(h, _terminal_listen_result(first_id, turn))
+            assert "response.listen" in types(events)
+            assert find(events, "response.done").response_id == response_id
+            assert h.session.active_response_id is None
+>           assert h.session.turn_id == turn + 1
+E           AssertionError: assert 0 == (0 + 1)
+E            +  where 0 = DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=386.617429488, num_stages=2, log_stats=False).turn_id
+E            +    where DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=386.617429488, num_stages=2, log_stats=False) = Harness(manager=<vllm_omni.engine.duplex.session.manager.DuplexSessionManager object at 0x7c88520639e0>, port=<tests.e...teLimitsUpdated(session_id='duplex-test', epoch=0, event_id='event_6e77bdc92a254fb1add7d3b5515ff83e', rate_limits=())]).session
+
+tests/engine/duplex/test_session_runner.py:1004: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_terminal_listen_with_continuations_left_still_ends_the_turn
+_ test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-turn-still-bound] _
+[gw7] linux -- Python 3.12.14 <laptop-dir>
+
+explicit_turn = False, bound_turn = True
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize("bound_turn", [False, True], ids=["unbound", "turn-still-bound"])
+    @pytest.mark.parametrize("explicit_turn", [True, False], ids=["model-turn", "turn-from-request-id"])
+    async def test_terminal_listen_without_response_lets_the_next_turn_through(
+        explicit_turn: bool, bound_turn: bool
+    ) -> None:
+        """A silent turn ends even with no response open, so the next append gets a new turn."""
+        h = await _open_turn_commit_harness()
+        try:
+            await h.run(append_audio())
+            first_id = h.port.submissions[-1].context.request_id
+            turn = h.session.turn_id
+            assert h.session.active_response_id is None
+            if bound_turn:
+                h.session.bind_response_turn(turn)
+    
+            events = await _send_model_result_and_settle(h, _terminal_listen_result(first_id, turn if explicit_turn else None))
+            assert types(events) == ["response.listen"]
+>           assert h.session.turn_id == turn + 1
+E           AssertionError: assert 0 == (0 + 1)
+E            +  where 0 = DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=386.696394094, num_stages=2, log_stats=False).turn_id
+E            +    where DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=386.696394094, num_stages=2, log_stats=False) = Harness(manager=<vllm_omni.engine.duplex.session.manager.DuplexSessionManager object at 0x7f9b0dca3200>, port=<tests.e...{'type': 'response.listen', 'session_id': 'duplex-test', 'epoch': 0, 'reason': 'model_listen', 'model_listen': True})]).session
+
+tests/engine/duplex/test_session_runner.py:974: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-turn-still-bound]
+_ test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-turn-still-bound] _
+[gw5] linux -- Python 3.12.14 <laptop-dir>
+
+explicit_turn = True, bound_turn = True
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize("bound_turn", [False, True], ids=["unbound", "turn-still-bound"])
+    @pytest.mark.parametrize("explicit_turn", [True, False], ids=["model-turn", "turn-from-request-id"])
+    async def test_terminal_listen_without_response_lets_the_next_turn_through(
+        explicit_turn: bool, bound_turn: bool
+    ) -> None:
+        """A silent turn ends even with no response open, so the next append gets a new turn."""
+        h = await _open_turn_commit_harness()
+        try:
+            await h.run(append_audio())
+            first_id = h.port.submissions[-1].context.request_id
+            turn = h.session.turn_id
+            assert h.session.active_response_id is None
+            if bound_turn:
+                h.session.bind_response_turn(turn)
+    
+            events = await _send_model_result_and_settle(h, _terminal_listen_result(first_id, turn if explicit_turn else None))
+            assert types(events) == ["response.listen"]
+>           assert h.session.turn_id == turn + 1
+E           AssertionError: assert 0 == (0 + 1)
+E            +  where 0 = DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...d=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=386.78662589, num_stages=2, log_stats=False).turn_id
+E            +    where DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...d=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=386.78662589, num_stages=2, log_stats=False) = Harness(manager=<vllm_omni.engine.duplex.session.manager.DuplexSessionManager object at 0x76bb834ed460>, port=<tests.e...n_id': 'duplex-test', 'epoch': 0, 'reason': 'model_listen', 'model_listen': True, 'vllm_omni': {'model_turn_id': 0}})]).session
+
+tests/engine/duplex/test_session_runner.py:974: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-turn-still-bound]
+_ test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-unbound] _
+[gw4] linux -- Python 3.12.14 <laptop-dir>
+
+explicit_turn = True, bound_turn = False
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize("bound_turn", [False, True], ids=["unbound", "turn-still-bound"])
+    @pytest.mark.parametrize("explicit_turn", [True, False], ids=["model-turn", "turn-from-request-id"])
+    async def test_terminal_listen_without_response_lets_the_next_turn_through(
+        explicit_turn: bool, bound_turn: bool
+    ) -> None:
+        """A silent turn ends even with no response open, so the next append gets a new turn."""
+        h = await _open_turn_commit_harness()
+        try:
+            await h.run(append_audio())
+            first_id = h.port.submissions[-1].context.request_id
+            turn = h.session.turn_id
+            assert h.session.active_response_id is None
+            if bound_turn:
+                h.session.bind_response_turn(turn)
+    
+            events = await _send_model_result_and_settle(h, _terminal_listen_result(first_id, turn if explicit_turn else None))
+            assert types(events) == ["response.listen"]
+>           assert h.session.turn_id == turn + 1
+E           AssertionError: assert 0 == (0 + 1)
+E            +  where 0 = DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=387.518424312, num_stages=2, log_stats=False).turn_id
+E            +    where DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=387.518424312, num_stages=2, log_stats=False) = Harness(manager=<vllm_omni.engine.duplex.session.manager.DuplexSessionManager object at 0x752b4e1fcdd0>, port=<tests.e...n_id': 'duplex-test', 'epoch': 0, 'reason': 'model_listen', 'model_listen': True, 'vllm_omni': {'model_turn_id': 0}})]).session
+
+tests/engine/duplex/test_session_runner.py:974: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-unbound]
+___ test_ragged_dit_two_step_decode_matches_per_row_exact_decode[fp32-cache] ___
+[gw2] linux -- Python 3.12.14 <laptop-dir>
+
+bfloat16_attention_cache = False
+
+    @pytest.mark.parametrize(
+        "bfloat16_attention_cache",
+        [False, True],
+        ids=["fp32-cache", "bf16-cache"],
+    )
+    def test_ragged_dit_two_step_decode_matches_per_row_exact_decode(
+        bfloat16_attention_cache: bool,
+    ):
+>       from cosyvoice2.flow.decoder_dit import DiT
+E       ModuleNotFoundError: No module named 'cosyvoice2'
+
+tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py:897: ModuleNotFoundError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_ragged_dit_two_step_decode_matches_per_row_exact_decode[fp32-cache]
+___ test_ragged_dit_two_step_decode_matches_per_row_exact_decode[bf16-cache] ___
+[gw7] linux -- Python 3.12.14 <laptop-dir>
+
+bfloat16_attention_cache = True
+
+    @pytest.mark.parametrize(
+        "bfloat16_attention_cache",
+        [False, True],
+        ids=["fp32-cache", "bf16-cache"],
+    )
+    def test_ragged_dit_two_step_decode_matches_per_row_exact_decode(
+        bfloat16_attention_cache: bool,
+    ):
+>       from cosyvoice2.flow.decoder_dit import DiT
+E       ModuleNotFoundError: No module named 'cosyvoice2'
+
+tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py:897: ModuleNotFoundError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_ragged_dit_two_step_decode_matches_per_row_exact_decode[bf16-cache]
+___ test_setup_cache_misses_when_cfm_graph_padding_is_disabled[after-setup] ____
+[gw7] linux -- Python 3.12.14 <laptop-dir>
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f9b0d4f0380>
+disable_during_setup = False
+
+    @pytest.mark.parametrize("disable_during_setup", [False, True], ids=["after-setup", "during-setup"])
+    def test_setup_cache_misses_when_cfm_graph_padding_is_disabled(monkeypatch, disable_during_setup):
+>       adapter, _, _ = _padded_decode_adapter(bucket_frames=16)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py:1728: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+bucket_frames = 16
+
+    def _padded_decode_adapter(bucket_frames: int) -> tuple[BatchedToken2Wav, int, int]:
+        """Build an adapter over a real ``DiT`` that exercises the CFM path.
+    
+        Returns the adapter, the valid width, and the padding width. Every call
+        seeds the same way, so two adapters built here agree on weights and noise.
+        """
+>       from cosyvoice2.flow.decoder_dit import DiT
+E       ModuleNotFoundError: No module named 'cosyvoice2'
+
+tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py:1704: ModuleNotFoundError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_setup_cache_misses_when_cfm_graph_padding_is_disabled[after-setup]
+___ test_setup_cache_misses_when_cfm_graph_padding_is_disabled[during-setup] ___
+[gw1] linux -- Python 3.12.14 <laptop-dir>
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x73f0f6ed8110>
+disable_during_setup = True
+
+    @pytest.mark.parametrize("disable_during_setup", [False, True], ids=["after-setup", "during-setup"])
+    def test_setup_cache_misses_when_cfm_graph_padding_is_disabled(monkeypatch, disable_during_setup):
+>       adapter, _, _ = _padded_decode_adapter(bucket_frames=16)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py:1728: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+bucket_frames = 16
+
+    def _padded_decode_adapter(bucket_frames: int) -> tuple[BatchedToken2Wav, int, int]:
+        """Build an adapter over a real ``DiT`` that exercises the CFM path.
+    
+        Returns the adapter, the valid width, and the padding width. Every call
+        seeds the same way, so two adapters built here agree on weights and noise.
+        """
+>       from cosyvoice2.flow.decoder_dit import DiT
+E       ModuleNotFoundError: No module named 'cosyvoice2'
+
+tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py:1704: ModuleNotFoundError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_setup_cache_misses_when_cfm_graph_padding_is_disabled[during-setup]
+_____ test_padded_chunk_keeps_the_cross_chunk_caches_on_the_valid_boundary _____
+[gw5] linux -- Python 3.12.14 <laptop-dir>
+
+    def test_padded_chunk_keeps_the_cross_chunk_caches_on_the_valid_boundary():
+        """Caches the next chunk reads must not carry padding.
+    
+        The padded steps still run, so ``step_cnn``/``step_att`` come back with
+        padding-derived values in them. Unless those positions are cleared, the
+        following chunk consumes them as its keys and as its CNN left context.
+        This drives a padded chunk through the real ``DiT`` and checks both caches
+        at the boundary.
+        """
+>       adapter, mel_frames, pad_frames = _padded_decode_adapter(bucket_frames=16)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py:1774: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+bucket_frames = 16
+
+    def _padded_decode_adapter(bucket_frames: int) -> tuple[BatchedToken2Wav, int, int]:
+        """Build an adapter over a real ``DiT`` that exercises the CFM path.
+    
+        Returns the adapter, the valid width, and the padding width. Every call
+        seeds the same way, so two adapters built here agree on weights and noise.
+        """
+>       from cosyvoice2.flow.decoder_dit import DiT
+E       ModuleNotFoundError: No module named 'cosyvoice2'
+
+tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py:1704: ModuleNotFoundError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_padded_chunk_keeps_the_cross_chunk_caches_on_the_valid_boundary
+________________ test_padding_does_not_change_the_valid_frames _________________
+[gw2] linux -- Python 3.12.14 <laptop-dir>
+
+    def test_padding_does_not_change_the_valid_frames():
+        """A padded chunk returns the same valid frames as an exact-width one.
+    
+        Masking takes the padded keys out of the attention and the padded CNN tail
+        never reaches the valid positions, so the only difference between the two
+        runs is the capture shape -- not the audio the chunk produces.
+        """
+>       padded, mel_frames, pad_frames = _padded_decode_adapter(bucket_frames=16)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py:1798: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+bucket_frames = 16
+
+    def _padded_decode_adapter(bucket_frames: int) -> tuple[BatchedToken2Wav, int, int]:
+        """Build an adapter over a real ``DiT`` that exercises the CFM path.
+    
+        Returns the adapter, the valid width, and the padding width. Every call
+        seeds the same way, so two adapters built here agree on weights and noise.
+        """
+>       from cosyvoice2.flow.decoder_dit import DiT
+E       ModuleNotFoundError: No module named 'cosyvoice2'
+
+tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py:1704: ModuleNotFoundError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_padding_does_not_change_the_valid_frames
+=============================== warnings summary ===============================
+../../../venvs/omni/lib/python3.12/site-packages/torch/jit/_script.py:365: 126 warnings
+  <laptop-dir> DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+vllm_omni/version.py:55
+vllm_omni/version.py:55
+vllm_omni/version.py:55
+vllm_omni/version.py:55
+vllm_omni/version.py:55
+vllm_omni/version.py:55
+vllm_omni/version.py:55
+vllm_omni/version.py:55
+vllm_omni/version.py:55
+  <laptop-dir> RuntimeWarning: vLLM and vLLM-Omni appear to have mismatched major/minor versions:
+   --> vLLM-Omni version 0.25.0.dev0
+   --> vLLM version 0.30.0
+  This will likely cause compatibility issues.
+    warn_if_misaligned_vllm_version()
+
+vllm_omni/protocol/realtime/audio.py:17
+vllm_omni/protocol/realtime/audio.py:17
+vllm_omni/protocol/realtime/audio.py:17
+vllm_omni/protocol/realtime/audio.py:17
+vllm_omni/protocol/realtime/audio.py:17
+vllm_omni/protocol/realtime/audio.py:17
+vllm_omni/protocol/realtime/audio.py:17
+vllm_omni/protocol/realtime/audio.py:17
+  <laptop-dir> DeprecationWarning: 'audioop' is deprecated and slated for removal in Python 3.13
+    from audioop import alaw2lin, lin2alaw, lin2ulaw, ulaw2lin
+
+../../../venvs/omni/lib/python3.12/site-packages/flashinfer/cute_dsl/availability.py:135
+../../../venvs/omni/lib/python3.12/site-packages/flashinfer/cute_dsl/availability.py:135
+../../../venvs/omni/lib/python3.12/site-packages/flashinfer/cute_dsl/availability.py:135
+../../../venvs/omni/lib/python3.12/site-packages/flashinfer/cute_dsl/availability.py:135
+../../../venvs/omni/lib/python3.12/site-packages/flashinfer/cute_dsl/availability.py:135
+../../../venvs/omni/lib/python3.12/site-packages/flashinfer/cute_dsl/availability.py:135
+../../../venvs/omni/lib/python3.12/site-packages/flashinfer/cute_dsl/availability.py:135
+../../../venvs/omni/lib/python3.12/site-packages/flashinfer/cute_dsl/availability.py:135
+  <laptop-dir> DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+tests/model_executor/models/minicpmo_4_5/test_pipeline.py::TestPipelineTopology::test_thinker_stage
+tests/model_executor/models/minicpmo_4_5/test_pipeline.py::TestPipelineTopology::test_talker_stage
+tests/model_executor/models/minicpmo_4_5/test_pipeline.py::TestPipelineTopology::test_three_stages
+tests/model_executor/models/minicpmo_4_5/test_pipeline.py::TestArchAliases::test_shared_minicpmo_alias_present
+tests/model_executor/models/minicpmo_4_5/test_pipeline.py::TestHfConfigPredicate::test_accepts_4_5_string
+tests/model_executor/models/minicpmo_4_5/test_pipeline.py::TestHfConfigPredicate::test_rejects_2_6_string
+tests/model_executor/models/minicpmo_4_5/test_pipeline.py::TestArchAliases::test_explicit_4_5_arch_presentINFO 10-01 11:56:58 [patch.py:253] NVFP4 W4A4 weight_scale NaN-clamp: skipped — upstream serves ModelOpt linears through the generic ModelOptLinearMethod and rejects any NaN weight_scale (unloaded-scale sentinel), so a load-time error replaces the `!!!!` decode-time collapse.
+INFO 10-01 11:56:58 [patch.py:565] inductor factorable-divisibility patch: installed.
+INFO 10-01 11:56:58 [patch.py:630] [cumem-cuda] CuMemAllocator._python_free_callback patched: asleep guard extended to all platforms.
+
+  <laptop-dir> PytestRemovedIn10Warning: Class-scoped fixture defined as instance method is deprecated.
+  Instance attributes set in this fixture will NOT be visible to test methods,
+  as each test gets a new instance while the fixture runs only once per class.
+  Use @classmethod decorator and set attributes on cls instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#class-scoped-fixture-as-instance-method
+    fixturefunc = resolve_fixture_function(fixturedef, request)
+
+tests/model_executor/models/minicpmo_4_5/test_talker_host_sync_cuda.py::test_talker_step_does_not_synchronize_cuda
+tests/model_executor/models/minicpmo_4_5/test_talker_host_sync_cuda.py::test_talker_condition_upload_does_not_synchronize_cuda
+  <laptop-dir> UserWarning: Synchronization debug mode is a prototype feature and does not yet detect all synchronizing operations (Triggered internally at /__w/pytorch/pytorch/torch/csrc/cuda/Module.cpp:1028.)
+    torch._C._cuda_set_sync_debug_mode(debug_mode)
+
+tests/model_executor/stage_input_processors/test_aura_omni.py::test_aura2tts_builds_qwen3_tts_prompt_information
+tests/model_executor/stage_input_processors/test_aura_omni.py::test_aura2tts_supports_x_vector_only_mode_for_base
+tests/model_executor/stage_input_processors/test_aura_omni.py::test_aura2tts_prefers_streaming_cumulative_text
+tests/model_executor/stage_input_processors/test_aura_omni.py::test_aura2tts_supports_base_ref_audio_override
+tests/model_executor/stage_input_processors/test_aura_omni.py::test_aura2tts_strips_im_end_from_spoken_text
+tests/model_executor/stage_input_processors/test_aura_omni_duplex_history.py::test_aura2tts_skips_history_on_sentence_partial
+  <laptop-dir> DeprecationWarning: Deprecated in 0.9.0: BPE.__init__ will not create from files anymore, try `BPE.from_file` instead
+    BPE(
+
+tests/model_executor/models/minicpmo_4_5/test_talker_batching.py::test_cpu_codec_transport_routes_owned_payloads_with_hidden[False]
+  <laptop-dir> DeprecationWarning: `vllm.entrypoints.openai.api_server` is deprecated and will likely beunsupported in a future version. Use the corresponding function from `vllm.entrypoints.launchers` instead.
+    warnings.warn(
+
+tests/model_executor/models/minicpmo_4_5/test_talker_batching.py::test_cpu_codec_transport_routes_owned_payloads_with_hidden[False]
+  <laptop-dir> PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class CreateAudio(BaseModel):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+--- Running Summary
+=========================== short test summary info ============================
+FAILED tests/engine/duplex/test_session_runner.py::test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-unbound]
+FAILED tests/engine/duplex/test_session_runner.py::test_late_terminal_listen_of_a_completed_turn_is_ignored
+FAILED tests/engine/duplex/test_session_runner.py::test_terminal_listen_with_continuations_left_still_ends_the_turn
+FAILED tests/engine/duplex/test_session_runner.py::test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-turn-still-bound]
+FAILED tests/engine/duplex/test_session_runner.py::test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-turn-still-bound]
+FAILED tests/engine/duplex/test_session_runner.py::test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-unbound]
+FAILED tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py::test_ragged_dit_two_step_decode_matches_per_row_exact_decode[fp32-cache]
+FAILED tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py::test_ragged_dit_two_step_decode_matches_per_row_exact_decode[bf16-cache]
+FAILED tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py::test_setup_cache_misses_when_cfm_graph_padding_is_disabled[after-setup]
+FAILED tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py::test_setup_cache_misses_when_cfm_graph_padding_is_disabled[during-setup]
+FAILED tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py::test_padded_chunk_keeps_the_cross_chunk_caches_on_the_valid_boundary
+FAILED tests/model_executor/models/minicpmo_4_5/test_code2wav_batching.py::test_padding_does_not_change_the_valid_frames
+12 failed, 1949 passed, 6 skipped, 168 warnings in 59.64s

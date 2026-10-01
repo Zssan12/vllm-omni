@@ -1,0 +1,166 @@
+pipeline: aura_omni_judged
+async_chunk: true
+session_mode: duplex
+duplex_session:
+  max_sessions: 1
+connectors:
+  connector_of_shared_memory:
+    name: SharedMemoryConnector
+    extra:
+      codec_streaming: true
+      connector_get_sleep_s: 0.01
+      connector_get_max_wait_first_chunk: 3000
+      connector_get_max_wait: 300
+      codec_chunk_frames: 25
+      codec_left_context_frames: 72
+      initial_codec_chunk_frames: 8
+      decode_cudagraph_capture_sizes:
+      - 25
+      - 73
+      - 97
+      - 169
+      - 325
+stages:
+- stage_id: 0
+  max_num_seqs: 1
+  gpu_memory_utilization: 0.17
+  enforce_eager: true
+  trust_remote_code: true
+  enable_prefix_caching: true
+  async_scheduling: true
+  max_model_len: 1024
+  max_num_batched_tokens: 1024
+  devices: '0'
+  model: /path/to/models/Qwen3-ASR-1.7B
+  default_sampling_params:
+    temperature: 0.0
+    top_p: 1.0
+    top_k: -1
+    max_tokens: 256
+  engine_extras:
+    kv_cache_memory_bytes: 201326592
+    limit_mm_per_prompt:
+      audio: 1
+- stage_id: 1
+  max_num_seqs: 8
+  gpu_memory_utilization: 0.04
+  enforce_eager: false
+  trust_remote_code: true
+  enable_prefix_caching: false
+  async_scheduling: false
+  max_model_len: 1024
+  max_num_batched_tokens: 8192
+  devices: '0'
+  model: /path/to/models/laya-multilingual-vllm
+  model_arch: LayaDecisionModel
+  runner: pooling
+  default_pooling_params:
+    task: classify
+  hf_overrides:
+    laya_question_type: choice
+    response_judge:
+      format: laya
+      question_type: choice
+      instructions: Who is this utterance for, and does the voice assistant need to
+        reply?
+      options:
+        assistant_request: a question or request for the voice assistant (information,
+          explanation, alarm, reminder, music, volume, translation, a story or joke)
+        backchannel: 'an acknowledgement or filler: uh-huh, okay, I see, got it, oh
+          really, hmm, laughter'
+        someone_else: 'talking to a family member or someone nearby: calling them
+          by name or title (mom, dear, honey), asking them to do something, telling
+          them what the speaker is about to do, or on a phone call'
+        noise: a cough, throat clearing, or meaningless noise
+      reply_option: assistant_request
+      threshold: 0.0173
+      state_template: 'The microphone of a home voice assistant picked up the user
+        saying: "{transcript}"'
+  compilation_config:
+    cudagraph_capture_sizes:
+    - 16
+    - 32
+    - 48
+    - 64
+    - 96
+    - 128
+    - 192
+    - 256
+- stage_id: 2
+  max_num_seqs: 1
+  gpu_memory_utilization: 0.6
+  enforce_eager: true
+  trust_remote_code: true
+  enable_prefix_caching: true
+  async_scheduling: true
+  max_model_len: 4096
+  max_num_batched_tokens: 4096
+  devices: '0'
+  model: /path/to/models/AURA-88ee5506
+  model_arch: AuraQwen3VLForConditionalGeneration
+  default_sampling_params:
+    temperature: 0.0
+    top_p: 1.0
+    top_k: -1
+    max_tokens: 128
+    repetition_penalty: 1.0
+    stop_token_ids:
+    - 151669
+    - 151645
+  engine_extras:
+    kv_cache_memory_bytes: 1073741824
+    limit_mm_per_prompt:
+      image: 0
+      video: 16
+    mm_processor_kwargs:
+      max_pixels: 65536
+  skip_mm_profiling: true
+- stage_id: 3
+  max_num_seqs: 1
+  gpu_memory_utilization: 0.16
+  enforce_eager: true
+  trust_remote_code: true
+  enable_prefix_caching: false
+  async_scheduling: true
+  max_num_batched_tokens: 1024
+  max_model_len: 1024
+  devices: '0'
+  output_connectors:
+    to_stage_4: connector_of_shared_memory
+  model: /path/to/models/Qwen3-TTS-12Hz-1.7B-CustomVoice
+  default_sampling_params:
+    temperature: 0.5
+    top_k: 50
+    max_tokens: 240
+    min_tokens: 8
+    repetition_penalty: 1.05
+    stop_token_ids:
+    - 2150
+  subtalker_sampling_params:
+    do_sample: true
+    temperature: 0.5
+    top_k: 50
+    top_p: 1.0
+  engine_extras:
+    kv_cache_memory_bytes: 134217728
+- stage_id: 4
+  max_num_seqs: 1
+  gpu_memory_utilization: 0.05
+  enforce_eager: true
+  trust_remote_code: true
+  enable_prefix_caching: false
+  async_scheduling: true
+  max_num_batched_tokens: 16384
+  max_model_len: 16384
+  devices: '0'
+  input_connectors:
+    from_stage_3: connector_of_shared_memory
+  model: /path/to/models/Qwen3-TTS-12Hz-1.7B-CustomVoice
+  default_sampling_params:
+    temperature: 0.0
+    top_p: 1.0
+    top_k: -1
+    max_tokens: 16384
+    seed: 42
+    repetition_penalty: 1.0
+dtype: bfloat16

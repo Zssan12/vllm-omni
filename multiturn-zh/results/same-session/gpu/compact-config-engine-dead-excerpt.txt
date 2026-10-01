@@ -1,0 +1,4 @@
+[0;36m(APIServer pid=22913)[0;0m ERROR 10-01 10:26:16 [orchestrator.py:487] vllm.exceptions.VLLMValidationError: At most 1 video(s) may be provided in one prompt. (parameter=video)
+[0;36m(APIServer pid=22913)[0;0m ERROR 10-01 10:26:34 [omni_engine_base.py:478] vllm.exceptions.VLLMValidationError: At most 1 video(s) may be provided in one prompt. (parameter=video)
+[0;36m(APIServer pid=22913)[0;0m ERROR 10-01 10:26:34 [async_omni_base.py:397] [DuplexOmni] Engine dead: At most 1 video(s) may be provided in one prompt. (parameter=video)
+[0;36m(APIServer pid=22913)[0;0m vllm.exceptions.VLLMValidationError: At most 1 video(s) may be provided in one prompt. (parameter=video)

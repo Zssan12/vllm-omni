@@ -1,0 +1,97 @@
+cmd: python -m pytest -p no:cacheprovider -rA -k terminal_listen tests/engine/duplex/test_session_runner.py
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: <laptop-dir>
+configfile: pyproject.toml
+plugins: asyncio-1.4.0, anyio-4.15.1, platformdirs-4.12.0, xdist-3.8.0, mock-3.15.1
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 57 items / 51 deselected / 6 selected
+
+tests/engine/duplex/test_session_runner.py .....F                        [100%]
+
+=================================== FAILURES ===================================
+___________ test_late_terminal_listen_of_a_completed_turn_is_ignored ___________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x766b864a1cd0>
+
+    @pytest.mark.asyncio
+    async def test_late_terminal_listen_of_a_completed_turn_is_ignored(monkeypatch: pytest.MonkeyPatch) -> None:
+        """A repeated or late listen for a finished turn must not touch the next one.
+    
+        It arrives after the turn completed and before the next append, when the
+        request-id check still lets an auto-response output through: it must not
+        commit its context again, emit another listen or abort anything.
+        """
+        h = await _open_turn_commit_harness()
+        try:
+            committed: list[str] = []
+            plugin = h.runner.model._ctx.plugin
+            monkeypatch.setattr(
+                plugin, "commit_model_context", lambda *, session_id, assistant_text: committed.append(assistant_text)
+            )
+            await h.run(append_audio())
+            first_id = h.port.submissions[-1].context.request_id
+            turn = h.session.turn_id
+            listen = {**_terminal_listen_result(first_id, turn), "model_context_text": "<silent>"}
+            await _send_model_result_and_settle(h, listen)
+            assert h.session.turn_id == turn + 1
+            assert committed == ["<silent>"]
+            aborts = len(h.port.aborts)
+    
+            events = await _send_model_result_and_settle(h, dict(listen))
+>           assert events == []
+E           AssertionError: assert [Listen(sessi...urn_id': 0}})] == []
+E             
+E             Left contains one more item: Listen(session_id='duplex-test', epoch=0, event_id='event_a41de431bd2341fa86002427cf4bef6e', response_id=None, details...ion_id': 'duplex-test', 'epoch': 0, 'reason': 'model_listen', 'model_listen': True, 'vllm_omni': {'model_turn_id': 0}})
+E             Use -v to get more diff
+
+tests/engine/duplex/test_session_runner.py:1038: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_late_terminal_listen_of_a_completed_turn_is_ignored
+=============================== warnings summary ===============================
+../../../venvs/omni/lib/python3.12/site-packages/torch/jit/_script.py:365: 14 warnings
+  <laptop-dir> DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+vllm_omni/version.py:55
+  <laptop-dir> RuntimeWarning: vLLM and vLLM-Omni appear to have mismatched major/minor versions:
+   --> vLLM-Omni version 0.25.0.dev0
+   --> vLLM version 0.30.0
+  This will likely cause compatibility issues.
+    warn_if_misaligned_vllm_version()
+
+vllm_omni/protocol/realtime/audio.py:17
+  <laptop-dir> DeprecationWarning: 'audioop' is deprecated and slated for removal in Python 3.13
+    from audioop import alaw2lin, lin2alaw, lin2ulaw, ulaw2lin
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+_ test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-unbound] _
+---------------------------- Captured stdout setup -----------------------------
+INFO 10-01 11:54:55 [scheduler.py:288] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 10-01 11:54:55 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+--- Running test: test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-unbound]
+------------------------------ Captured log setup ------------------------------
+INFO     vllm.config.scheduler:scheduler.py:288 Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO     vllm.config.kernel:kernel.py:416 Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+_ test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-turn-still-bound] _
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-turn-still-bound]
+_ test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-unbound] _
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-unbound]
+_ test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-turn-still-bound] _
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-turn-still-bound]
+_______ test_terminal_listen_with_continuations_left_still_ends_the_turn _______
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_terminal_listen_with_continuations_left_still_ends_the_turn
+--- Running Summary
+=========================== short test summary info ============================
+PASSED tests/engine/duplex/test_session_runner.py::test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-unbound]
+PASSED tests/engine/duplex/test_session_runner.py::test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-turn-still-bound]
+PASSED tests/engine/duplex/test_session_runner.py::test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-unbound]
+PASSED tests/engine/duplex/test_session_runner.py::test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-turn-still-bound]
+PASSED tests/engine/duplex/test_session_runner.py::test_terminal_listen_with_continuations_left_still_ends_the_turn
+FAILED tests/engine/duplex/test_session_runner.py::test_late_terminal_listen_of_a_completed_turn_is_ignored
+=========== 1 failed, 5 passed, 51 deselected, 16 warnings in 2.69s ============

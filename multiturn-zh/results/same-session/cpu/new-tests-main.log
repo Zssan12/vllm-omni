@@ -1,0 +1,222 @@
+cmd: python -m pytest -p no:cacheprovider -rA -k terminal_listen tests/engine/duplex/test_session_runner.py
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: <laptop-dir>
+configfile: pyproject.toml
+plugins: asyncio-1.4.0, anyio-4.15.1, platformdirs-4.12.0, xdist-3.8.0, mock-3.15.1
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 57 items / 51 deselected / 6 selected
+
+tests/engine/duplex/test_session_runner.py FFFFFF                        [100%]
+
+=================================== FAILURES ===================================
+_ test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-unbound] _
+
+explicit_turn = True, bound_turn = False
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize("bound_turn", [False, True], ids=["unbound", "turn-still-bound"])
+    @pytest.mark.parametrize("explicit_turn", [True, False], ids=["model-turn", "turn-from-request-id"])
+    async def test_terminal_listen_without_response_lets_the_next_turn_through(
+        explicit_turn: bool, bound_turn: bool
+    ) -> None:
+        """A silent turn ends even with no response open, so the next append gets a new turn."""
+        h = await _open_turn_commit_harness()
+        try:
+            await h.run(append_audio())
+            first_id = h.port.submissions[-1].context.request_id
+            turn = h.session.turn_id
+            assert h.session.active_response_id is None
+            if bound_turn:
+                h.session.bind_response_turn(turn)
+    
+            events = await _send_model_result_and_settle(h, _terminal_listen_result(first_id, turn if explicit_turn else None))
+            assert types(events) == ["response.listen"]
+>           assert h.session.turn_id == turn + 1
+E           AssertionError: assert 0 == (0 + 1)
+E            +  where 0 = DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=198.736541241, num_stages=2, log_stats=False).turn_id
+E            +    where DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=198.736541241, num_stages=2, log_stats=False) = Harness(manager=<vllm_omni.engine.duplex.session.manager.DuplexSessionManager object at 0x727fe354b740>, port=<tests.e...n_id': 'duplex-test', 'epoch': 0, 'reason': 'model_listen', 'model_listen': True, 'vllm_omni': {'model_turn_id': 0}})]).session
+
+tests/engine/duplex/test_session_runner.py:974: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+INFO 10-01 11:54:26 [scheduler.py:288] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 10-01 11:54:26 [kernel.py:416] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+--- Running test: test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-unbound]
+------------------------------ Captured log setup ------------------------------
+INFO     vllm.config.scheduler:scheduler.py:288 Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO     vllm.config.kernel:kernel.py:416 Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+_ test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-turn-still-bound] _
+
+explicit_turn = True, bound_turn = True
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize("bound_turn", [False, True], ids=["unbound", "turn-still-bound"])
+    @pytest.mark.parametrize("explicit_turn", [True, False], ids=["model-turn", "turn-from-request-id"])
+    async def test_terminal_listen_without_response_lets_the_next_turn_through(
+        explicit_turn: bool, bound_turn: bool
+    ) -> None:
+        """A silent turn ends even with no response open, so the next append gets a new turn."""
+        h = await _open_turn_commit_harness()
+        try:
+            await h.run(append_audio())
+            first_id = h.port.submissions[-1].context.request_id
+            turn = h.session.turn_id
+            assert h.session.active_response_id is None
+            if bound_turn:
+                h.session.bind_response_turn(turn)
+    
+            events = await _send_model_result_and_settle(h, _terminal_listen_result(first_id, turn if explicit_turn else None))
+            assert types(events) == ["response.listen"]
+>           assert h.session.turn_id == turn + 1
+E           AssertionError: assert 0 == (0 + 1)
+E            +  where 0 = DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=198.976646631, num_stages=2, log_stats=False).turn_id
+E            +    where DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=198.976646631, num_stages=2, log_stats=False) = Harness(manager=<vllm_omni.engine.duplex.session.manager.DuplexSessionManager object at 0x727fe350cf20>, port=<tests.e...n_id': 'duplex-test', 'epoch': 0, 'reason': 'model_listen', 'model_listen': True, 'vllm_omni': {'model_turn_id': 0}})]).session
+
+tests/engine/duplex/test_session_runner.py:974: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-turn-still-bound]
+_ test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-unbound] _
+
+explicit_turn = False, bound_turn = False
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize("bound_turn", [False, True], ids=["unbound", "turn-still-bound"])
+    @pytest.mark.parametrize("explicit_turn", [True, False], ids=["model-turn", "turn-from-request-id"])
+    async def test_terminal_listen_without_response_lets_the_next_turn_through(
+        explicit_turn: bool, bound_turn: bool
+    ) -> None:
+        """A silent turn ends even with no response open, so the next append gets a new turn."""
+        h = await _open_turn_commit_harness()
+        try:
+            await h.run(append_audio())
+            first_id = h.port.submissions[-1].context.request_id
+            turn = h.session.turn_id
+            assert h.session.active_response_id is None
+            if bound_turn:
+                h.session.bind_response_turn(turn)
+    
+            events = await _send_model_result_and_settle(h, _terminal_listen_result(first_id, turn if explicit_turn else None))
+            assert types(events) == ["response.listen"]
+>           assert h.session.turn_id == turn + 1
+E           AssertionError: assert 0 == (0 + 1)
+E            +  where 0 = DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=199.185649745, num_stages=2, log_stats=False).turn_id
+E            +    where DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=199.185649745, num_stages=2, log_stats=False) = Harness(manager=<vllm_omni.engine.duplex.session.manager.DuplexSessionManager object at 0x727fe350e570>, port=<tests.e...{'type': 'response.listen', 'session_id': 'duplex-test', 'epoch': 0, 'reason': 'model_listen', 'model_listen': True})]).session
+
+tests/engine/duplex/test_session_runner.py:974: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-unbound]
+_ test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-turn-still-bound] _
+
+explicit_turn = False, bound_turn = True
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize("bound_turn", [False, True], ids=["unbound", "turn-still-bound"])
+    @pytest.mark.parametrize("explicit_turn", [True, False], ids=["model-turn", "turn-from-request-id"])
+    async def test_terminal_listen_without_response_lets_the_next_turn_through(
+        explicit_turn: bool, bound_turn: bool
+    ) -> None:
+        """A silent turn ends even with no response open, so the next append gets a new turn."""
+        h = await _open_turn_commit_harness()
+        try:
+            await h.run(append_audio())
+            first_id = h.port.submissions[-1].context.request_id
+            turn = h.session.turn_id
+            assert h.session.active_response_id is None
+            if bound_turn:
+                h.session.bind_response_turn(turn)
+    
+            events = await _send_model_result_and_settle(h, _terminal_listen_result(first_id, turn if explicit_turn else None))
+            assert types(events) == ["response.listen"]
+>           assert h.session.turn_id == turn + 1
+E           AssertionError: assert 0 == (0 + 1)
+E            +  where 0 = DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=199.392535405, num_stages=2, log_stats=False).turn_id
+E            +    where DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=199.392535405, num_stages=2, log_stats=False) = Harness(manager=<vllm_omni.engine.duplex.session.manager.DuplexSessionManager object at 0x727fe350fb60>, port=<tests.e...{'type': 'response.listen', 'session_id': 'duplex-test', 'epoch': 0, 'reason': 'model_listen', 'model_listen': True})]).session
+
+tests/engine/duplex/test_session_runner.py:974: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-turn-still-bound]
+_______ test_terminal_listen_with_continuations_left_still_ends_the_turn _______
+
+    @pytest.mark.asyncio
+    async def test_terminal_listen_with_continuations_left_still_ends_the_turn() -> None:
+        """Same with an active response whose continuation budget is not spent."""
+        h = await _open_turn_commit_harness()
+        try:
+            await h.run(append_audio())
+            first_id = h.port.submissions[-1].context.request_id
+            turn = h.session.turn_id
+            await h.deliver_and_settle(tts_output(first_id, samples=24000, text="ok"))
+            response_id = h.session.active_response_id
+            assert response_id is not None
+            assert h.runner.model.response_continuations_remaining(response_id)
+    
+            events = await _send_model_result_and_settle(h, _terminal_listen_result(first_id, turn))
+            assert "response.listen" in types(events)
+            assert find(events, "response.done").response_id == response_id
+            assert h.session.active_response_id is None
+>           assert h.session.turn_id == turn + 1
+E           AssertionError: assert 0 == (0 + 1)
+E            +  where 0 = DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=199.602575528, num_stages=2, log_stats=False).turn_id
+E            +    where DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=199.602575528, num_stages=2, log_stats=False) = Harness(manager=<vllm_omni.engine.duplex.session.manager.DuplexSessionManager object at 0x727fe350e570>, port=<tests.e...teLimitsUpdated(session_id='duplex-test', epoch=0, event_id='event_a0a2a8e361c940018279bbf3a350f1e5', rate_limits=())]).session
+
+tests/engine/duplex/test_session_runner.py:1004: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_terminal_listen_with_continuations_left_still_ends_the_turn
+___________ test_late_terminal_listen_of_a_completed_turn_is_ignored ___________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x727fe350eea0>
+
+    @pytest.mark.asyncio
+    async def test_late_terminal_listen_of_a_completed_turn_is_ignored(monkeypatch: pytest.MonkeyPatch) -> None:
+        """A repeated or late listen for a finished turn must not touch the next one.
+    
+        It arrives after the turn completed and before the next append, when the
+        request-id check still lets an auto-response output through: it must not
+        commit its context again, emit another listen or abort anything.
+        """
+        h = await _open_turn_commit_harness()
+        try:
+            committed: list[str] = []
+            plugin = h.runner.model._ctx.plugin
+            monkeypatch.setattr(
+                plugin, "commit_model_context", lambda *, session_id, assistant_text: committed.append(assistant_text)
+            )
+            await h.run(append_audio())
+            first_id = h.port.submissions[-1].context.request_id
+            turn = h.session.turn_id
+            listen = {**_terminal_listen_result(first_id, turn), "model_context_text": "<silent>"}
+            await _send_model_result_and_settle(h, listen)
+>           assert h.session.turn_id == turn + 1
+E           AssertionError: assert 0 == (0 + 1)
+E            +  where 0 = DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=199.877779623, num_stages=2, log_stats=False).turn_id
+E            +    where DuplexEngineSession(session_id='duplex-test', config=DuplexSessionConfig(model='openbmb/MiniCPM-o-4_5', modalities=['t...=0, config_generation=0, input_seq=1, input_turn_seq=1, created_monotonic=199.877779623, num_stages=2, log_stats=False) = Harness(manager=<vllm_omni.engine.duplex.session.manager.DuplexSessionManager object at 0x727fe350f440>, port=<tests.e...n_id': 'duplex-test', 'epoch': 0, 'reason': 'model_listen', 'model_listen': True, 'vllm_omni': {'model_turn_id': 0}})]).session
+
+tests/engine/duplex/test_session_runner.py:1033: AssertionError
+---------------------------- Captured stdout setup -----------------------------
+--- Running test: test_late_terminal_listen_of_a_completed_turn_is_ignored
+=============================== warnings summary ===============================
+../../../venvs/omni/lib/python3.12/site-packages/torch/jit/_script.py:365: 14 warnings
+  <laptop-dir> DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+vllm_omni/version.py:55
+  <laptop-dir> RuntimeWarning: vLLM and vLLM-Omni appear to have mismatched major/minor versions:
+   --> vLLM-Omni version 0.25.0.dev0
+   --> vLLM version 0.30.0
+  This will likely cause compatibility issues.
+    warn_if_misaligned_vllm_version()
+
+vllm_omni/protocol/realtime/audio.py:17
+  <laptop-dir> DeprecationWarning: 'audioop' is deprecated and slated for removal in Python 3.13
+    from audioop import alaw2lin, lin2alaw, lin2ulaw, ulaw2lin
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+--- Running Summary
+=========================== short test summary info ============================
+FAILED tests/engine/duplex/test_session_runner.py::test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-unbound]
+FAILED tests/engine/duplex/test_session_runner.py::test_terminal_listen_without_response_lets_the_next_turn_through[model-turn-turn-still-bound]
+FAILED tests/engine/duplex/test_session_runner.py::test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-unbound]
+FAILED tests/engine/duplex/test_session_runner.py::test_terminal_listen_without_response_lets_the_next_turn_through[turn-from-request-id-turn-still-bound]
+FAILED tests/engine/duplex/test_session_runner.py::test_terminal_listen_with_continuations_left_still_ends_the_turn
+FAILED tests/engine/duplex/test_session_runner.py::test_late_terminal_listen_of_a_completed_turn_is_ignored
+================ 6 failed, 51 deselected, 16 warnings in 1.54s =================

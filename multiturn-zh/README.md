@@ -113,6 +113,58 @@ decisions from the stage's own functions.
   most 26 ms). CUDA allocated/reserved memory (1265.2 / 1366.0 MB) and peak RSS
   did not change.
 
+### Same session (with a separate session fix)
+
+In an `auto_response` session, a turn that follows a terminal listen (a
+judge rejection, or AURA's own silence) may only get `response.listen`. The
+fix is commit
+[`801afe5`](https://github.com/Zssan12/vllm-omni/commit/801afe5) on
+`origin/main` (27a6321); it will be proposed as its own PR.
+`results/same-session/` holds the evidence.
+
+**GPU** (`results/same-session/gpu/`, RTX 4080 SUPER). Code: the #8316 head
+`932fd24` plus `judge-fix.patch` (an earlier version of the bridge hardening
+now in #8316) and, for the "fix" arms, `silent-fix.patch` (an earlier
+revision of `801afe5`: same logic, longer comments and one equivalent
+condition). Each held-out dialogue runs in one session. The compact profile
+cannot hold several turns in one session (AURA stage: 1024 tokens, one video
+per prompt; the second turn fails with "At most 1 video(s) may be provided
+in one prompt", see `compact-config-engine-dead-excerpt.txt`), so
+`mt-on.yaml` / `mt-off.yaml` raise only the AURA stage's `max_model_len`,
+`max_num_batched_tokens` (4096), KV cache (1 GiB) and video limit (16).
+
+| | judge on, without the fix | judge on, with the fix | judge off, with the fix |
+| --- | --- | --- | --- |
+| Turns that need a reply (63): replied | 30 | 63 | 63 |
+| A question right after a judge rejection (the same 17 turns): replied | 0 | 17 | — |
+| Turns that need no reply (40): still got a reply | 3 | 3 | 40 |
+| Audio in those unneeded replies | ~11 s | ~11 s | ~194 s |
+| Failed turns | 0 | 0 | 0 |
+
+Without the fix, the turns after a rejection end with a listen whose
+`listen_source` is `aura_silent`: the reused request still carries the
+silent state. "Replied" means text, non-empty audio and `response.done`.
+A longer run on the tune split (30 dialogues, 210 turns, one session per
+dialogue, with the fix) had no failed turn; every listen came from the
+judge; GPU memory stayed at 30.9 GB after warmup (`soak-tune.jsonl`,
+`soak-resources.txt`, sampled every 30 s).
+
+**CPU** (`results/same-session/cpu/`, RTX 3060 laptop, WSL2). Code:
+`origin/main` 27a6321 with the new tests, without and with the fix (the
+logs predate the AURA test's docstring wording; same assertions).
+- The six new `test_session_runner.py` cases fail on `main` and pass with
+  the fix; with the late-listen filter removed, only the late-listen case
+  fails (`new-tests-*.log`).
+- `test_session_aura_silent_turn.py` uses AURA's own data plane and a
+  native `<|silent|>`: on `main` the next answer of the session is swallowed
+  (no response opens); with the fix it opens a response (`aura-test-*.log`).
+- Related suites: identical failures on `main` and with the fix (six
+  MiniCPM-o cases need `cosyvoice2`, absent on that laptop)
+  (`regression-*.log`).
+
+AURA's natural silence was not reproduced on the GPU: AURA replied to every
+backchannel in these dialogues.
+
 ## Reproduce
 
 Paths are relative to this package. Replace `/path/to/models` in the deploy
@@ -150,6 +202,7 @@ The checks in `results/config-update/` ran on that tree plus the changes of
 - `results/judge-text/`: per-run `summary.json` and `raw.jsonl` of the tuners.
 - `results/parity/`, `results/stability/`: see above.
 - `results/e2e/`: per-turn rows of both arms, the summary and the deploy files.
+- `results/same-session/`: the same-session check above (GPU and CPU).
 - `results/config-update/`: checks for updating the LAYA example config in
   #8316. Added latency with the previous and the new prompt, from one run that
   shares its off arm (`analyze_onoff.py` output and the judge-stage breakdown,
