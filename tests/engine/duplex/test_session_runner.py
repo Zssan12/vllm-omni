@@ -926,6 +926,126 @@ async def test_direct_response_listen_still_emits_response_done_after_continuati
         await close_harness(h)
 
 
+async def _open_turn_commit_harness() -> Harness:
+    """A session whose model gets one stage request per turn (no resumable core request)."""
+    from dataclasses import replace
+
+    h = await open_harness()
+    h.session.capabilities = replace(h.session.capabilities, supports_core_resumable_request=False)
+    return h
+
+
+def _terminal_listen_result(request_id: str, turn_id: int | None) -> dict[str, object]:
+    """A silent turn as a data plane projects it: listen, end of turn, abort the request."""
+    result: dict[str, object] = {
+        "is_listen": True,
+        "end_of_turn": True,
+        "data_plane_request_id": request_id,
+        "abort_data_plane_request": True,
+    }
+    if turn_id is not None:
+        result["model_turn_id"] = turn_id
+    return result
+
+
+async def _send_model_result_and_settle(h: Harness, result: dict[str, object]) -> list[DuplexEvent]:
+    await h.runner.model._send_one_model_output_event(result, expected_epoch=h.session.epoch)
+    return await h.settle()
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize("bound_turn", [False, True], ids=["unbound", "turn-still-bound"])
+@pytest.mark.parametrize("explicit_turn", [True, False], ids=["model-turn", "turn-from-request-id"])
+async def test_terminal_listen_without_response_lets_the_next_turn_through(
+    explicit_turn: bool, bound_turn: bool
+) -> None:
+    """A silent turn ends even with no response open, so the next append gets a new turn."""
+    h = await _open_turn_commit_harness()
+    try:
+        await h.run(append_audio())
+        first_id = h.port.submissions[-1].context.request_id
+        turn = h.session.turn_id
+        assert h.session.active_response_id is None
+        if bound_turn:
+            h.session.bind_response_turn(turn)
+
+        events = await _send_model_result_and_settle(h, _terminal_listen_result(first_id, turn if explicit_turn else None))
+        assert types(events) == ["response.listen"]
+        assert h.session.turn_id == turn + 1
+        assert h.session.fence.turn_id == turn + 1
+
+        await h.run(append_audio())
+        second_id = h.port.submissions[-1].context.request_id
+        assert second_id != first_id
+        assert f"-turn{turn + 1}" in second_id
+        await h.deliver_and_settle(tts_output(second_id, samples=24000, text="ok", turn_id=turn + 1))
+        assert h.session.active_response_id is not None
+    finally:
+        await close_harness(h)
+
+
+@pytest.mark.asyncio
+async def test_terminal_listen_with_continuations_left_still_ends_the_turn() -> None:
+    """Same with an active response whose continuation budget is not spent."""
+    h = await _open_turn_commit_harness()
+    try:
+        await h.run(append_audio())
+        first_id = h.port.submissions[-1].context.request_id
+        turn = h.session.turn_id
+        await h.deliver_and_settle(tts_output(first_id, samples=24000, text="ok"))
+        response_id = h.session.active_response_id
+        assert response_id is not None
+        assert h.runner.model.response_continuations_remaining(response_id)
+
+        events = await _send_model_result_and_settle(h, _terminal_listen_result(first_id, turn))
+        assert "response.listen" in types(events)
+        assert find(events, "response.done").response_id == response_id
+        assert h.session.active_response_id is None
+        assert h.session.turn_id == turn + 1
+
+        await h.run(append_audio())
+        second_id = h.port.submissions[-1].context.request_id
+        assert f"-turn{turn + 1}" in second_id
+    finally:
+        await close_harness(h)
+
+
+@pytest.mark.asyncio
+async def test_late_terminal_listen_of_a_completed_turn_is_ignored(monkeypatch: pytest.MonkeyPatch) -> None:
+    """A repeated or late listen for a finished turn must not touch the next one.
+
+    It arrives after the turn completed and before the next append, when the
+    request-id check still lets an auto-response output through: it must not
+    commit its context again, emit another listen or abort anything.
+    """
+    h = await _open_turn_commit_harness()
+    try:
+        committed: list[str] = []
+        plugin = h.runner.model._ctx.plugin
+        monkeypatch.setattr(
+            plugin, "commit_model_context", lambda *, session_id, assistant_text: committed.append(assistant_text)
+        )
+        await h.run(append_audio())
+        first_id = h.port.submissions[-1].context.request_id
+        turn = h.session.turn_id
+        listen = {**_terminal_listen_result(first_id, turn), "model_context_text": "<silent>"}
+        await _send_model_result_and_settle(h, listen)
+        assert h.session.turn_id == turn + 1
+        assert committed == ["<silent>"]
+        aborts = len(h.port.aborts)
+
+        events = await _send_model_result_and_settle(h, dict(listen))
+        assert events == []
+        assert committed == ["<silent>"]
+        assert h.session.turn_id == turn + 1
+        assert len(h.port.aborts) == aborts
+
+        await h.run(append_audio())
+        assert f"-turn{turn + 1}" in h.port.submissions[-1].context.request_id
+    finally:
+        await close_harness(h)
+
+
 @pytest.mark.asyncio
 async def test_listen_decision_on_a_resumable_request_keeps_the_turn_going() -> None:
     """Same unfinished listen, budget left: it must schedule the next unit.
