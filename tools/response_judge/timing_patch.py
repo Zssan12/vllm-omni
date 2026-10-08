@@ -54,9 +54,13 @@ PATCHES = {
     ],
     "vllm_omni/engine/duplex_orchestrator.py": [
         (
-            "            response_judge_rejected=finished and self._is_response_judge_stage(stage_id) and judge_rejects(output),\n"
+            "            response_judge_rejected=(\n"
+            "                finished and self._is_response_judge_stage(stage_id) and judge_rejects(output, req_state.streaming)\n"
+            "            ),\n"
             "        )\n",
-            "            response_judge_rejected=finished and self._is_response_judge_stage(stage_id) and judge_rejects(output),\n"
+            "            response_judge_rejected=(\n"
+            "                finished and self._is_response_judge_stage(stage_id) and judge_rejects(output, req_state.streaming)\n"
+            "            ),\n"
             "        )\n"
             "        if context.response_judge_rejected:\n"
             '            logger.warning("OMNI_HOP judge_rejected stage=%d req=%s t=%.6f", stage_id, request_id, _time.time())\n',
