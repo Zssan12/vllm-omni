@@ -30,6 +30,10 @@ def load(name: str):
 
 def check(mod, tree: Path) -> int:
     bad = 0
+    # An anchor may be a tuple of alternative forms covering upstream revisions that
+    # reformatted the same code. Resolution is delegated to the patcher itself, so this
+    # check cannot disagree with what applying would do.
+    resolve = getattr(mod, "resolve_anchor", None)
     for rel, edits in mod.PATCHES.items():
         f = tree / rel
         if not f.exists():
@@ -38,6 +42,16 @@ def check(mod, tree: Path) -> int:
             continue
         text = f.read_text()
         for i, (old, _new) in enumerate(edits):
+            if resolve is not None:
+                anchor = resolve(text, old)
+                if anchor is not None:
+                    continue
+                forms = (old,) if isinstance(old, str) else old
+                bad += 1
+                counts = ", ".join(str(text.count(c)) for c in forms)
+                first = forms[0].splitlines()[0] if forms[0].splitlines() else forms[0]
+                print(f"  {rel} edit[{i}]: counts=[{counts}]  anchor starts: {first[:100]!r}")
+                continue
             n = text.count(old)
             if n != 1:
                 bad += 1

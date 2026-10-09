@@ -3,6 +3,7 @@
 # Runs on the host inside the py3.12 image (it ships huggingface_hub).
 #
 #   MODELS=/models ./h200/fetch_models.sh
+#   MODELS=/models FORCE=1 ./h200/fetch_models.sh   # re-download even if present
 set -euo pipefail
 
 export HF_ENDPOINT=https://hf-mirror.com
@@ -14,18 +15,31 @@ export HF_HUB_DOWNLOAD_TIMEOUT=120
 export HF_HUB_DISABLE_XET=1
 
 MODELS=${MODELS:-/models}
+FORCE=${FORCE:-}
 mkdir -p "$MODELS"
 
+# Never delete an existing destination: these are tens of GB over a mirror, and a
+# directory without `.complete` may still be a usable or resumable download. Fetch
+# into a sibling temp dir (same filesystem, so the move is atomic) and only put it
+# in place once the download has succeeded.
 fetch() {  # fetch <repo> <sha> <dest-name>
   local repo="$1" sha="$2" dest="$MODELS/$3"
   if [ -f "$dest/.complete" ]; then echo "== skip $dest (already complete)"; return 0; fi
+  if [ -e "$dest" ] && [ -z "$FORCE" ]; then
+    echo "== skip $dest (exists without .complete; verify it, or re-run with FORCE=1)"
+    return 0
+  fi
+  local tmp="$dest.tmp-$$"
+  rm -rf "$tmp"
   echo "== $repo@${sha:0:8} -> $dest"
-  rm -rf "$dest"
-  if hf download "$repo" --revision "$sha" --local-dir "$dest"; then
-    touch "$dest/.complete"
+  if hf download "$repo" --revision "$sha" --local-dir "$tmp"; then
+    touch "$tmp/.complete"
+    # Only now is the existing destination replaced, and only under FORCE.
+    if [ -e "$dest" ]; then rm -rf "$dest"; fi
+    mv "$tmp" "$dest"
   else
-    echo "!! FAILED $repo -- continuing with the rest"
-    rm -rf "$dest"
+    echo "!! FAILED $repo -- leaving $dest untouched, continuing with the rest"
+    rm -rf "$tmp"
     return 1
   fi
 }

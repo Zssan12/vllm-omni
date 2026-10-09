@@ -34,14 +34,15 @@ numbers, not one:
 What the package has no layer for is the join: judge-off against judge-on,
 across concurrency levels. That join is `judge_bench_report.py`.
 
-Two things to know when quoting the package's own output:
+One thing to know when quoting the package's own output: its headline "added
+latency" is a difference of group quantiles, not time to first audio. The README
+says so; it should not be presented as a user-visible latency.
 
-1. Its headline "added latency" is a difference of group quantiles, not time to
-   first audio. The README says so; it should not be presented as a
-   user-visible latency.
-2. `aura_concurrency_real.summarize()` reads `turn_ms`, but `measure()` emits
-   `terminal_ms`, so the package's per-concurrency latency summary is always
-   empty. `judge_bench_report.py` reads `terminal_ms` off the per-turn rows.
+`judge_bench_report.py` reads `terminal_ms` off the per-turn rows rather than
+reusing `summarize()`'s `latency_successful_questions`, because it needs the
+rows themselves to split the two arms by clip kind and by `listen_sources`.
+Both fields are measured from the same `committed_at`, so the choice is about
+which granularity the join needs, not about either being unavailable.
 
 ## Files
 
@@ -50,7 +51,7 @@ Two things to know when quoting the package's own output:
 | `run_arms.sh` | runs the judge-off and judge-on arms back to back, one `smoke` or `conc` pair, recording the environment per arm |
 | `judge_bench_report.py` | joins the two arms: routing, latency pooled and per concurrency level, useful throughput, GPU peak, and checks |
 | `check_anchors.py` | reports every `timing_patch` / `prof_patch` anchor against a source tree without applying, so a moved anchor is caught before an arm runs |
-| `fetch_models.sh` | downloads all seven checkpoints at the pinned revisions |
+| `fetch_models.sh` | downloads all seven checkpoints at the pinned revisions, into a temp dir moved into place on success, never deleting an existing one (`FORCE=1` to re-download) |
 
 ## Running
 
@@ -87,20 +88,25 @@ arm still records exactly what it ran.
 
 ## Reading the report
 
-- **Routing** — questions answered, false blocks, backchannels suppressed
-  against let through, and the `listen_sources` behind each suppression.
+- **Routing** — questions answered, false blocks, questions broken by failures
+  or timeouts, backchannels suppressed by the judge against by AURA against let
+  through, and the `listen_sources` behind each suppression.
 - **Latency** — TTFT and TTFA of answered questions, pooled and per concurrency
   level. Quote the per-level rows: pooling mixes populations, and the judge can
   be faster at one user and slower at four while the pooled delta describes
   neither.
 - **Useful throughput** — completed questions per minute per level.
 - **GPU** — peak memory and utilization over the arm's snapshots.
-- **Checks** — flags a false block, a judge that suppressed nothing (so is not
-  wired in), an invalid wave, and judge-off turns AURA itself silenced.
+- **Checks** — flags a missing or empty arm file, a false block, a judge that
+  suppressed nothing (so is not wired in), an invalid wave, and judge-off turns
+  AURA itself silenced.
 
 Judge-off suppressing backchannels is expected rather than a bug, because AURA
 emits `<|silent|>` on its own. That is why `listen_source` matters: only
-`response_judge` is the judge doing the work.
+`response_judge` is the judge doing the work, and the report applies that test
+throughout. A question that failed or timed out is never counted as a false
+block, and a suppression without judge attribution is counted against AURA, so
+neither inflates what the judge appears to have done.
 
 ## Environment used
 

@@ -29,11 +29,13 @@ Both defaults reproduce the previous behaviour exactly. `--conc-users` takes
 `nargs="+"` rather than a space-joined string so `--conc-users 1 2 4` parses the
 way it reads.
 
-## `tools/response_judge/timing_patch.py` — one anchor widened
+## `tools/response_judge/timing_patch.py` — one anchor, both upstream forms
 
 `4e860735` (the current #8316 head) reformatted the `response_judge_rejected`
 argument in `vllm_omni/engine/duplex_orchestrator.py` from one line to three, so
-the patch's original one-line anchor no longer matched:
+the patch's original one-line anchor no longer matched. Narrowing the anchor to
+the new form alone would break the other direction: `4c1da861` is what the
+repro README's profiling walkthrough uses.
 
 ```python
 # 4c1da861 (what the patch was written against)
@@ -45,11 +47,28 @@ response_judge_rejected=(
 ),
 ```
 
-The anchor and its replacement were both widened to the three-line form,
-keeping the injected `OMNI_HOP judge_rejected` line in the same place. The
-semantics are unchanged; only the formatting the anchor expects moved. This is
-the only anchor in either patch that had drifted — `h200/check_anchors.py`
-reports 0 remaining mismatches against `4e860735` for both patches.
+The patch now accepts **both** forms. The anchor for that edit is a tuple of
+candidates tried in order, and the edit is marked `APPEND`, so the injected
+`OMNI_HOP judge_rejected` line is added after whichever form matched instead of
+the patch having to restate it:
+
+```python
+(
+    (THREE_LINE_FORM, ONE_LINE_FORM),   # tried in order
+    (APPEND, '        if context.response_judge_rejected:\n...'),
+)
+```
+
+Appending is what makes one patch serve several anchor forms; a replacing patch
+may not carry alternatives, because the replacement would depend on which form
+matched, and `main()` rejects that combination rather than guessing. An anchor
+that appears more than once is never used, so the exactly-once guarantee the
+patch relied on is kept per candidate.
+
+Semantics are unchanged. Both trees verify: `h200/check_anchors.py` reports 0
+mismatches against `4c1da861` and `4e860735` for both patches, the patched
+output compiles on each, and against `4e860735` all four patched files are
+byte-identical to the tree the published arms ran on.
 
 ## Not a code change: the startup timeout
 
@@ -70,7 +89,34 @@ Not part of the package's own tooling; a layer on top of it.
   turn and `aura_concurrency_real.summarize()` counts completions, but nothing
   compares the arms.
 - `check_anchors.py` reports every patch anchor against a tree without applying.
-- `fetch_models.sh` downloads the seven checkpoints at pinned revisions.
+  It resolves alternative anchor forms through `timing_patch.resolve_anchor`
+  itself, so the check cannot disagree with what applying would do.
+- `fetch_models.sh` downloads the seven checkpoints at pinned revisions. It
+  never deletes an existing destination: a directory without `.complete` is
+  skipped with a message rather than removed, since it may still be usable or
+  resumable, and tens of GB over a mirror is expensive to redo. Each download
+  goes to a sibling `<dest>.tmp-$$` on the same filesystem and is moved into
+  place only on success, so an interrupted or failed run leaves whatever was
+  already there untouched. `FORCE=1` re-downloads, and even then the existing
+  directory is replaced only after the new one has finished.
+
+### Attribution in `judge_bench_report.py`
+
+A turn can end without a reply for reasons that are not the judge's doing, so
+the report separates them by `"response_judge" in listen_sources`:
+
+- `false blocks` counts only questions the judge silenced. Questions that failed
+  or timed out are counted as `broken`, and a question silenced without judge
+  attribution is reported separately — previously all three were one number.
+- Backchannel suppressions are split into `by judge` and `by AURA`, the latter
+  being AURA's own `<|silent|>`, which judge-off emits too. Suppression latency
+  is measured over judge-attributed turns only.
+- A missing arm file is flagged in the checks instead of reading as an arm with
+  no turns, which used to print `clean`.
+
+On the published `conc` run these splits change no number: 35/35 answered in
+both arms, 0 false blocks, 0 broken, and all 21 suppressions attributed to
+`response_judge` with 0 to AURA.
 
 It also reads the two client output shapes: the `conc` client
 (`aura_concurrency_real.py`) labels every row with `kind`, while the `onoff`
@@ -79,10 +125,6 @@ handled, so no arm needs a post-processing step.
 
 ## Known quirks worked around in `h200/`, not patched here
 
-- `aura_concurrency_real.summarize()` reports
-  `latency_successful_questions.turn_ms`, but `measure()` emits `terminal_ms` —
-  that key is always empty. `judge_bench_report.py` reads `terminal_ms` off the
-  per-turn rows instead.
 - `hop_analysis.py` without `--client-jsonl` falls back to dropping the first N
   requests in log order and labels its output "do not quote". The `conc` client
   emits no `--client-jsonl`, so `conc` hop numbers are not reported.
