@@ -55,6 +55,10 @@ def main() -> None:
     p.add_argument("--client-timeout", type=float, default=900)
     p.add_argument("--after-failed-warmup-s", type=float, default=90)
     p.add_argument("--skip", type=int, default=8, help="conc arms only: hop stats skip the first N requests")
+    p.add_argument("--conc-users", nargs="+", default=["4", "8"],
+                   help="conc arms only: space-separated concurrency levels")
+    p.add_argument("--rounds", type=int, default=3,
+                   help="conc arms only: measured rounds per user (turns per user = 2x this)")
     a = p.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
     if not port_free(a.port) or gpu_pids():
@@ -115,7 +119,7 @@ def main() -> None:
             extra = ["--mode", a.mode, "--audio-dir", str(a.audio_dir), *a.dialogue_args.split()]
         else:
             script = HERE.parent / "rfc_bench" / "aura_concurrency_real.py"
-            extra = ["--mode", a.mode, "--users", "4", "8", "--rounds", "3",
+            extra = ["--mode", a.mode, "--users", *a.conc_users, "--rounds", str(a.rounds),
                      "--clips", *[str(a.audio_dir / (c + ".wav")) for c in ("a3", "a4", "a0", "a1")]]
         client_argv = [sys.executable, "-B", str(script), "--model", str(model),
                        "--url", f"ws://127.0.0.1:{a.port}/v1/realtime?duplex=1",

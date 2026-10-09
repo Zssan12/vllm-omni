@@ -23,6 +23,11 @@ import shutil
 import sys
 from pathlib import Path
 
+# Marks a patch whose `after` is added following the anchor rather than replacing it.
+# Only such a patch may carry several alternative anchor forms, since the replacement
+# must not depend on which form matched.
+APPEND = object()
+
 PATCHES = {
     "vllm_omni/engine/duplex/session/model_channel.py": [
         (
@@ -54,12 +59,23 @@ PATCHES = {
     ],
     "vllm_omni/engine/duplex_orchestrator.py": [
         (
-            "            response_judge_rejected=finished and self._is_response_judge_stage(stage_id) and judge_rejects(output),\n"
-            "        )\n",
-            "            response_judge_rejected=finished and self._is_response_judge_stage(stage_id) and judge_rejects(output),\n"
-            "        )\n"
-            "        if context.response_judge_rejected:\n"
-            '            logger.warning("OMNI_HOP judge_rejected stage=%d req=%s t=%.6f", stage_id, request_id, _time.time())\n',
+            # Two upstream forms of the same argument. 4c1da86 (which the README's
+            # profiling walkthrough uses) has it on one line; 4e860735 reformatted it
+            # to three and added the `streaming` argument. Both are tried in order, so
+            # one patcher serves either tree.
+            (
+                "            response_judge_rejected=(\n"
+                "                finished and self._is_response_judge_stage(stage_id) and judge_rejects(output, req_state.streaming)\n"
+                "            ),\n"
+                "        )\n",
+                "            response_judge_rejected=finished and self._is_response_judge_stage(stage_id) and judge_rejects(output),\n"
+                "        )\n",
+            ),
+            (
+                APPEND,
+                "        if context.response_judge_rejected:\n"
+                '            logger.warning("OMNI_HOP judge_rejected stage=%d req=%s t=%.6f", stage_id, request_id, _time.time())\n',
+            ),
         ),
         (
             "        del replica_id\n        if not isinstance(req_state, DuplexOrchestratorRequestState) or req_state.fence is None:\n",
@@ -104,6 +120,20 @@ PATCHES = {
 }
 
 
+def resolve_anchor(text: str, before):
+    """The one candidate anchor present exactly once, else None.
+
+    `before` is either a single anchor string or a tuple of alternatives covering the
+    same code across upstream revisions that reformatted it. Alternatives are tried in
+    order and the first that appears exactly once wins; an anchor appearing more than
+    once is never used, because the patch site would be ambiguous.
+    """
+    for candidate in (before,) if isinstance(before, str) else before:
+        if text.count(candidate) == 1:
+            return candidate
+    return None
+
+
 def main() -> None:
     source, dest = Path(sys.argv[1]).resolve(), Path(sys.argv[2]).resolve()
     if dest.exists():
@@ -114,9 +144,17 @@ def main() -> None:
         path = dest / rel
         text = path.read_text()
         for before, after in patches:
-            if text.count(before) != 1:
-                raise SystemExit(f"anchor not found exactly once in {rel}: {before[:80]!r}")
-            text = text.replace(before, after)
+            is_append = isinstance(after, tuple) and after and after[0] is APPEND
+            if not isinstance(before, str) and not is_append:
+                raise SystemExit(f"{rel}: alternative anchors require an APPEND patch, else the replacement is ambiguous")
+            anchor = resolve_anchor(text, before)
+            if anchor is None:
+                shown = before if isinstance(before, str) else before[0]
+                raise SystemExit(f"anchor not found exactly once in {rel}: {shown[:80]!r}")
+            # `after` replaces the anchor outright, unless the patch is marked APPEND,
+            # in which case it is added after whichever anchor form matched. Appending
+            # is what lets one patch serve several anchor forms without restating each.
+            text = text.replace(anchor, (anchor + after[1]) if is_append else after)
         path.write_text(text)
         applied[rel] = hashlib.sha256(text.encode()).hexdigest()
     (dest / "TIMING-PATCH.json").write_text(json.dumps({"source": str(source), "patched_sha256": applied}, indent=2))
