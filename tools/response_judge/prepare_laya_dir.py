@@ -6,7 +6,7 @@ LAYA snapshots keep the encoder config in ``encoder/`` and the tokenizer in
 new directory and never modifies the snapshot:
 
     <out>/config.json            encoder config + architectures=[LayaDecisionModel]
-    <out>/model.safetensors      symlink to the snapshot weights
+    <out>/model.safetensors      relative symlink to the snapshot weights
     <out>/tokenizer.json         copy
     <out>/tokenizer_config.json  copy, patched the same way the laya package does
 """
@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import shutil
 from pathlib import Path
 
@@ -34,7 +35,10 @@ def main() -> None:
     cfg["laya_question_type"] = a.question_type
     a.out.mkdir(parents=True)
     (a.out / "config.json").write_text(json.dumps(cfg, indent=1))
-    (a.out / "model.safetensors").symlink_to((a.snapshot / "model.safetensors").resolve())
+    weights = (a.snapshot / "model.safetensors").resolve()
+    # Relative, so the link survives mounting the models directory elsewhere (e.g. Docker),
+    # as long as <out> and the resolved weights (HF blobs included) are mounted together.
+    (a.out / "model.safetensors").symlink_to(os.path.relpath(weights, a.out.resolve()))
     shutil.copyfile(a.snapshot / "tokenizer" / "tokenizer.json", a.out / "tokenizer.json")
     tcfg = json.loads((a.snapshot / "tokenizer" / "tokenizer_config.json").read_text())
     if tcfg.get("tokenizer_class") in (None, "TokenizersBackend"):

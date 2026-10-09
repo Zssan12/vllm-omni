@@ -29,6 +29,9 @@ in this order: `tools/response_judge/timing_patch.py`, then
 
 ## Prerequisites
 
+- Python 3.11–3.13. On 3.10 the PR head fails at import with a `__slots__`
+  layout conflict in the `DuplexCommand` subclasses; upstream fixed it in
+  #7985, which the PR branch does not include.
 - vLLM 0.30.0 and torch 2.13.0 (CUDA 13.0 build) in one virtualenv, with the
   vllm-omni source above importable (`PYTHONPATH=<patched tree>`) and the
   `vllm-omni` CLI installed in the same virtualenv (`run_arm.py` starts
