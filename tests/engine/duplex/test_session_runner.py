@@ -2027,6 +2027,7 @@ async def test_terminal_listen_preserves_an_older_draining_response(monkeypatch:
         session.snapshot_active_response_for_drain()
         session.complete_model_turn(turn)
         new_response = session.begin_response(turn_id=turn + 1)
+        h.runner.emit({"type": "response.created", "response_id": new_response})
         second = await _append_turn(h)
         events = await _send_model_result_and_settle(
             h, {**_terminal_listen_result(drain_id, turn), "model_context_text": "old context"}
