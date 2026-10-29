@@ -95,6 +95,8 @@ async def test_judge_no_ends_the_turn_through_the_native_listen_path(auto_respon
         session.bind_request(request_id)
         session.bind_response_turn(session.turn_id)
         response_id = session.begin_response(turn_id=session.turn_id)
+        runner = orchestrator.session_manager.runners[SESSION_ID]
+        runner.emit(runner.model.response_created_payload(response_id, epoch=session.epoch))
         consumed = await orchestrator._intercept_stage_output(
             _JUDGE, 0, _judge_output(request_id, "NO"), orchestrator.request_states[request_id], None, None
         )
