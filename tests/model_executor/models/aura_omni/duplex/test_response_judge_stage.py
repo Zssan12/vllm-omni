@@ -7,18 +7,25 @@ from __future__ import annotations
 
 import importlib
 import weakref
+from dataclasses import replace
+from io import BytesIO
 from types import SimpleNamespace
 
+import pybase64
 import pytest
+from PIL import Image
 
 from tests.engine.test_duplex_orchestrator import (
     SESSION_ID,
+    _append_audio,
     _build,
     _close,
     _encode_audio,
     _open,
+    _open_message,
     _settle,
     _submit,
+    _tts_output,
 )
 from tests.helpers.stage_config import get_deploy_config_path
 from vllm_omni.config.config_factory import StageConfigFactory
@@ -28,6 +35,7 @@ from vllm_omni.engine.duplex import commands
 from vllm_omni.engine.duplex.contracts import DuplexOutputAction, duplex_resource_request_belongs_to_session
 from vllm_omni.engine.duplex.delivery import DuplexOutputBuffer
 from vllm_omni.engine.duplex.session.model_channel import ModelChannel
+from vllm_omni.engine.orchestrator import build_engine_core_request_from_tokens
 from vllm_omni.model_executor.models.aura_omni.duplex.plugin import (
     AURA_SILENT_TOKEN_ID,
     AuraDuplexPlugin,
@@ -55,12 +63,12 @@ def _judged_orchestrator(**kwargs):
     return orchestrator, clients, rpc_q, output_q
 
 
-async def _pending_judge(orchestrator):
+async def _pending_judge(orchestrator, transcript="嗯嗯"):
     request_id = next(iter(orchestrator.request_states))
     assert duplex_resource_request_belongs_to_session(request_id, SESSION_ID)
     state = orchestrator.request_states[request_id]
-    asr = SimpleNamespace(request_id=request_id, outputs=[SimpleNamespace(text="嗯嗯")])
-    rj._owned(state.streaming)[request_id] = rj._PendingTurn(rj.JudgeSpec("chat_yes_no", {}), "嗯嗯", asr)
+    asr = SimpleNamespace(request_id=request_id, outputs=[SimpleNamespace(text=transcript)])
+    rj._owned(state.streaming)[request_id] = rj._PendingTurn(rj.JudgeSpec("chat_yes_no", {}), transcript, asr)
     request = SimpleNamespace(request_id=request_id, prompt_token_ids=[1], resumable=False)
     replica_id = await orchestrator.stage_pools[_JUDGE].submit_initial(request_id, state, request)
     orchestrator._on_stage_submitted(_JUDGE, request_id, replica_id, state)
@@ -116,6 +124,85 @@ async def test_judge_no_ends_the_turn_through_the_native_listen_path(auto_respon
         done = [event for event in events if event.type == "response.done"]
         assert [event.response_id for event in done] == [response_id]
         assert session.active_response_id is None
+    finally:
+        await orchestrator.session_manager.shutdown()
+
+
+@pytest.mark.asyncio
+async def test_judge_rejection_allows_the_next_question_in_the_same_session(monkeypatch):
+    orchestrator, clients, rpc_q, _ = _judged_orchestrator()
+    output_buffer = DuplexOutputBuffer(max_bytes=2 * 1024 * 1024, max_events=512)
+
+    def process_inputs(**kwargs):
+        return build_engine_core_request_from_tokens(
+            request_id=kwargs["request_id"],
+            prompt={"prompt_token_ids": [1, 2]},
+            params=kwargs["params"],
+            model_config=orchestrator.stage_pools[0].stage_vllm_config.model_config,
+            resumable=kwargs["resumable"],
+        )
+
+    # Model outputs and tokenization are faked; commits, judge interception
+    # and session output projection use the same paths for both turns.
+    monkeypatch.setattr(
+        orchestrator, "_get_stage_input_processor", lambda stage_id: SimpleNamespace(process_inputs=process_inputs)
+    )
+    message = _open_message(output_buffer=output_buffer)
+    message.session_config.modalities = ["text", "audio"]
+    frame = BytesIO()
+    Image.new("RGB", (8, 8)).save(frame, format="PNG")
+    append = replace(_append_audio(), video_frames=(pybase64.b64encode(frame.getvalue()).decode("ascii"),))
+    try:
+        await orchestrator._dispatch_message(message)
+        assert (await rpc_q.get()).ok
+        session = orchestrator.session_manager.get(SESSION_ID)
+        request_ids = []
+        for transcript, decision in [("嗯嗯", "NO"), ("上海明天天气怎么样？", "YES")]:
+            await _submit(orchestrator, append)
+            await _submit(orchestrator, commands.Commit(final=True, create_response=True))
+            request_id = await _pending_judge(orchestrator, transcript)
+            request_ids.append(request_id)
+            state = orchestrator.request_states[request_id]
+            consumed = await orchestrator._intercept_stage_output(
+                _JUDGE, 0, _judge_output(request_id, decision), state, None, None
+            )
+            await _settle(orchestrator)
+            if decision == "NO":
+                assert consumed
+                assert request_id not in orchestrator.request_states
+                assert all(not client.add_request_calls for client in clients[2:])
+                events = [await output_buffer.get() for _ in range(output_buffer.pending_events)]
+                listen = next(event for event in events if event.type == "response.listen").to_realtime()
+                assert listen["response"]["metadata"]["vllm_omni"]["listen_source"] == "response_judge"
+                assert not any(
+                    event.type in {"response.output_audio_transcript.delta", "response.output_audio.delta", "error"}
+                    for event in events
+                ), [event.to_realtime() for event in events if event.type == "error"]
+                assert session.active_response_id is None
+                continue
+
+            assert not consumed
+            assert request_ids[0] != request_id
+            answer = _judge_output(request_id, "上海明天多云。")
+            answer.finished = False
+            assert not await orchestrator._intercept_stage_output(
+                AURA_JUDGED_STAGE_LAYOUT.aura, 0, answer, state, None, None
+            )
+            await _settle(orchestrator)
+            audio = _tts_output(request_id, text="上海明天多云。")
+            audio.finished = True
+            await orchestrator._intercept_stage_output(AURA_JUDGED_STAGE_LAYOUT.code2wav, 0, audio, state, None, None)
+            await _settle(orchestrator)
+            events = [await output_buffer.get() for _ in range(output_buffer.pending_events)]
+            types = [event.type for event in events]
+            assert "response.listen" not in types and "error" not in types
+            assert any(
+                event.type == "response.output_audio_transcript.delta" and event.delta == "上海明天多云。"
+                for event in events
+            )
+            assert any(event.type == "response.output_audio.delta" and event.delta for event in events)
+            assert "response.done" in types
+            assert session.active_response_id is None
     finally:
         await orchestrator.session_manager.shutdown()
 
