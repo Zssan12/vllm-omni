@@ -109,6 +109,7 @@ def _should_emit_engine_output(
         bool(getattr(model_config, "use_v2_model_runner", False))
         and bool(getattr(model_config, "async_chunk", False))
         and not bool(getattr(model_config, "final_output", False))
+        and bool(getattr(model_config, "custom_process_next_stage_input_func", None))
     )
 
 
